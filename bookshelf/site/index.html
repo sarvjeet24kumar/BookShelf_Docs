@@ -1,0 +1,938 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="functional_usecases/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>BookShelf – Personalized Library Management System</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bookshelf-personalized-library-management-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="BookShelf – Personalized Library Management System" class="md-header__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BookShelf – Personalized Library Management System
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="BookShelf – Personalized Library Management System" class="md-nav__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BookShelf – Personalized Library Management System
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Goals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Goals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-centralize-personal-book-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Centralize Personal Book Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-enable-role-based-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Enable Role-Based Functionality
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stakeholders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stakeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admins
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Technology Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-core-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Core Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Outcome
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expected Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-for-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. For Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-for-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. For Admins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-the-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. For the System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="functional_usecases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functional Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="functional_modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="schema_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api_docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Docs.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Goals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Goals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-centralize-personal-book-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Centralize Personal Book Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-enable-role-based-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Enable Role-Based Functionality
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stakeholders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stakeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admins
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Technology Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-core-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Core Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication System
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Outcome
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expected Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-for-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. For Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-for-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. For Admins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-the-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. For the System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bookshelf-personalized-library-management-system">BookShelf – Personalized Library Management System</h1>
+<h2 id="overview">Overview</h2>
+<p>BookShelf is a REST-based Library Management System built with <strong>Django</strong> and <strong>Django REST Framework</strong>, designed to help users organize, track, and manage their personal book collections in a secure and structured manner.</p>
+<p>It serves as a centralized digital bookshelf where users can maintain records of the books they own, are currently reading, or plan to read in the future.</p>
+<p>The platform enables:</p>
+<ul>
+<li>Users to add, update, and manage their personal book collections.</li>
+<li>Admins to monitor, manage, and moderate book data across the entire system.</li>
+</ul>
+<hr />
+<h2 id="key-goals">Key Goals</h2>
+<h3 id="1-centralize-personal-book-management">1. Centralize Personal Book Management</h3>
+<p>All books owned by a user—whether planned (<code>TO_READ</code>), currently being read (<code>READING</code>), or completed (<code>COMPLETED</code>)—are stored in a single digital platform.</p>
+<p>Users can easily track reading progress without relying on manual notes. This improves organization, accessibility, and reading consistency through a structured backend.</p>
+<hr />
+<h3 id="2-enable-role-based-functionality">2. Enable Role-Based Functionality</h3>
+<p>The system defines clear roles and permissions:</p>
+<ul>
+<li>
+<p><strong>Users:</strong><br />
+  Can browse the public book catalog and manage books in their personal bookshelf (add, view, update status, and soft-delete).</p>
+</li>
+<li>
+<p><strong>Admins:</strong><br />
+  Can manage the entire book database (create new books, update information) and perform administrative tasks like user management.</p>
+</li>
+</ul>
+<hr />
+<h2 id="stakeholders">Stakeholders</h2>
+<h3 id="users">Users</h3>
+<ul>
+<li>Maintain a personalized digital bookshelf.</li>
+<li>Track reading status using predefined categories (<code>TO_READ</code>, <code>READING</code>, <code>COMPLETED</code>).</li>
+<li>Manage book information securely with a private collection view.</li>
+</ul>
+<h3 id="admins">Admins</h3>
+<ul>
+<li>View and manage system-wide book data and genres.</li>
+<li>Moderate book entries and deactivate/activate books for the public catalog.</li>
+<li>Manage user profiles and ensure platform-level data integrity.</li>
+</ul>
+<hr />
+<h2 id="scope">Scope</h2>
+<h3 id="1-technology-stack">1. Technology Stack</h3>
+<ul>
+<li><strong>Backend Framework:</strong> Django 6.0</li>
+<li><strong>API Development:</strong> Django REST Framework (DRF)</li>
+<li><strong>Database:</strong> PostgreSQL</li>
+<li><strong>Dependency Management:</strong> <code>uv</code></li>
+<li><strong>Authentication:</strong> JWT (SimpleJWT) with access and refresh tokens.</li>
+</ul>
+<hr />
+<h3 id="2-core-features">2. Core Features</h3>
+<ul>
+<li>User registration and login system with secure password validation.</li>
+<li>Token-based authentication and authorization.</li>
+<li>Personal bookshelf management with soft-delete functionality.</li>
+<li>Enum-based reading status tracking.</li>
+<li>RESTful API endpoints following standard HTTP methods.</li>
+<li>Role-based access control (USER/ADMIN).</li>
+<li>Global exception handling for unified API responses.</li>
+<li>Paginated data access for performance and scalability.</li>
+</ul>
+<hr />
+<h2 id="authentication-system">Authentication System</h2>
+<p>BookShelf uses <strong>SimpleJWT</strong> to provide secure, stateless authentication and controlled API access throughout the system.</p>
+<ul>
+<li>
+<p><strong>Signup/Login APIs:</strong><br />
+  Allow users to authenticate using their credentials and receive JWT tokens.</p>
+</li>
+<li>
+<p><strong>Access and Refresh Tokens:</strong><br />
+  Support secure sessions with token rotation and blacklisting on logout.</p>
+</li>
+<li>
+<p><strong>Role-based Permissions:</strong><br />
+  Custom permissions (<code>IsAdmin</code>, <code>IsUser</code>) ensure that only authorized roles can access specific endpoints.</p>
+</li>
+</ul>
+<p>This mechanism enhances data security, ensures data isolation between users, and allows for seamless integration with modern frontend clients.</p>
+<hr />
+<h2 id="expected-outcome">Expected Outcome</h2>
+<p>By the end of this project, the BookShelf platform delivers the following outcomes:</p>
+<h3 id="1-for-users">1. For Users</h3>
+<ul>
+<li>A secure and personalized digital bookshelf experience.</li>
+<li>Reliable tracking of reading progress across multiple status categories.</li>
+<li>Simplified book management through a clean API interface.</li>
+</ul>
+<h3 id="2-for-admins">2. For Admins</h3>
+<ul>
+<li>Centralized visibility into all platform data.</li>
+<li>Robust tools to moderate content and manage the book catalog.</li>
+<li>Automated role-enforcement reducing the need for manual oversight.</li>
+</ul>
+<h3 id="3-for-the-system">3. For the System</h3>
+<ul>
+<li>A scalable and maintainable REST API architecture.</li>
+<li>Strong enforcement of data isolation and soft-delete consistency.</li>
+<li>A future-proof foundation ready for features like book reviews and community recommendations.</li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p>BookShelf simplifies personal book management by providing a secure, structured, and role-based digital platform. By utilizing Django, DRF, and modern JWT authentication, the project demonstrates a professional-grade backend system designed for reliability, scalability, and ease of use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.tabs.link", "content.tooltips"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
