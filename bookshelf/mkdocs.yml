@@ -1,0 +1,19 @@
+site_name: BookShelf – Personalized Library Management System
+
+theme:
+  name: material
+
+  features:
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+
+nav:
+  - Overview: index.md
+  - Functional Use Cases: functional_usecases.md
+  - Modules: functional_modules.md
+  - Database Schema: schema_design.md
+  - Api Docs.: api_docs.md
+
+plugins:
+  - mermaid2
