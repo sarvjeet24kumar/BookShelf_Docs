@@ -1,0 +1,1688 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../schema_design/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Api Docs. - BookShelf – Personalized Library Management System</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BookShelf – Personalized Library Management System" class="md-header__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BookShelf – Personalized Library Management System
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Api Docs.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BookShelf – Personalized Library Management System" class="md-nav__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BookShelf – Personalized Library Management System
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional_usecases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functional Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional_modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Docs.
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Docs.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resource List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#header-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auth Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Auth Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Login User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logout-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logout User
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books-endpoints-useradmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Books Endpoints (User/Admin)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Books Endpoints (User/Admin)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-all-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List All Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-new-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create New Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-new-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request New Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-book-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Book Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-books-endpoints-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Books Endpoints (User)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Books Endpoints (User)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-personal-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Personal Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-book-to-my-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add Book to My List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-personal-book-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Personal Book Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-from-my-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove from My List
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Admin Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-all-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get All Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete User
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Codes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Error Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resource List
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#header-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Header Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoint Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auth Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Auth Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Register User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Login User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logout-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logout User
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books-endpoints-useradmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Books Endpoints (User/Admin)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Books Endpoints (User/Admin)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-all-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List All Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-new-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create New Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-new-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request New Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-book-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get Book Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-books-endpoints-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        My Books Endpoints (User)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="My Books Endpoints (User)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-personal-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List Personal Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-book-to-my-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add Book to My List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-personal-book-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Personal Book Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-from-my-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove from My List
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Admin Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-all-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get All Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delete User
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Codes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-error-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Error Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="api-documentation">API Documentation</h1>
+<h2 id="overview">Overview</h2>
+<p>This document provides comprehensive API documentation for the <strong>BookShelf – Library Management System</strong>.
+The API allows <strong>users</strong> to manage their personal book collection and <strong>admins</strong> to manage users and platform administration.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li>Resource List</li>
+<li>Endpoint Reference</li>
+<li>Authentication</li>
+<li>Endpoint Details</li>
+<li>Error Codes</li>
+</ol>
+<hr />
+<h2 id="resource-list">Resource List</h2>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auth</strong></td>
+<td>User registration, login, and logout</td>
+</tr>
+<tr>
+<td><strong>Books</strong></td>
+<td>Public and personal book management</td>
+</tr>
+<tr>
+<td><strong>Admin</strong></td>
+<td>User and Books  management</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="endpoint-reference">Endpoint Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
+<th>Auth Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POST</td>
+<td><code>/api/auth/signup/</code></td>
+<td>Register new user</td>
+<td>No</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/api/auth/login/</code></td>
+<td>User login</td>
+<td>No</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/api/auth/logout/</code></td>
+<td>User logout</td>
+<td>User</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/books/</code></td>
+<td>List all books</td>
+<td>User and Admin</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/api/books/</code></td>
+<td>Create new book</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/api/books/</code></td>
+<td>Request new book</td>
+<td>User</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/books/{id}/</code></td>
+<td>Get book details</td>
+<td>User  and Admin</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td><code>/api/books/{id}/</code></td>
+<td>Partial update book</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/api/books/{id}/</code></td>
+<td>Delete book</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/my-books/</code></td>
+<td>List user's personal books</td>
+<td>User</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/api/my-books/</code></td>
+<td>Add book to personal list</td>
+<td>User</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/my-books/{id}/</code></td>
+<td>Get personal book details</td>
+<td>User</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td><code>/api/my-books/{id}/</code></td>
+<td>Update personal book status</td>
+<td>User</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/api/my-books/{id}/</code></td>
+<td>Remove book from personal list</td>
+<td>User</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/users/</code></td>
+<td>List all users</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/api/users/{id}/</code></td>
+<td>Get user details</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/api/users/{id}/</code></td>
+<td>Delete user</td>
+<td>Admin</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="authentication">Authentication</h2>
+<h3 id="mechanism">Mechanism</h3>
+<p>JWT (JSON Web Token) Bearer Authentication.</p>
+<h3 id="header-format">Header Format</h3>
+<pre><code>Authorization: Bearer {access_token}
+</code></pre>
+<h3 id="roles">Roles</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USER</td>
+<td>Manage own collection and browse</td>
+</tr>
+<tr>
+<td>ADMIN</td>
+<td>Full platform management and users</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="endpoint-details">Endpoint Details</h2>
+<hr />
+<h2 id="auth-endpoints">Auth Endpoints</h2>
+<h3 id="register-user">Register User</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/auth/signup/</code></li>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Auth Required:</strong> No</li>
+</ul>
+<p><strong>Request Example</strong></p>
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;sarvjeet&quot;,
+  &quot;email&quot;: &quot;sarvjeet@test.com&quot;,
+  &quot;password&quot;: &quot;Password@123&quot;,
+  &quot;password_confirm&quot;: &quot;Password@123&quot;,
+  &quot;first_name&quot;: &quot;Sarvjeet&quot;,
+  &quot;last_name&quot;: &quot;Kumar&quot;,
+  &quot;phone_no&quot;: &quot;+919876543210&quot;
+}
+</code></pre>
+<p><strong>Success Response (201 Created)</strong></p>
+<pre><code class="language-json">{
+  &quot;user_id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;
+}
+</code></pre>
+<p><strong>Error Responses</strong></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td><code>{ "errors":"Invalid email format."}</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="login-user">Login User</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/auth/login/</code></li>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Auth Required:</strong> No</li>
+</ul>
+<p><strong>Request Example</strong></p>
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;sarvjeet&quot;,
+  &quot;password&quot;: &quot;Password@123&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK)</strong></p>
+<pre><code class="language-json">{
+  &quot;access&quot;: &quot;jwt_access_token&quot;,
+  &quot;refresh&quot;: &quot;jwt_refresh_token&quot;
+}
+</code></pre>
+<p><strong>Error Responses</strong></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td><code>{ "error": "Invalid credentials." }</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="logout-user">Logout User</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/auth/logout/</code></li>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Request Example</strong></p>
+<pre><code class="language-json">{
+  &quot;refresh&quot;: &quot;jwt_refresh_token&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK)</strong></p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Logout successful.&quot;
+}
+</code></pre>
+<hr />
+<h2 id="books-endpoints-useradmin">Books Endpoints (User/Admin)</h2>
+<h3 id="list-all-books">List All Books</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/books/</code></li>
+<li><strong>Method:</strong> <code>GET</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Query Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>genre</code></td>
+<td>string</td>
+<td>Filter by genre name</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>Filter by title keyword</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Success Response (200 OK)</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 1,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
+      &quot;title&quot;: &quot;Atomic Habits&quot;,
+      &quot;author&quot;: &quot;James Clear&quot;,
+      &quot;isbn&quot;: &quot;9780735211292&quot;,
+      &quot;published_year&quot;: 2018,
+      &quot;genres&quot;: [&quot;Self-Help&quot;, &quot;Psychology&quot;],
+      &quot;created_at&quot;: &quot;2024-03-21T10:00:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="create-new-book">Create New Book</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/books/</code></li>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Auth Required:</strong> Admin</li>
+</ul>
+<p><strong>Request Example</strong></p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;Deep Work&quot;,
+  &quot;author&quot;: &quot;Cal Newport&quot;,
+  &quot;isbn&quot;: &quot;9781455586691&quot;,
+  &quot;published_year&quot;: 2016,
+  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;]
+}
+</code></pre>
+<p><strong>Success Response (201 Created)</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9f-5f3a3c4a718f&quot;,
+  &quot;title&quot;: &quot;Deep Work&quot;,
+  &quot;author&quot;: &quot;Cal Newport&quot;,
+  &quot;isbn&quot;: &quot;9781455586691&quot;,
+  &quot;published_year&quot;: 2016,
+  &quot;is_active&quot;: true,
+  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;],
+  &quot;created_at&quot;: &quot;2024-03-21T10:05:00Z&quot;
+}
+</code></pre>
+<hr />
+<h3 id="request-new-book">Request New Book</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/books/</code></li>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Request Example</strong></p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;Deep Work&quot;,
+  &quot;author&quot;: &quot;Cal Newport&quot;,
+  &quot;isbn&quot;: &quot;9781455586691&quot;,
+  &quot;published_year&quot;: 2016,
+  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;]
+}
+</code></pre>
+<p><strong>Success Response (201 Created)</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9f-5f3a3c4a718f&quot;,
+  &quot;title&quot;: &quot;Deep Work&quot;,
+  &quot;author&quot;: &quot;Cal Newport&quot;,
+  &quot;isbn&quot;: &quot;9781455586691&quot;,
+  &quot;published_year&quot;: 2016,
+  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;],
+  &quot;created_at&quot;: &quot;2024-03-21T10:05:00Z&quot;
+}
+</code></pre>
+<hr />
+<h3 id="get-book-details">Get Book Details</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/books/{id}/</code></li>
+<li><strong>Method:</strong> <code>GET</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Success Response (200 OK)</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
+  &quot;title&quot;: &quot;Atomic Habits&quot;,
+  &quot;author&quot;: &quot;James Clear&quot;,
+  &quot;isbn&quot;: &quot;9780735211292&quot;,
+  &quot;published_year&quot;: 2018,
+  &quot;genres&quot;: [&quot;Self-Help&quot;, &quot;Psychology&quot;]
+}
+</code></pre>
+<hr />
+<h2 id="my-books-endpoints-user">My Books Endpoints (User)</h2>
+<h3 id="list-personal-books">List Personal Books</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/my-books/</code></li>
+<li><strong>Method:</strong> <code>GET</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Success Response (200 OK)</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 1,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
+      &quot;title&quot;: &quot;Atomic Habits&quot;,
+      &quot;author&quot;: &quot;James Clear&quot;,
+      &quot;status&quot;: &quot;READING&quot;,
+      &quot;genres&quot;: [&quot;Self-Help&quot;]
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="add-book-to-my-list">Add Book to My List</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/my-books/</code></li>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Request Example</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
+  &quot;status&quot;: &quot;TO_READ&quot;
+}
+</code></pre>
+<p><strong>Success Response (201 Created)</strong></p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Book added to your list.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="update-personal-book-status">Update Personal Book Status</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/my-books/{id}/</code></li>
+<li><strong>Method:</strong> <code>PATCH</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Request Example</strong></p>
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;COMPLETED&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK)</strong></p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Book status updated successfully.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="remove-from-my-list">Remove from My List</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/my-books/{id}/</code></li>
+<li><strong>Method:</strong> <code>DELETE</code></li>
+<li><strong>Auth Required:</strong> User</li>
+</ul>
+<p><strong>Success Response (204 No Content)</strong></p>
+<hr />
+<h2 id="admin-endpoints">Admin Endpoints</h2>
+<h3 id="get-all-users">Get All Users</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/users/</code></li>
+<li><strong>Method:</strong> <code>GET</code></li>
+<li><strong>Auth Required:</strong> Admin</li>
+</ul>
+<p><strong>Success Response (200 OK)</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 10,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a719a&quot;,
+      &quot;username&quot;: &quot;sarvjeet&quot;,
+      &quot;email&quot;: &quot;sarvjeet@test.com&quot;,
+      &quot;role&quot;: &quot;USER&quot;
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="user-details">User Details</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/users/{id}/</code></li>
+<li><strong>Method:</strong> <code>GET</code></li>
+<li><strong>Auth Required:</strong> Admin</li>
+</ul>
+<p><strong>Success Response (200 OK)</strong></p>
+<hr />
+<h3 id="delete-user">Delete User</h3>
+<ul>
+<li><strong>URL:</strong> <code>/api/users/{id}/</code></li>
+<li><strong>Method:</strong> <code>DELETE</code></li>
+<li><strong>Auth Required:</strong> Admin</li>
+</ul>
+<p><strong>Success Response (204 No Content)</strong></p>
+<hr />
+<h2 id="error-codes">Error Codes</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Created</td>
+</tr>
+<tr>
+<td>204</td>
+<td>No Content</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="common-error-response">Common Error Response</h3>
+<pre><code class="language-json">{
+  &quot;error&quot;: &quot;Error message describing the issue&quot;
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
