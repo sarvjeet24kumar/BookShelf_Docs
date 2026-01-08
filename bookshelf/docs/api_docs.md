@@ -1,455 +1,312 @@
-# API Documentation
+# BookShelf REST API Documentation
 
-## Overview
+## Base Configuration
 
-This document provides comprehensive API documentation for the **BookShelf – Library Management System**.
-The API allows **users** to manage their personal book collection and **admins** to manage users and platform administration.
-
----
-
-## Table of Contents
-
-1. Resource List
-2. Endpoint Reference
-3. Authentication
-4. Endpoint Details
-5. Error Codes
+| Setting | Value |
+|---------|-------|
+| Base URL | `/api/v1/` |
+| Versioning | URI-based |
+| Authentication | JWT (Bearer Token) |
+| Pagination | Enabled for list endpoints |
+| Update Strategy | PATCH only |
 
 ---
 
-## Resource List
+## Pagination
 
-| Resource  | Description                          |
-| --------- | ------------------------------------ |
-| **Auth**  | User registration, login, and logout |
-| **Books** | Public and personal book management  |
-| **Admin** | User and Books  management                      |
+Pagination is applied to all list endpoints.
+
+**Response Structure:**
+```json
+{
+    "count": 50,
+    "page": 1,
+    "page_size": 10,
+    "next": "http://localhost:8000/api/v1/books/?page=2",
+    "previous": null,
+    "data": [...]
+}
+```
 
 ---
 
-## Endpoint Reference
+## Response Formats
 
-| Method | Endpoint                    | Description                         | Auth Required |
-| ------ | --------------------------- | ----------------------------------- | ------------- |
-| POST   | `/api/auth/signup/`         | Register new user                   | No            |
-| POST   | `/api/auth/login/`          | User login                          | No            |
-| POST   | `/api/auth/logout/`         | User logout                         | User          |
-| GET    | `/api/books/`               | List all books                      | User and Admin         |
-| POST   | `/api/books/`               | Create new book                     | Admin         |
-| POST   | `/api/books/`               | Request new book                     | User         |
-| GET    | `/api/books/{id}/`          | Get book details                    | User  and Admin        |
-| PATCH  | `/api/books/{id}/`          | Partial update book                 | Admin         |
-| DELETE | `/api/books/{id}/`          | Delete book                         | Admin         |
-| GET    | `/api/my-books/`            | List user's personal books          | User          |
-| POST   | `/api/my-books/`            | Add book to personal list           | User          |
-| GET    | `/api/my-books/{id}/`       | Get personal book details           | User          |
-| PATCH  | `/api/my-books/{id}/`       | Update personal book status         | User          |
-| DELETE | `/api/my-books/{id}/`       | Remove book from personal list      | User          |
-| GET    | `/api/users/`               | List all users                      | Admin         |
-| GET    | `/api/users/{id}/`          | Get user details                    | Admin         |
-| DELETE | `/api/users/{id}/`          | Delete user                         | Admin         |
+### Success Response
+
+```json
+{
+    "id": "019b9b30-fa5f-71ff-8a30-3ec1cf2109dd",
+    "title": "Deep Learning",
+    "author": "Ian Goodfellow",
+    "isbn": "9780262035613",
+    "published_year": 2016,
+    "request_status": "APPROVED",
+    "created_by_email": "admin@gmail.com",
+    "genres": ["Technology", "Machine Learning"],
+    "created_at": "2026-01-08T06:50:36.959536+05:30"
+}
+```
+
+### Error Response
+
+```json
+{
+    "errors": {
+        "isbn": ["ISBN already exists."],
+        "title": ["Title must contain at least one letter."]
+    }
+}
+```
+
+**or**
+
+```json
+{
+    "error": "Book not found."
+}
+```
 
 ---
 
 ## Authentication
 
-### Mechanism
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/auth/signup/` | Register new user |
+| POST | `/auth/login/` | Login and get JWT tokens |
+| POST | `/auth/refresh/` | Refresh access token |
+| POST | `/auth/logout/` | Logout (blacklist token) |
 
-JWT (JSON Web Token) Bearer Authentication.
-
-### Header Format
-
-```
-Authorization: Bearer {access_token}
-```
-
-### Roles
-
-| Role  | Description                        |
-| ----- | ---------------------------------- |
-| USER  | Manage own collection and browse   |
-| ADMIN | Full platform management and users |
-
----
-
-## Endpoint Details
-
----
-
-## Auth Endpoints
-
-### Register User
-
-* **URL:** `/api/auth/signup/`
-* **Method:** `POST`
-* **Auth Required:** No
-
-**Request Example**
-
+### Signup Request
 ```json
 {
-  "username": "sarvjeet",
-  "email": "sarvjeet@test.com",
-  "password": "Password@123",
-  "password_confirm": "Password@123",
-  "first_name": "Sarvjeet",
-  "last_name": "Kumar",
-  "phone_no": "+919876543210"
+    "username": "testuser",
+    "email": "test@example.com",
+    "password": "securepassword123",
+    "first_name": "Test",
+    "last_name": "User"
 }
 ```
 
-**Success Response (201 Created)**
-
+### Login Request
 ```json
 {
-  "user_id": "018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e"
+    "email": "test@example.com",
+    "password": "securepassword123"
 }
 ```
 
-**Error Responses**
-
-| Code | Response                              |
-| ---- | ------------------------------------- |
-| 400  | `{ "errors":"Invalid email format."}` |
-
----
-
-### Login User
-
-* **URL:** `/api/auth/login/`
-* **Method:** `POST`
-* **Auth Required:** No
-
-**Request Example**
-
+### Login Response
 ```json
 {
-  "username": "sarvjeet",
-  "password": "Password@123"
-}
-```
-
-**Success Response (200 OK)**
-
-```json
-{
-  "access": "jwt_access_token",
-  "refresh": "jwt_refresh_token"
-}
-```
-
-**Error Responses**
-
-| Code | Response                                     |
-| ---- | -------------------------------------------- |
-| 400  | `{ "error": "Invalid credentials." }`        |
-
----
-
-### Logout User
-
-* **URL:** `/api/auth/logout/`
-* **Method:** `POST`
-* **Auth Required:** User
-
-**Request Example**
-
-```json
-{
-  "refresh": "jwt_refresh_token"
-}
-```
-
-**Success Response (200 OK)**
-
-```json
-{
-  "message": "Logout successful."
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...",
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9..."
 }
 ```
 
 ---
 
-## Books Endpoints (User/Admin)
+## User Management (Admin Only)
 
-### List All Books
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/users/` | List all users |
+| GET | `/users/{id}/` | Get user details |
+| DELETE | `/users/{id}/` | Soft delete user |
 
-* **URL:** `/api/books/`
-* **Method:** `GET`
-* **Auth Required:** User
+## Me 
 
-**Query Parameters**
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/users/me/` | Get self details |
+| DELETE | `/users/me/` | Soft delete user (User only)|
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| `genre`   | string | Filter by genre name    |
-| `title`   | string | Filter by title keyword |
-
-**Success Response (200 OK)**
-
+### User Response
 ```json
 {
-  "count": 1,
-  "next": null,
-  "previous": null,
-  "data": [
-    {
-      "id": "018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e",
-      "title": "Atomic Habits",
-      "author": "James Clear",
-      "isbn": "9780735211292",
-      "published_year": 2018,
-      "genres": ["Self-Help", "Psychology"],
-      "created_at": "2024-03-21T10:00:00Z"
-    }
-  ]
+    "id": "019b99e5-09aa-7bd5-9a3c-71efd21c56ee",
+    "username": "testuser1",
+    "email": "testuser1@example.com",
+    "first_name": "Test",
+    "last_name": "User",
+    "role": "USER",
+    "date_joined": "2026-01-08T00:48:02.922906+05:30"
 }
 ```
 
 ---
 
-### Create New Book
+## Books
 
-* **URL:** `/api/books/`
-* **Method:** `POST`
-* **Auth Required:** Admin
+| Method | Endpoint | Description | Access |
+|--------|----------|-------------|--------|
+| GET | `/books/` | List books | All authenticated |
+| POST | `/books/` | Create book | All authenticated |
+| GET | `/books/{id}/` | Get book details | All authenticated |
+| PATCH | `/books/{id}/` | Update book | Admin only |
+| DELETE | `/books/{id}/` | Soft delete book | Admin only |
 
-**Request Example**
+### Query Parameters (GET `/books/`)
 
+| Parameter | Description | Example |
+|-----------|-------------|---------|
+| `request_status` | Filter by status (PENDING, APPROVED, REJECTED) | `?request_status=APPROVED` |
+| `genre` | Filter by genre name | `?genre=Fiction` |
+| `title` | Search by title (case-insensitive) | `?title=harry` |
+
+### Visibility Rules
+
+| User Type | Default View | With `request_status` Filter |
+|-----------|--------------|------------------------------|
+| Admin | All books | Filter by specified status |
+| User | APPROVED + own books | APPROVED: all, PENDING/REJECTED: own only |
+
+### Create Book Request
 ```json
 {
-  "title": "Deep Work",
-  "author": "Cal Newport",
-  "isbn": "9781455586691",
-  "published_year": 2016,
-  "genres": ["Productivity", "Focus"]
+    "title": "My Book Title",
+    "author": "Author Name",
+    "isbn": "9780262035613",
+    "published_year": 2020,
+    "genres": ["019b9297-6647-72dd-902b-d0fe1e8e2b48"]
 }
 ```
 
-**Success Response (201 Created)**
-
+### Book Response
 ```json
 {
-  "id": "018f3a3a-3c4a-718e-8a9f-5f3a3c4a718f",
-  "title": "Deep Work",
-  "author": "Cal Newport",
-  "isbn": "9781455586691",
-  "published_year": 2016,
-  "is_active": true,
-  "genres": ["Productivity", "Focus"],
-  "created_at": "2024-03-21T10:05:00Z"
+    "id": "019b9b30-fa5f-71ff-8a30-3ec1cf2109dd",
+    "title": "My Book Title",
+    "author": "Author Name",
+    "isbn": "9780262035613",
+    "published_year": 2020,
+    "request_status": "APPROVED",
+    "created_by_email": "admin@gmail.com",
+    "genres": ["Fiction", "Technology"],
+    "created_at": "2026-01-08T06:50:36.959536+05:30"
 }
 ```
 
----
-### Request New Book
-
-* **URL:** `/api/books/`
-* **Method:** `POST`
-* **Auth Required:** User
-
-**Request Example**
-
+### Update Book Request (Admin Only)
 ```json
 {
-  "title": "Deep Work",
-  "author": "Cal Newport",
-  "isbn": "9781455586691",
-  "published_year": 2016,
-  "genres": ["Productivity", "Focus"]
+    "title": "Updated Title",
+    "author": "Updated Author",
+    "published_year": 2021,
+    "request_status": "APPROVED"
 }
 ```
 
-**Success Response (201 Created)**
-
-```json
-{
-  "id": "018f3a3a-3c4a-718e-8a9f-5f3a3c4a718f",
-  "title": "Deep Work",
-  "author": "Cal Newport",
-  "isbn": "9781455586691",
-  "published_year": 2016,
-  "genres": ["Productivity", "Focus"],
-  "created_at": "2024-03-21T10:05:00Z"
-}
-```
+> **Note:** ISBN and genres are NOT updateable after creation.
 
 ---
 
-### Get Book Details
+## My Books (User Library)
 
-* **URL:** `/api/books/{id}/`
-* **Method:** `GET`
-* **Auth Required:** User
+| Method | Endpoint | Description | Access |
+|--------|----------|-------------|--------|
+| GET | `/my-books/` | List user's reading list | User only |
+| POST | `/my-books/` | Add book to reading list | User only |
+| GET | `/my-books/{id}/` | Get book from reading list | User only |
+| PATCH | `/my-books/{id}/` | Update reading status | User only |
+| DELETE | `/my-books/{id}/` | Remove from reading list | User only |
 
-**Success Response (200 OK)**
+### Query Parameters (GET `/my-books/`)
 
+| Parameter | Description | Example |
+|-----------|-------------|---------|
+| `status` | Filter by reading status | `?status=READING` |
+| `title` | Search by title | `?title=harry` |
+| `author` | Search by author | `?author=rowling` |
+
+### Add Book to Library Request
 ```json
 {
-  "id": "018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e",
-  "title": "Atomic Habits",
-  "author": "James Clear",
-  "isbn": "9780735211292",
-  "published_year": 2018,
-  "genres": ["Self-Help", "Psychology"]
+    "id": "019b9b30-fa5f-71ff-8a30-3ec1cf2109dd",
+    "status": "TO_READ"
 }
 ```
 
+### Reading Status Values
+- `TO_READ`
+- `READING`
+- `COMPLETED`
+
+### My Book Response
+```json
+{
+    "id": "019b9b30-fa5f-71ff-8a30-3ec1cf2109dd",
+    "title": "Deep Learning",
+    "author": "Ian Goodfellow",
+    "isbn": "9780262035613",
+    "published_year": 2016,
+    "status": "READING",
+    "created_by_email": "admin@gmail.com",
+    "genres": ["Technology", "Machine Learning"],
+    "created_at": "2026-01-08T06:50:36.959536+05:30"
+}
+```
+
+> **Note:** `request_status` is hidden in my-books responses. Only APPROVED books can be added.
 
 ---
 
-## My Books Endpoints (User)
+## Genres
 
-### List Personal Books
+| Method | Endpoint | Description | Access |
+|--------|----------|-------------|--------|
+| GET | `/genres/` | List all genres | All authenticated |
 
-* **URL:** `/api/my-books/`
-* **Method:** `GET`
-* **Auth Required:** User
-
-**Success Response (200 OK)**
-
+### Genre Response
 ```json
 {
-  "count": 1,
-  "next": null,
-  "previous": null,
-  "data": [
-    {
-      "id": "018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e",
-      "title": "Atomic Habits",
-      "author": "James Clear",
-      "status": "READING",
-      "genres": ["Self-Help"]
-    }
-  ]
-}
-```
-
----
-
-### Add Book to My List
-
-* **URL:** `/api/my-books/`
-* **Method:** `POST`
-* **Auth Required:** User
-
-**Request Example**
-
-```json
-{
-  "id": "018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e",
-  "status": "TO_READ"
-}
-```
-
-**Success Response (201 Created)**
-
-```json
-{
-  "message": "Book added to your list."
+    "id": "019b9297-6647-72dd-902b-d0fe1e8e2b48",
+    "name": "Fiction",
+    "created_at": "2026-01-07T14:30:00.000000+05:30"
 }
 ```
 
 ---
 
-### Update Personal Book Status
+## Request Status Values
 
-* **URL:** `/api/my-books/{id}/`
-* **Method:** `PATCH`
-* **Auth Required:** User
-
-**Request Example**
-
-```json
-{
-  "status": "COMPLETED"
-}
-```
-
-**Success Response (200 OK)**
-
-```json
-{
-  "message": "Book status updated successfully."
-}
-```
-
----
-
-### Remove from My List
-
-* **URL:** `/api/my-books/{id}/`
-* **Method:** `DELETE`
-* **Auth Required:** User
-
-**Success Response (204 No Content)**
-
----
-
-## Admin Endpoints
-
-### Get All Users
-
-* **URL:** `/api/users/`
-* **Method:** `GET`
-* **Auth Required:** Admin
-
-**Success Response (200 OK)**
-
-```json
-{
-  "count": 10,
-  "results": [
-    {
-      "id": "018f3a3a-3c4a-718e-8a9d-5f3a3c4a719a",
-      "username": "sarvjeet",
-      "email": "sarvjeet@test.com",
-      "role": "USER"
-    }
-  ]
-}
-```
-
----
-###  User Details
-
-* **URL:** `/api/users/{id}/`
-* **Method:** `GET`
-* **Auth Required:** Admin
-
-**Success Response (200 OK)**
-
----
-
-### Delete User
-
-* **URL:** `/api/users/{id}/`
-* **Method:** `DELETE`
-* **Auth Required:** Admin
-
-**Success Response (204 No Content)**
+| Status | Description |
+|--------|-------------|
+| `PENDING` | Book awaiting admin approval (default for users) |
+| `APPROVED` | Book approved and visible to all (default for admins) |
+| `REJECTED` | Book rejected by admin |
 
 ---
 
 ## Error Codes
 
-| Code | Meaning               |
-| ---- | --------------------- |
-| 200  | OK                    |
-| 201  | Created               |
-| 204  | No Content            |
-| 400  | Bad Request           |
-| 401  | Unauthorized          |
-| 403  | Forbidden             |
-| 404  | Not Found             |
-| 500  | Internal Server Error |
+| Status Code | Description |
+|-------------|-------------|
+| 200 | Success |
+| 201 | Created |
+| 204 | No Content (successful delete) |
+| 400 | Bad Request (validation error) |
+| 401 | Unauthorized (invalid/missing token) |
+| 403 | Forbidden (insufficient permissions) |
+| 404 | Not Found |
+| 500 | Internal Server Error |
 
 ---
 
-### Common Error Response
+## Validation Rules
 
-```json
-{
-  "error": "Error message describing the issue"
-}
-```
+### Title & Author
+- Must contain at least one letter
+- Allowed: letters, numbers, spaces, underscores, apostrophes, periods, commas
+
+### ISBN
+- Maximum 13 characters
+- Must be unique across all books
+
+### Published Year
+- Range: 1000 - 2100
+
+### Genres
+- Must provide at least one valid genre UUID
+- Genre must exist in database

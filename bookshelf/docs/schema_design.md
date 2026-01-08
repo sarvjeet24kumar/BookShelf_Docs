@@ -28,6 +28,8 @@ erDiagram
         small_int published_year
         string isbn
         boolean is_active
+        enum request_status
+        uuid created_by FK
         datetime created_at
         datetime updated_at
         datetime deleted_at

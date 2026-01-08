@@ -8,14 +8,14 @@ It serves as a centralized digital bookshelf where users can maintain records of
 The platform enables:
 
 - Users to add, update, and manage their personal book collections.
-- Admins to monitor, manage, and moderate book data across the entire system.
+- Admins to monitor and manage book data across the entire system.
 
 ---
 
 ## Key Goals
 
 ### 1. Centralize Personal Book Management
-All books owned by a user—whether planned (`TO_READ`), currently being read (`READING`), or completed (`COMPLETED`)—are stored in a single digital platform.
+All books owned by a user—whether planned (`TO_READ`), currently being read (`READING`), or completed (`COMPLETED`) are stored in a single digital platform.
 
 Users can easily track reading progress without relying on manual notes. This improves organization, accessibility, and reading consistency through a structured backend.
 
@@ -25,7 +25,7 @@ Users can easily track reading progress without relying on manual notes. This im
 The system defines clear roles and permissions:
 
 - **Users:**  
-  Can browse the public book catalog and manage books in their personal bookshelf (add, view, update status, and soft-delete).
+  Can browse the public book catalog and manage books in their personal bookshelf (add, view, update status, and delete).
 
 - **Admins:**  
   Can manage the entire book database (create new books, update information) and perform administrative tasks like user management.

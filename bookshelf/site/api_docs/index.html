@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-documentation" class="md-skip">
+        <a href="#bookshelf-rest-api-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -322,10 +322,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#base-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Base Configuration
       
     </span>
   </a>
@@ -333,10 +333,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
+  <a href="#pagination" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Table of Contents
+        Pagination
       
     </span>
   </a>
@@ -344,24 +344,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resource-list" class="md-nav__link">
+  <a href="#response-formats" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resource List
+        Response Formats
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Response Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#success-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Success Response
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#endpoint-reference" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Endpoint Reference
+        Error Response
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -378,10 +395,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mechanism" class="md-nav__link">
+  <a href="#signup-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mechanism
+        Signup Request
       
     </span>
   </a>
@@ -389,10 +406,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#header-format" class="md-nav__link">
+  <a href="#login-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Header Format
+        Login Request
       
     </span>
   </a>
@@ -400,10 +417,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#roles" class="md-nav__link">
+  <a href="#login-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Roles
+        Login Response
       
     </span>
   </a>
@@ -416,10 +433,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#endpoint-details" class="md-nav__link">
+  <a href="#user-management-admin-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Endpoint Details
+        User Management (Admin Only)
       
     </span>
   </a>
@@ -427,44 +444,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#auth-endpoints" class="md-nav__link">
+  <a href="#me" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Auth Endpoints
+        Me
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Auth Endpoints">
+    <nav class="md-nav" aria-label="Me">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#register-user" class="md-nav__link">
+  <a href="#user-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Register User
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#login-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login User
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logout-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logout User
+        User Response
       
     </span>
   </a>
@@ -477,22 +472,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#books-endpoints-useradmin" class="md-nav__link">
+  <a href="#books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Books Endpoints (User/Admin)
+        Books
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Books Endpoints (User/Admin)">
+    <nav class="md-nav" aria-label="Books">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#list-all-books" class="md-nav__link">
+  <a href="#query-parameters-get-books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List All Books
+        Query Parameters (GET /books/)
       
     </span>
   </a>
@@ -500,10 +495,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-new-book" class="md-nav__link">
+  <a href="#visibility-rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create New Book
+        Visibility Rules
       
     </span>
   </a>
@@ -511,10 +506,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#request-new-book" class="md-nav__link">
+  <a href="#create-book-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Request New Book
+        Create Book Request
       
     </span>
   </a>
@@ -522,10 +517,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-book-details" class="md-nav__link">
+  <a href="#book-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Get Book Details
+        Book Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-book-request-admin-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Book Request (Admin Only)
       
     </span>
   </a>
@@ -538,22 +544,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-books-endpoints-user" class="md-nav__link">
+  <a href="#my-books-user-library" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Books Endpoints (User)
+        My Books (User Library)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="My Books Endpoints (User)">
+    <nav class="md-nav" aria-label="My Books (User Library)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#list-personal-books" class="md-nav__link">
+  <a href="#query-parameters-get-my-books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List Personal Books
+        Query Parameters (GET /my-books/)
       
     </span>
   </a>
@@ -561,10 +567,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-book-to-my-list" class="md-nav__link">
+  <a href="#add-book-to-library-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Book to My List
+        Add Book to Library Request
       
     </span>
   </a>
@@ -572,10 +578,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-personal-book-status" class="md-nav__link">
+  <a href="#reading-status-values" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Update Personal Book Status
+        Reading Status Values
       
     </span>
   </a>
@@ -583,10 +589,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove-from-my-list" class="md-nav__link">
+  <a href="#my-book-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Remove from My List
+        My Book Response
       
     </span>
   </a>
@@ -599,44 +605,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-endpoints" class="md-nav__link">
+  <a href="#genres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Admin Endpoints
+        Genres
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Admin Endpoints">
+    <nav class="md-nav" aria-label="Genres">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#get-all-users" class="md-nav__link">
+  <a href="#genre-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Get All Users
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        User Details
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Delete User
+        Genre Response
       
     </span>
   </a>
@@ -645,6 +629,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-status-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Status Values
+      
+    </span>
+  </a>
   
 </li>
       
@@ -657,14 +652,58 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Error Codes">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation Rules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#common-error-response" class="md-nav__link">
+  <a href="#title-author" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common Error Response
+        Title &amp; Author
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISBN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#published-year" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Published Year
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genres_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genres
       
     </span>
   </a>
@@ -711,10 +750,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#base-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Base Configuration
       
     </span>
   </a>
@@ -722,10 +761,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
+  <a href="#pagination" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Table of Contents
+        Pagination
       
     </span>
   </a>
@@ -733,24 +772,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resource-list" class="md-nav__link">
+  <a href="#response-formats" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resource List
+        Response Formats
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Response Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#success-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Success Response
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#endpoint-reference" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Endpoint Reference
+        Error Response
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -767,10 +823,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mechanism" class="md-nav__link">
+  <a href="#signup-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mechanism
+        Signup Request
       
     </span>
   </a>
@@ -778,10 +834,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#header-format" class="md-nav__link">
+  <a href="#login-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Header Format
+        Login Request
       
     </span>
   </a>
@@ -789,10 +845,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#roles" class="md-nav__link">
+  <a href="#login-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Roles
+        Login Response
       
     </span>
   </a>
@@ -805,10 +861,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#endpoint-details" class="md-nav__link">
+  <a href="#user-management-admin-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Endpoint Details
+        User Management (Admin Only)
       
     </span>
   </a>
@@ -816,44 +872,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#auth-endpoints" class="md-nav__link">
+  <a href="#me" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Auth Endpoints
+        Me
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Auth Endpoints">
+    <nav class="md-nav" aria-label="Me">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#register-user" class="md-nav__link">
+  <a href="#user-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Register User
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#login-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login User
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logout-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logout User
+        User Response
       
     </span>
   </a>
@@ -866,22 +900,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#books-endpoints-useradmin" class="md-nav__link">
+  <a href="#books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Books Endpoints (User/Admin)
+        Books
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Books Endpoints (User/Admin)">
+    <nav class="md-nav" aria-label="Books">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#list-all-books" class="md-nav__link">
+  <a href="#query-parameters-get-books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List All Books
+        Query Parameters (GET /books/)
       
     </span>
   </a>
@@ -889,10 +923,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-new-book" class="md-nav__link">
+  <a href="#visibility-rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create New Book
+        Visibility Rules
       
     </span>
   </a>
@@ -900,10 +934,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#request-new-book" class="md-nav__link">
+  <a href="#create-book-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Request New Book
+        Create Book Request
       
     </span>
   </a>
@@ -911,10 +945,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-book-details" class="md-nav__link">
+  <a href="#book-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Get Book Details
+        Book Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-book-request-admin-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update Book Request (Admin Only)
       
     </span>
   </a>
@@ -927,22 +972,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-books-endpoints-user" class="md-nav__link">
+  <a href="#my-books-user-library" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Books Endpoints (User)
+        My Books (User Library)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="My Books Endpoints (User)">
+    <nav class="md-nav" aria-label="My Books (User Library)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#list-personal-books" class="md-nav__link">
+  <a href="#query-parameters-get-my-books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List Personal Books
+        Query Parameters (GET /my-books/)
       
     </span>
   </a>
@@ -950,10 +995,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-book-to-my-list" class="md-nav__link">
+  <a href="#add-book-to-library-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Book to My List
+        Add Book to Library Request
       
     </span>
   </a>
@@ -961,10 +1006,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-personal-book-status" class="md-nav__link">
+  <a href="#reading-status-values" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Update Personal Book Status
+        Reading Status Values
       
     </span>
   </a>
@@ -972,10 +1017,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove-from-my-list" class="md-nav__link">
+  <a href="#my-book-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Remove from My List
+        My Book Response
       
     </span>
   </a>
@@ -988,44 +1033,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-endpoints" class="md-nav__link">
+  <a href="#genres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Admin Endpoints
+        Genres
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Admin Endpoints">
+    <nav class="md-nav" aria-label="Genres">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#get-all-users" class="md-nav__link">
+  <a href="#genre-response" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Get All Users
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        User Details
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Delete User
+        Genre Response
       
     </span>
   </a>
@@ -1034,6 +1057,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-status-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Status Values
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1046,14 +1080,58 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Error Codes">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation Rules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#common-error-response" class="md-nav__link">
+  <a href="#title-author" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common Error Response
+        Title &amp; Author
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ISBN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#published-year" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Published Year
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genres_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genres
       
     </span>
   </a>
@@ -1082,514 +1160,483 @@
 
 
 
-<h1 id="api-documentation">API Documentation</h1>
-<h2 id="overview">Overview</h2>
-<p>This document provides comprehensive API documentation for the <strong>BookShelf – Library Management System</strong>.
-The API allows <strong>users</strong> to manage their personal book collection and <strong>admins</strong> to manage users and platform administration.</p>
-<hr />
-<h2 id="table-of-contents">Table of Contents</h2>
-<ol>
-<li>Resource List</li>
-<li>Endpoint Reference</li>
-<li>Authentication</li>
-<li>Endpoint Details</li>
-<li>Error Codes</li>
-</ol>
-<hr />
-<h2 id="resource-list">Resource List</h2>
+<h1 id="bookshelf-rest-api-documentation">BookShelf REST API Documentation</h1>
+<h2 id="base-configuration">Base Configuration</h2>
 <table>
 <thead>
 <tr>
-<th>Resource</th>
-<th>Description</th>
+<th>Setting</th>
+<th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Auth</strong></td>
-<td>User registration, login, and logout</td>
+<td>Base URL</td>
+<td><code>/api/v1/</code></td>
 </tr>
 <tr>
-<td><strong>Books</strong></td>
-<td>Public and personal book management</td>
+<td>Versioning</td>
+<td>URI-based</td>
 </tr>
 <tr>
-<td><strong>Admin</strong></td>
-<td>User and Books  management</td>
+<td>Authentication</td>
+<td>JWT (Bearer Token)</td>
+</tr>
+<tr>
+<td>Pagination</td>
+<td>Enabled for list endpoints</td>
+</tr>
+<tr>
+<td>Update Strategy</td>
+<td>PATCH only</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="endpoint-reference">Endpoint Reference</h2>
+<h2 id="pagination">Pagination</h2>
+<p>Pagination is applied to all list endpoints.</p>
+<p><strong>Response Structure:</strong></p>
+<pre><code class="language-json">{
+    &quot;count&quot;: 50,
+    &quot;page&quot;: 1,
+    &quot;page_size&quot;: 10,
+    &quot;next&quot;: &quot;http://localhost:8000/api/v1/books/?page=2&quot;,
+    &quot;previous&quot;: null,
+    &quot;data&quot;: [...]
+}
+</code></pre>
+<hr />
+<h2 id="response-formats">Response Formats</h2>
+<h3 id="success-response">Success Response</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
+    &quot;title&quot;: &quot;Deep Learning&quot;,
+    &quot;author&quot;: &quot;Ian Goodfellow&quot;,
+    &quot;isbn&quot;: &quot;9780262035613&quot;,
+    &quot;published_year&quot;: 2016,
+    &quot;request_status&quot;: &quot;APPROVED&quot;,
+    &quot;created_by_email&quot;: &quot;admin@gmail.com&quot;,
+    &quot;genres&quot;: [&quot;Technology&quot;, &quot;Machine Learning&quot;],
+    &quot;created_at&quot;: &quot;2026-01-08T06:50:36.959536+05:30&quot;
+}
+</code></pre>
+<h3 id="error-response">Error Response</h3>
+<pre><code class="language-json">{
+    &quot;errors&quot;: {
+        &quot;isbn&quot;: [&quot;ISBN already exists.&quot;],
+        &quot;title&quot;: [&quot;Title must contain at least one letter.&quot;]
+    }
+}
+</code></pre>
+<p><strong>or</strong></p>
+<pre><code class="language-json">{
+    &quot;error&quot;: &quot;Book not found.&quot;
+}
+</code></pre>
+<hr />
+<h2 id="authentication">Authentication</h2>
 <table>
 <thead>
 <tr>
 <th>Method</th>
 <th>Endpoint</th>
 <th>Description</th>
-<th>Auth Required</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>POST</td>
-<td><code>/api/auth/signup/</code></td>
+<td><code>/auth/signup/</code></td>
 <td>Register new user</td>
-<td>No</td>
 </tr>
 <tr>
 <td>POST</td>
-<td><code>/api/auth/login/</code></td>
-<td>User login</td>
-<td>No</td>
+<td><code>/auth/login/</code></td>
+<td>Login and get JWT tokens</td>
 </tr>
 <tr>
 <td>POST</td>
-<td><code>/api/auth/logout/</code></td>
-<td>User logout</td>
-<td>User</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/api/books/</code></td>
-<td>List all books</td>
-<td>User and Admin</td>
+<td><code>/auth/refresh/</code></td>
+<td>Refresh access token</td>
 </tr>
 <tr>
 <td>POST</td>
-<td><code>/api/books/</code></td>
-<td>Create new book</td>
-<td>Admin</td>
-</tr>
-<tr>
-<td>POST</td>
-<td><code>/api/books/</code></td>
-<td>Request new book</td>
-<td>User</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/api/books/{id}/</code></td>
-<td>Get book details</td>
-<td>User  and Admin</td>
-</tr>
-<tr>
-<td>PATCH</td>
-<td><code>/api/books/{id}/</code></td>
-<td>Partial update book</td>
-<td>Admin</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/api/books/{id}/</code></td>
-<td>Delete book</td>
-<td>Admin</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/api/my-books/</code></td>
-<td>List user's personal books</td>
-<td>User</td>
-</tr>
-<tr>
-<td>POST</td>
-<td><code>/api/my-books/</code></td>
-<td>Add book to personal list</td>
-<td>User</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/api/my-books/{id}/</code></td>
-<td>Get personal book details</td>
-<td>User</td>
-</tr>
-<tr>
-<td>PATCH</td>
-<td><code>/api/my-books/{id}/</code></td>
-<td>Update personal book status</td>
-<td>User</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/api/my-books/{id}/</code></td>
-<td>Remove book from personal list</td>
-<td>User</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/api/users/</code></td>
-<td>List all users</td>
-<td>Admin</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/api/users/{id}/</code></td>
-<td>Get user details</td>
-<td>Admin</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/api/users/{id}/</code></td>
-<td>Delete user</td>
-<td>Admin</td>
+<td><code>/auth/logout/</code></td>
+<td>Logout (blacklist token)</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="authentication">Authentication</h2>
-<h3 id="mechanism">Mechanism</h3>
-<p>JWT (JSON Web Token) Bearer Authentication.</p>
-<h3 id="header-format">Header Format</h3>
-<pre><code>Authorization: Bearer {access_token}
+<h3 id="signup-request">Signup Request</h3>
+<pre><code class="language-json">{
+    &quot;username&quot;: &quot;testuser&quot;,
+    &quot;email&quot;: &quot;test@example.com&quot;,
+    &quot;password&quot;: &quot;securepassword123&quot;,
+    &quot;first_name&quot;: &quot;Test&quot;,
+    &quot;last_name&quot;: &quot;User&quot;
+}
 </code></pre>
-<h3 id="roles">Roles</h3>
+<h3 id="login-request">Login Request</h3>
+<pre><code class="language-json">{
+    &quot;email&quot;: &quot;test@example.com&quot;,
+    &quot;password&quot;: &quot;securepassword123&quot;
+}
+</code></pre>
+<h3 id="login-response">Login Response</h3>
+<pre><code class="language-json">{
+    &quot;access&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...&quot;,
+    &quot;refresh&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...&quot;
+}
+</code></pre>
+<hr />
+<h2 id="user-management-admin-only">User Management (Admin Only)</h2>
 <table>
 <thead>
 <tr>
-<th>Role</th>
+<th>Method</th>
+<th>Endpoint</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>USER</td>
-<td>Manage own collection and browse</td>
+<td>GET</td>
+<td><code>/users/</code></td>
+<td>List all users</td>
 </tr>
 <tr>
-<td>ADMIN</td>
-<td>Full platform management and users</td>
+<td>GET</td>
+<td><code>/users/{id}/</code></td>
+<td>Get user details</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/users/{id}/</code></td>
+<td>Soft delete user</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="endpoint-details">Endpoint Details</h2>
-<hr />
-<h2 id="auth-endpoints">Auth Endpoints</h2>
-<h3 id="register-user">Register User</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/auth/signup/</code></li>
-<li><strong>Method:</strong> <code>POST</code></li>
-<li><strong>Auth Required:</strong> No</li>
-</ul>
-<p><strong>Request Example</strong></p>
-<pre><code class="language-json">{
-  &quot;username&quot;: &quot;sarvjeet&quot;,
-  &quot;email&quot;: &quot;sarvjeet@test.com&quot;,
-  &quot;password&quot;: &quot;Password@123&quot;,
-  &quot;password_confirm&quot;: &quot;Password@123&quot;,
-  &quot;first_name&quot;: &quot;Sarvjeet&quot;,
-  &quot;last_name&quot;: &quot;Kumar&quot;,
-  &quot;phone_no&quot;: &quot;+919876543210&quot;
-}
-</code></pre>
-<p><strong>Success Response (201 Created)</strong></p>
-<pre><code class="language-json">{
-  &quot;user_id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;
-}
-</code></pre>
-<p><strong>Error Responses</strong></p>
+<h2 id="me">Me</h2>
 <table>
 <thead>
 <tr>
-<th>Code</th>
-<th>Response</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>400</td>
-<td><code>{ "errors":"Invalid email format."}</code></td>
+<td>GET</td>
+<td><code>/users/me/</code></td>
+<td>Get self details</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/users/me/</code></td>
+<td>Soft delete user (User only)</td>
 </tr>
 </tbody>
 </table>
+<h3 id="user-response">User Response</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;019b99e5-09aa-7bd5-9a3c-71efd21c56ee&quot;,
+    &quot;username&quot;: &quot;testuser1&quot;,
+    &quot;email&quot;: &quot;testuser1@example.com&quot;,
+    &quot;first_name&quot;: &quot;Test&quot;,
+    &quot;last_name&quot;: &quot;User&quot;,
+    &quot;role&quot;: &quot;USER&quot;,
+    &quot;date_joined&quot;: &quot;2026-01-08T00:48:02.922906+05:30&quot;
+}
+</code></pre>
 <hr />
-<h3 id="login-user">Login User</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/auth/login/</code></li>
-<li><strong>Method:</strong> <code>POST</code></li>
-<li><strong>Auth Required:</strong> No</li>
-</ul>
-<p><strong>Request Example</strong></p>
-<pre><code class="language-json">{
-  &quot;username&quot;: &quot;sarvjeet&quot;,
-  &quot;password&quot;: &quot;Password@123&quot;
-}
-</code></pre>
-<p><strong>Success Response (200 OK)</strong></p>
-<pre><code class="language-json">{
-  &quot;access&quot;: &quot;jwt_access_token&quot;,
-  &quot;refresh&quot;: &quot;jwt_refresh_token&quot;
-}
-</code></pre>
-<p><strong>Error Responses</strong></p>
+<h2 id="books">Books</h2>
 <table>
 <thead>
 <tr>
-<th>Code</th>
-<th>Response</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
+<th>Access</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>400</td>
-<td><code>{ "error": "Invalid credentials." }</code></td>
+<td>GET</td>
+<td><code>/books/</code></td>
+<td>List books</td>
+<td>All authenticated</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/books/</code></td>
+<td>Create book</td>
+<td>All authenticated</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/books/{id}/</code></td>
+<td>Get book details</td>
+<td>All authenticated</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td><code>/books/{id}/</code></td>
+<td>Update book</td>
+<td>Admin only</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/books/{id}/</code></td>
+<td>Soft delete book</td>
+<td>Admin only</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="logout-user">Logout User</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/auth/logout/</code></li>
-<li><strong>Method:</strong> <code>POST</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Request Example</strong></p>
-<pre><code class="language-json">{
-  &quot;refresh&quot;: &quot;jwt_refresh_token&quot;
-}
-</code></pre>
-<p><strong>Success Response (200 OK)</strong></p>
-<pre><code class="language-json">{
-  &quot;message&quot;: &quot;Logout successful.&quot;
-}
-</code></pre>
-<hr />
-<h2 id="books-endpoints-useradmin">Books Endpoints (User/Admin)</h2>
-<h3 id="list-all-books">List All Books</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/books/</code></li>
-<li><strong>Method:</strong> <code>GET</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Query Parameters</strong></p>
+<h3 id="query-parameters-get-books">Query Parameters (GET <code>/books/</code>)</h3>
 <table>
 <thead>
 <tr>
 <th>Parameter</th>
-<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>request_status</code></td>
+<td>Filter by status (PENDING, APPROVED, REJECTED)</td>
+<td><code>?request_status=APPROVED</code></td>
+</tr>
+<tr>
+<td><code>genre</code></td>
+<td>Filter by genre name</td>
+<td><code>?genre=Fiction</code></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>Search by title (case-insensitive)</td>
+<td><code>?title=harry</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="visibility-rules">Visibility Rules</h3>
+<table>
+<thead>
+<tr>
+<th>User Type</th>
+<th>Default View</th>
+<th>With <code>request_status</code> Filter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td>All books</td>
+<td>Filter by specified status</td>
+</tr>
+<tr>
+<td>User</td>
+<td>APPROVED + own books</td>
+<td>APPROVED: all, PENDING/REJECTED: own only</td>
+</tr>
+</tbody>
+</table>
+<h3 id="create-book-request">Create Book Request</h3>
+<pre><code class="language-json">{
+    &quot;title&quot;: &quot;My Book Title&quot;,
+    &quot;author&quot;: &quot;Author Name&quot;,
+    &quot;isbn&quot;: &quot;9780262035613&quot;,
+    &quot;published_year&quot;: 2020,
+    &quot;genres&quot;: [&quot;019b9297-6647-72dd-902b-d0fe1e8e2b48&quot;]
+}
+</code></pre>
+<h3 id="book-response">Book Response</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
+    &quot;title&quot;: &quot;My Book Title&quot;,
+    &quot;author&quot;: &quot;Author Name&quot;,
+    &quot;isbn&quot;: &quot;9780262035613&quot;,
+    &quot;published_year&quot;: 2020,
+    &quot;request_status&quot;: &quot;APPROVED&quot;,
+    &quot;created_by_email&quot;: &quot;admin@gmail.com&quot;,
+    &quot;genres&quot;: [&quot;Fiction&quot;, &quot;Technology&quot;],
+    &quot;created_at&quot;: &quot;2026-01-08T06:50:36.959536+05:30&quot;
+}
+</code></pre>
+<h3 id="update-book-request-admin-only">Update Book Request (Admin Only)</h3>
+<pre><code class="language-json">{
+    &quot;title&quot;: &quot;Updated Title&quot;,
+    &quot;author&quot;: &quot;Updated Author&quot;,
+    &quot;published_year&quot;: 2021,
+    &quot;request_status&quot;: &quot;APPROVED&quot;
+}
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> ISBN and genres are NOT updateable after creation.</p>
+</blockquote>
+<hr />
+<h2 id="my-books-user-library">My Books (User Library)</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td><code>/my-books/</code></td>
+<td>List user's reading list</td>
+<td>User only</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/my-books/</code></td>
+<td>Add book to reading list</td>
+<td>User only</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/my-books/{id}/</code></td>
+<td>Get book from reading list</td>
+<td>User only</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td><code>/my-books/{id}/</code></td>
+<td>Update reading status</td>
+<td>User only</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/my-books/{id}/</code></td>
+<td>Remove from reading list</td>
+<td>User only</td>
+</tr>
+</tbody>
+</table>
+<h3 id="query-parameters-get-my-books">Query Parameters (GET <code>/my-books/</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>status</code></td>
+<td>Filter by reading status</td>
+<td><code>?status=READING</code></td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>Search by title</td>
+<td><code>?title=harry</code></td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>Search by author</td>
+<td><code>?author=rowling</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-book-to-library-request">Add Book to Library Request</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
+    &quot;status&quot;: &quot;TO_READ&quot;
+}
+</code></pre>
+<h3 id="reading-status-values">Reading Status Values</h3>
+<ul>
+<li><code>TO_READ</code></li>
+<li><code>READING</code></li>
+<li><code>COMPLETED</code></li>
+</ul>
+<h3 id="my-book-response">My Book Response</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
+    &quot;title&quot;: &quot;Deep Learning&quot;,
+    &quot;author&quot;: &quot;Ian Goodfellow&quot;,
+    &quot;isbn&quot;: &quot;9780262035613&quot;,
+    &quot;published_year&quot;: 2016,
+    &quot;status&quot;: &quot;READING&quot;,
+    &quot;created_by_email&quot;: &quot;admin@gmail.com&quot;,
+    &quot;genres&quot;: [&quot;Technology&quot;, &quot;Machine Learning&quot;],
+    &quot;created_at&quot;: &quot;2026-01-08T06:50:36.959536+05:30&quot;
+}
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> <code>request_status</code> is hidden in my-books responses. Only APPROVED books can be added.</p>
+</blockquote>
+<hr />
+<h2 id="genres">Genres</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td><code>/genres/</code></td>
+<td>List all genres</td>
+<td>All authenticated</td>
+</tr>
+</tbody>
+</table>
+<h3 id="genre-response">Genre Response</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: &quot;019b9297-6647-72dd-902b-d0fe1e8e2b48&quot;,
+    &quot;name&quot;: &quot;Fiction&quot;,
+    &quot;created_at&quot;: &quot;2026-01-07T14:30:00.000000+05:30&quot;
+}
+</code></pre>
+<hr />
+<h2 id="request-status-values">Request Status Values</h2>
+<table>
+<thead>
+<tr>
+<th>Status</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>genre</code></td>
-<td>string</td>
-<td>Filter by genre name</td>
+<td><code>PENDING</code></td>
+<td>Book awaiting admin approval (default for users)</td>
 </tr>
 <tr>
-<td><code>title</code></td>
-<td>string</td>
-<td>Filter by title keyword</td>
+<td><code>APPROVED</code></td>
+<td>Book approved and visible to all (default for admins)</td>
+</tr>
+<tr>
+<td><code>REJECTED</code></td>
+<td>Book rejected by admin</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Success Response (200 OK)</strong></p>
-<pre><code class="language-json">{
-  &quot;count&quot;: 1,
-  &quot;next&quot;: null,
-  &quot;previous&quot;: null,
-  &quot;data&quot;: [
-    {
-      &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
-      &quot;title&quot;: &quot;Atomic Habits&quot;,
-      &quot;author&quot;: &quot;James Clear&quot;,
-      &quot;isbn&quot;: &quot;9780735211292&quot;,
-      &quot;published_year&quot;: 2018,
-      &quot;genres&quot;: [&quot;Self-Help&quot;, &quot;Psychology&quot;],
-      &quot;created_at&quot;: &quot;2024-03-21T10:00:00Z&quot;
-    }
-  ]
-}
-</code></pre>
-<hr />
-<h3 id="create-new-book">Create New Book</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/books/</code></li>
-<li><strong>Method:</strong> <code>POST</code></li>
-<li><strong>Auth Required:</strong> Admin</li>
-</ul>
-<p><strong>Request Example</strong></p>
-<pre><code class="language-json">{
-  &quot;title&quot;: &quot;Deep Work&quot;,
-  &quot;author&quot;: &quot;Cal Newport&quot;,
-  &quot;isbn&quot;: &quot;9781455586691&quot;,
-  &quot;published_year&quot;: 2016,
-  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;]
-}
-</code></pre>
-<p><strong>Success Response (201 Created)</strong></p>
-<pre><code class="language-json">{
-  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9f-5f3a3c4a718f&quot;,
-  &quot;title&quot;: &quot;Deep Work&quot;,
-  &quot;author&quot;: &quot;Cal Newport&quot;,
-  &quot;isbn&quot;: &quot;9781455586691&quot;,
-  &quot;published_year&quot;: 2016,
-  &quot;is_active&quot;: true,
-  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;],
-  &quot;created_at&quot;: &quot;2024-03-21T10:05:00Z&quot;
-}
-</code></pre>
-<hr />
-<h3 id="request-new-book">Request New Book</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/books/</code></li>
-<li><strong>Method:</strong> <code>POST</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Request Example</strong></p>
-<pre><code class="language-json">{
-  &quot;title&quot;: &quot;Deep Work&quot;,
-  &quot;author&quot;: &quot;Cal Newport&quot;,
-  &quot;isbn&quot;: &quot;9781455586691&quot;,
-  &quot;published_year&quot;: 2016,
-  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;]
-}
-</code></pre>
-<p><strong>Success Response (201 Created)</strong></p>
-<pre><code class="language-json">{
-  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9f-5f3a3c4a718f&quot;,
-  &quot;title&quot;: &quot;Deep Work&quot;,
-  &quot;author&quot;: &quot;Cal Newport&quot;,
-  &quot;isbn&quot;: &quot;9781455586691&quot;,
-  &quot;published_year&quot;: 2016,
-  &quot;genres&quot;: [&quot;Productivity&quot;, &quot;Focus&quot;],
-  &quot;created_at&quot;: &quot;2024-03-21T10:05:00Z&quot;
-}
-</code></pre>
-<hr />
-<h3 id="get-book-details">Get Book Details</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/books/{id}/</code></li>
-<li><strong>Method:</strong> <code>GET</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Success Response (200 OK)</strong></p>
-<pre><code class="language-json">{
-  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
-  &quot;title&quot;: &quot;Atomic Habits&quot;,
-  &quot;author&quot;: &quot;James Clear&quot;,
-  &quot;isbn&quot;: &quot;9780735211292&quot;,
-  &quot;published_year&quot;: 2018,
-  &quot;genres&quot;: [&quot;Self-Help&quot;, &quot;Psychology&quot;]
-}
-</code></pre>
-<hr />
-<h2 id="my-books-endpoints-user">My Books Endpoints (User)</h2>
-<h3 id="list-personal-books">List Personal Books</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/my-books/</code></li>
-<li><strong>Method:</strong> <code>GET</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Success Response (200 OK)</strong></p>
-<pre><code class="language-json">{
-  &quot;count&quot;: 1,
-  &quot;next&quot;: null,
-  &quot;previous&quot;: null,
-  &quot;data&quot;: [
-    {
-      &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
-      &quot;title&quot;: &quot;Atomic Habits&quot;,
-      &quot;author&quot;: &quot;James Clear&quot;,
-      &quot;status&quot;: &quot;READING&quot;,
-      &quot;genres&quot;: [&quot;Self-Help&quot;]
-    }
-  ]
-}
-</code></pre>
-<hr />
-<h3 id="add-book-to-my-list">Add Book to My List</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/my-books/</code></li>
-<li><strong>Method:</strong> <code>POST</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Request Example</strong></p>
-<pre><code class="language-json">{
-  &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a718e&quot;,
-  &quot;status&quot;: &quot;TO_READ&quot;
-}
-</code></pre>
-<p><strong>Success Response (201 Created)</strong></p>
-<pre><code class="language-json">{
-  &quot;message&quot;: &quot;Book added to your list.&quot;
-}
-</code></pre>
-<hr />
-<h3 id="update-personal-book-status">Update Personal Book Status</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/my-books/{id}/</code></li>
-<li><strong>Method:</strong> <code>PATCH</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Request Example</strong></p>
-<pre><code class="language-json">{
-  &quot;status&quot;: &quot;COMPLETED&quot;
-}
-</code></pre>
-<p><strong>Success Response (200 OK)</strong></p>
-<pre><code class="language-json">{
-  &quot;message&quot;: &quot;Book status updated successfully.&quot;
-}
-</code></pre>
-<hr />
-<h3 id="remove-from-my-list">Remove from My List</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/my-books/{id}/</code></li>
-<li><strong>Method:</strong> <code>DELETE</code></li>
-<li><strong>Auth Required:</strong> User</li>
-</ul>
-<p><strong>Success Response (204 No Content)</strong></p>
-<hr />
-<h2 id="admin-endpoints">Admin Endpoints</h2>
-<h3 id="get-all-users">Get All Users</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/users/</code></li>
-<li><strong>Method:</strong> <code>GET</code></li>
-<li><strong>Auth Required:</strong> Admin</li>
-</ul>
-<p><strong>Success Response (200 OK)</strong></p>
-<pre><code class="language-json">{
-  &quot;count&quot;: 10,
-  &quot;results&quot;: [
-    {
-      &quot;id&quot;: &quot;018f3a3a-3c4a-718e-8a9d-5f3a3c4a719a&quot;,
-      &quot;username&quot;: &quot;sarvjeet&quot;,
-      &quot;email&quot;: &quot;sarvjeet@test.com&quot;,
-      &quot;role&quot;: &quot;USER&quot;
-    }
-  ]
-}
-</code></pre>
-<hr />
-<h3 id="user-details">User Details</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/users/{id}/</code></li>
-<li><strong>Method:</strong> <code>GET</code></li>
-<li><strong>Auth Required:</strong> Admin</li>
-</ul>
-<p><strong>Success Response (200 OK)</strong></p>
-<hr />
-<h3 id="delete-user">Delete User</h3>
-<ul>
-<li><strong>URL:</strong> <code>/api/users/{id}/</code></li>
-<li><strong>Method:</strong> <code>DELETE</code></li>
-<li><strong>Auth Required:</strong> Admin</li>
-</ul>
-<p><strong>Success Response (204 No Content)</strong></p>
 <hr />
 <h2 id="error-codes">Error Codes</h2>
 <table>
 <thead>
 <tr>
-<th>Code</th>
-<th>Meaning</th>
+<th>Status Code</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>200</td>
-<td>OK</td>
+<td>Success</td>
 </tr>
 <tr>
 <td>201</td>
@@ -1597,19 +1644,19 @@ The API allows <strong>users</strong> to manage their personal book collection a
 </tr>
 <tr>
 <td>204</td>
-<td>No Content</td>
+<td>No Content (successful delete)</td>
 </tr>
 <tr>
 <td>400</td>
-<td>Bad Request</td>
+<td>Bad Request (validation error)</td>
 </tr>
 <tr>
 <td>401</td>
-<td>Unauthorized</td>
+<td>Unauthorized (invalid/missing token)</td>
 </tr>
 <tr>
 <td>403</td>
-<td>Forbidden</td>
+<td>Forbidden (insufficient permissions)</td>
 </tr>
 <tr>
 <td>404</td>
@@ -1622,11 +1669,26 @@ The API allows <strong>users</strong> to manage their personal book collection a
 </tbody>
 </table>
 <hr />
-<h3 id="common-error-response">Common Error Response</h3>
-<pre><code class="language-json">{
-  &quot;error&quot;: &quot;Error message describing the issue&quot;
-}
-</code></pre>
+<h2 id="validation-rules">Validation Rules</h2>
+<h3 id="title-author">Title &amp; Author</h3>
+<ul>
+<li>Must contain at least one letter</li>
+<li>Allowed: letters, numbers, spaces, underscores, apostrophes, periods, commas</li>
+</ul>
+<h3 id="isbn">ISBN</h3>
+<ul>
+<li>Maximum 13 characters</li>
+<li>Must be unique across all books</li>
+</ul>
+<h3 id="published-year">Published Year</h3>
+<ul>
+<li>Range: 1000 - 2100</li>
+</ul>
+<h3 id="genres_1">Genres</h3>
+<ul>
+<li>Must provide at least one valid genre UUID</li>
+<li>Genre must exist in database</li>
+</ul>
 
 
 
