@@ -513,57 +513,117 @@
 <p><strong>Description:</strong><br />
 Allows a user to create an account and log in to the BookShelf system using JWT authentication.</p>
 <p><strong>Steps:</strong>
-- User enters username, email, password, password confirmation, first name, last name, and phone number.
-- System validates the data (e.g., email format, password match, alpha characters in names).
-- User credentials and profile are securely stored in the database.
-- System generates an authentication token (Access and Refresh) for the user.</p>
+- User enters username, email, password, password confirmation, first name, last name, and phone number.</p>
+<ul>
+<li>
+<p>System validates the data (e.g., email format, password match, alpha characters in names).</p>
+</li>
+<li>
+<p>User credentials and profile are securely stored in the database.</p>
+</li>
+<li>
+<p>System generates an authentication token (Access and Refresh) for the user.</p>
+</li>
+</ul>
 <p><strong>Post-condition:</strong><br />
 User is successfully registered and can authenticate for subsequent requests.</p>
-<p><strong>Exceptions:</strong>
-- Duplicate username or email.
-- Invalid email or phone number format.
-- Passwords do not match or are too short.</p>
+<p><strong>Exceptions:</strong></p>
+<ul>
+<li>
+<p>Duplicate username or email.</p>
+</li>
+<li>
+<p>Invalid email or phone number format.</p>
+</li>
+<li>
+<p>Passwords do not match or are too short.</p>
+</li>
+</ul>
 <hr />
 <h2 id="use-case-2-personal-bookshelf-management">Use Case 2: Personal Bookshelf Management</h2>
 <p><strong>Role:</strong> User  </p>
 <p><strong>Description:</strong><br />
 Allows users to maintain a personal collection of books by adding them from the public catalog.</p>
-<p><strong>Steps:</strong>
-- User searches or browses the public book catalog.
-- User selects a book by its UUID and provides an initial reading status.
-- System verifies the book exists and is active.
-- System links the book to the user's personal collection.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>
+<p>User searches or browses the public book catalog.</p>
+</li>
+<li>
+<p>User selects a book by its UUID and provides an initial reading status.</p>
+</li>
+<li>
+<p>System verifies the book exists and is active.</p>
+</li>
+<li>
+<p>System links the book to the user's personal collection.</p>
+</li>
+</ul>
 <p><strong>Post-condition:</strong><br />
 Book is successfully added to the user's personal list with the specified status.</p>
-<p><strong>Exceptions:</strong>
-- Book already exists in the user's list.
-- Book is inactive or deleted.
-- Invalid book UUID.</p>
+<p><strong>Exceptions:</strong></p>
+<ul>
+<li>
+<p>Book already exists in the user's list.</p>
+</li>
+<li>
+<p>Book is inactive or deleted.</p>
+</li>
+<li>
+<p>Invalid book UUID.</p>
+</li>
+</ul>
 <hr />
 <h2 id="use-case-3-reading-status-tracking">Use Case 3: Reading Status Tracking</h2>
 <p><strong>Role:</strong> User  </p>
 <p><strong>Description:</strong><br />
 Allows users to track and update the status of books in their personal collection (e.g., TO_READ, READING, COMPLETED).</p>
-<p><strong>Steps:</strong>
-- User selects a book from their personal list.
-- User updates the <code>status</code> field.
-- System validates the status against the allowed choices (<code>TO_READ</code>, <code>READING</code>, <code>COMPLETED</code>).
-- Updated status and <code>updated_at</code> timestamp are stored.</p>
-<p><strong>Post-condition:</strong><br />
-Reading status is successfully updated for the specific user-book relationship.</p>
-<p><strong>Exceptions:</strong>
-- Invalid status value.
-- Book not found in user's personal list.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>
+<p>User selects a book from their personal list.</p>
+</li>
+<li>
+<p>User updates the <code>status</code> field.</p>
+</li>
+<li>
+<p>System validates the status against the allowed choices (<code>TO_READ</code>, <code>READING</code>, <code>COMPLETED</code>).</p>
+</li>
+<li>
+<p>Updated status and <code>updated_at</code> timestamp are stored.</p>
+</li>
+</ul>
+<p><strong>Post-condition:</strong>  </p>
+<p>Reading status is successfully updated for the specific user-book relationship.</p>
+<p><strong>Exceptions:</strong></p>
+<ul>
+<li>
+<p>Invalid status value.</p>
+</li>
+<li>
+<p>Book not found in user's personal list.</p>
+</li>
+</ul>
 <hr />
 <h2 id="use-case-4-viewing-personal-and-public-books">Use Case 4: Viewing Personal and Public Books</h2>
 <p><strong>Role:</strong> User / Admin</p>
 <p><strong>Description:</strong><br />
 Allows users to view the available book catalog and their own personal subset with pagination and filtering.</p>
-<p><strong>Steps:</strong>
-- User sends a request to list books (public or personal).
-- System applies filters (genre, title) and pagination.
-- For personal books, the system filters by the authenticated user's ID.
-- Paginated results are returned with book details and status.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>
+<p>User sends a request to list books (public or personal).</p>
+</li>
+<li>
+<p>System applies filters (genre, title) and pagination.</p>
+</li>
+<li>
+<p>For personal books, the system filters by the authenticated user's ID.</p>
+</li>
+<li>
+<p>Paginated results are returned with book details and status.</p>
+</li>
+</ul>
 <p><strong>Post-condition:</strong><br />
 User receives a structured list of books.</p>
 <p><strong>Exceptions:</strong>
@@ -572,33 +632,64 @@ User receives a structured list of books.</p>
 <h2 id="use-case-5-administrative-system-management">Use Case 5: Administrative System Management</h2>
 <p><strong>Role:</strong> Admin  </p>
 <p><strong>Description:</strong><br />
-Allows admins to manage the entire book catalog, including creation, updates, and soft-deletion.</p>
-<p><strong>Steps:</strong>
-- Admin creates a new book with details like ISBN, title, and genres.
-- Admin updates existing book information or activates/deactivates books.
-- Admin performs a soft delete on a book, which also soft-deletes related genre links.
-- Admin manages user accounts (viewing or deleting).</p>
+Allows admins to manage the entire book catalog, including creation, updates, and deletion.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>
+<p>Admin creates a new book with details like ISBN, title, and genres.</p>
+</li>
+<li>
+<p>Admin updates existing book information or activates/deactivates books.</p>
+</li>
+<li>
+<p>Admin manages user accounts (viewing or deleting).</p>
+</li>
+</ul>
 <p><strong>Post-condition:</strong><br />
 System-wide data is updated, and changes are reflected for all users.</p>
-<p><strong>Exceptions:</strong>
-- Duplicate ISBN during creation/update.
-- Attempting to delete oneself (admin account).
-- Unauthorized access to admin-only endpoints.</p>
+<p><strong>Exceptions:</strong></p>
+<ul>
+<li>
+<p>Duplicate ISBN during creation/update.</p>
+</li>
+<li>
+<p>Attempting to delete oneself (admin account).</p>
+</li>
+<li>
+<p>Unauthorized access to admin-only endpoints.</p>
+</li>
+</ul>
 <hr />
 <h2 id="use-case-6-unauthorized-access-handling">Use Case 6: Unauthorized Access Handling</h2>
 <p><strong>Role:</strong> System  </p>
 <p><strong>Description:</strong><br />
 Ensures that all protected resources are accessed only by authenticated users with the appropriate roles.</p>
-<p><strong>Steps:</strong>
-- User attempts to access a protected API.
-- System validates the JWT in the <code>Authorization</code> header.
-- System checks the user's role (USER or ADMIN) against endpoint permissions.
-- Access is granted or an error is returned.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>
+<p>User attempts to access a protected API.</p>
+</li>
+<li>
+<p>System validates the JWT in the <code>Authorization</code> header.</p>
+</li>
+<li>
+<p>System checks the user's role (USER or ADMIN) against endpoint permissions.</p>
+</li>
+<li>
+<p>Access is granted or an error is returned.</p>
+</li>
+</ul>
 <p><strong>Post-condition:</strong><br />
 Data integrity and security are maintained by preventing unauthorized actions.</p>
-<p><strong>Exceptions:</strong>
-- Missing, invalid, or expired Bearer token.
-- User role lacks sufficient permissions (e.g., USER trying to access <code>/api/users/</code>).</p>
+<p><strong>Exceptions:</strong></p>
+<ul>
+<li>
+<p>Missing, invalid, or expired Bearer token.</p>
+</li>
+<li>
+<p>User role lacks sufficient permissions (e.g., USER trying to access <code>/api/users/</code>).</p>
+</li>
+</ul>
 
 
 
