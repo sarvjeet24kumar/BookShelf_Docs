@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../tenant_onboarding/">
-      
-      
-        <link rel="next" href="../functional_modules/">
       
       
         
@@ -23,7 +19,7 @@
     
     
       
-        <title>Functional Use Cases - BookShelf – Personalized Library Management System</title>
+        <title>Multi-Tenant Architecture Documentation - BookShelf – Personalized Library Management System</title>
       
     
     
@@ -64,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#functional-use-case-documentation-bookshelf-system" class="md-skip">
+        <a href="#multi-tenant-architecture-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Functional Use Cases
+              Multi-Tenant Architecture Documentation
             
           </span>
         </div>
@@ -234,37 +230,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Functional Use Cases
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../functional_usecases/" class="md-nav__link">
         
   
   
@@ -280,103 +249,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-1-user-registration-login-tenant-context" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 1: User Registration &amp; Login (Tenant Context)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-2-personal-bookshelf-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 2: Personal Bookshelf Management
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-3-reading-status-tracking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 3: Reading Status Tracking
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-4-viewing-tenant-personal-books" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 4: Viewing Tenant &amp; Personal Books
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-5-tenant-administrative-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 5: Tenant Administrative Management
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-6-platform-level-supervision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 6: Platform-Level Supervision
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-7-security-permission-enforcement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 7: Security &amp; Permission Enforcement
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -543,10 +415,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-case-1-user-registration-login-tenant-context" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 1: User Registration &amp; Login (Tenant Context)
+        Overview
       
     </span>
   </a>
@@ -554,68 +426,141 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-2-personal-bookshelf-management" class="md-nav__link">
+  <a href="#tenant-resolution-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 2: Personal Bookshelf Management
+        Tenant Resolution Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tenant Resolution Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-tenants-are-identified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Tenants Are Identified
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-3-reading-status-tracking" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-authentication-tenant-id-required" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 3: Reading Status Tracking
+        Phase 1: Authentication (Tenant-ID Required)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-4-viewing-tenant-personal-books" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-api-access-no-tenant-id-needed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 4: Viewing Tenant &amp; Personal Books
+        Phase 2: API Access (No Tenant-ID Needed)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-5-tenant-administrative-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#super-admin-exception" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 5: Tenant Administrative Management
+        Super Admin Exception
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#use-case-6-platform-level-supervision" class="md-nav__link">
+  <a href="#tenant-isolation-mechanisms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 6: Platform-Level Supervision
+        Tenant Isolation Mechanisms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tenant Isolation Mechanisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-middleware-level-enforcement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Middleware-Level Enforcement
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-7-security-permission-enforcement" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-tenant-aware-data-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 7: Security &amp; Permission Enforcement
+        2. Tenant-Aware Data Models
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-automatic-query-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Automatic Query Filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tenant-aware-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant-Aware Caching
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tenant-Aware Caching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cache-key-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cache Key Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -636,216 +581,112 @@
 
 
 
-<h1 id="functional-use-case-documentation-bookshelf-system">Functional Use Case Documentation: BookShelf System</h1>
+<h1 id="multi-tenant-architecture-documentation">Multi-Tenant Architecture Documentation</h1>
+<h2 id="overview">Overview</h2>
+<p>BookShelf implements <strong>database-level multi-tenancy</strong> where each organization (tenant) operates independently with complete data segregation while sharing the same infrastructure. This architecture enables serving multiple organizations from a single codebase while ensuring zero data leakage across tenants.</p>
 <hr />
-<h2 id="use-case-1-user-registration-login-tenant-context">Use Case 1: User Registration &amp; Login (Tenant Context)</h2>
-<p><strong>Description:</strong><br />
-Allows a user to create an account within a specific Tenant and log in using JWT authentication.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User provides registration details (Username, Email, Password, Name, Phone).</p>
-</li>
-<li>
-<p>System validates data (email format, password strength, unique username/email within the tenant).</p>
-</li>
-<li>
-<p>System stores user profile linked to the relevant <code>Tenant</code>.</p>
-</li>
-<li>
-<p>System generates JWT tokens (Access &amp; Refresh).</p>
-</li>
-<li>
-<p><strong>Security Check:</strong> Middleware validates that the user's <code>Tenant</code> is active and not deleted/suspended.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>User is registered and authenticated. All subsequent requests carry the Tenant context.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Duplicate username/email for the same tenant.</p>
-</li>
-<li>
-<p>Invalid data formats.</p>
-</li>
-<li>
-<p>Attempting to access from a deleted or suspended tenant.</p>
-</li>
-</ul>
+<h2 id="tenant-resolution-strategy">Tenant Resolution Strategy</h2>
+<h3 id="how-tenants-are-identified">How Tenants Are Identified</h3>
+<p><strong>Tenant Resolution Strategy:</strong></p>
+<p>BookShelf uses a <strong>two-phase tenant resolution</strong> approach:</p>
+<ol>
+<li><strong>Authentication Phase:</strong> <code>Tenant-ID</code> header required</li>
+<li><strong>API Access Phase:</strong> Tenant derived from authenticated user</li>
+</ol>
 <hr />
-<h2 id="use-case-2-personal-bookshelf-management">Use Case 2: Personal Bookshelf Management</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to maintain a personal collection of books from their tenant's approved catalog.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User browses the books approved for their organization.</p>
-</li>
-<li>
-<p>User adds a book to their personal bookshelf with an initial status (default: <code>TO_READ</code>).</p>
-</li>
-<li>
-<p>System verifies the book exists and belongs to the user's tenant.</p>
-</li>
-<li>
-<p>System creates a link between the User and the Book.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Book is added to the user's "My Books" list.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Book already exists in user's personal library.</p>
-</li>
-<li>
-<p>Book belongs to a different tenant.</p>
-</li>
-</ul>
+<h3 id="phase-1-authentication-tenant-id-required">Phase 1: Authentication (Tenant-ID Required)</h3>
+<p><strong>When Used:</strong>
+- User signup
+- User login
+- Email verification
+- Password reset requests</p>
+<p><strong>Header Format:</strong></p>
+<pre><code>Tenant-ID: 550e8400-e29b-41d4-a716-446655440000
+</code></pre>
+<p><strong>Why Required During Authentication:</strong>
+- User not yet authenticated, so system doesn't know which tenant they belong to
+- Header identifies which organization's users database to check
+- Prevents username collisions across tenants.
+- Validates that tenant exists and is active before processing authentication</p>
+<p><strong>Validation:</strong>
+- System checks if tenant with provided UUID exists
+- Verifies tenant is active (not suspended or deleted)
+- During signup: Creates new user linked to this tenant
+- During login: Validates credentials against users in this tenant only</p>
 <hr />
-<h2 id="use-case-3-reading-status-tracking">Use Case 3: Reading Status Tracking</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to track progress on books in their personal collection.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User selects a book from their personal library.</p>
-</li>
-<li>
-<p>User updates the status to <code>TO_READ</code>, <code>READING</code>, or <code>COMPLETED</code>.</p>
-</li>
-<li>
-<p>System validates the status choice.</p>
-</li>
-<li>
-<p>System updates the <code>updated_at</code> timestamp for accuracy.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>The reading progress is updated and reflected in the user's dashboard.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Invalid status value provided.</p>
-</li>
-<li>
-<p>User attempts to update a book they haven't added to their library.</p>
-</li>
-</ul>
+<h3 id="phase-2-api-access-no-tenant-id-needed">Phase 2: API Access (No Tenant-ID Needed)</h3>
+<p><strong>When Used:</strong>
+- All authenticated API requests after login
+- Book management, user profile, library operations
+- Any endpoint requiring JWT authentication</p>
+<p><strong>Header Format:</strong></p>
+<pre><code>Authorization: Bearer &lt;jwt_access_token&gt;
+</code></pre>
+<p><em>Note: Tenant-ID header is </em><em>NOT</em><em> required</em></p>
+<p><strong>How Tenant Is Determined:</strong>
+1. JWT token decoded and validated
+2. User ID extracted from token
+3. User record fetched from database
+4. User's tenant retrieved via foreign key relationship: <code>user.tenant</code>
+5. Tenant context automatically set for entire request</p>
+<p><strong>Why Tenant-ID Is NOT Needed:</strong>
+- JWT token already identifies the user
+- User record contains tenant relationship
+- No ambiguity - user belongs to exactly one tenant
+- Simpler API usage for clients
+- Prevents header manipulation attacks</p>
+<h3 id="super-admin-exception">Super Admin Exception</h3>
+<p><strong>Special Case:</strong>
+- Super Admins do NOT belong to any tenant (<code>tenant = NULL</code>)
+- They manage tenants themselves (create, suspend, delete)
+- Tenant-ID header is <strong>ignored</strong> for Super Admin requests
+- Their API requests work without tenant context</p>
 <hr />
-<h2 id="use-case-4-viewing-tenant-personal-books">Use Case 4: Viewing Tenant &amp; Personal Books</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to view the available catalog and their personal reading list .</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User requests the book list (public tenant catalog or personal).</p>
-</li>
-<li>
-<p>System applies tenant-level filtering (User only sees their organization's data).</p>
-</li>
-<li>
-<p>System applies pagination and optional filters (Genre, Title, Author).</p>
-</li>
-<li>
-<p>Paginated results are returned.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>User sees a filtered, structured list of books.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Unauthorized access (missing/invalid token).</p>
-</li>
-<li>
-<p>Attempting to access data from another tenant.</p>
-</li>
-</ul>
+<h2 id="tenant-isolation-mechanisms">Tenant Isolation Mechanisms</h2>
+<h3 id="1-middleware-level-enforcement">1. Middleware-Level Enforcement</h3>
+<p><strong>What It Does:</strong>
+- Runs on EVERY authenticated request before view execution
+- Sets tenant context based on authenticated user
+- Blocks requests from suspended or deleted tenants immediately
+- Ensures tenant context is available throughout request lifecycle</p>
+<p><strong>Benefits:</strong>
+- Centralized enforcement
+- Blocks inactive tenants before data access
+- Provides consistent tenant context for all queries</p>
 <hr />
-<h2 id="use-case-5-tenant-administrative-management">Use Case 5: Tenant Administrative Management</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows tenant administrators to manage their organization's users and book catalog.</p>
-<p><strong>Steps:</strong>
-- Admin adds new books to the tenant's catalog.</p>
-<ul>
-<li>
-<p>Admin manages user accounts (viewing active users, suspending accounts).</p>
-</li>
-<li>
-<p>Admin approves book requests if applicable.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Tenant-specific data is updated for all users within that organization.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Admin attempts to update/delete users from other tenants (Blocked by Tenant Isolation).</p>
-</li>
-<li>
-<p>Admin attempts to delete their own account.</p>
-</li>
-</ul>
+<h3 id="2-tenant-aware-data-models">2. Tenant-Aware Data Models</h3>
+<p><strong>Database Design:</strong>
+- All tenant-scoped tables have a <code>tenant_id</code> foreign key column
+- Tenant field is mandatory (NOT NULL) for tenant-scoped models</p>
+<p><strong>Tenant-Scoped Models:</strong>
+- User accounts (except Super Admins)
+- Books
+- Genres
+- Payments and subscriptions</p>
 <hr />
-<h2 id="use-case-6-platform-level-supervision">Use Case 6: Platform-Level Supervision</h2>
-<p><strong>Description:</strong>  </p>
-<p>Platform-wide control over tenants, global settings, and system-level auditing.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>Super Admin creates or updates Tenants.</p>
-</li>
-<li>
-<p>Super Admin performs "Soft Delete" on inactive tenants.</p>
-</li>
-<li>
-<p>Super Admin restores recently deleted tenants via <code>PATCH</code>.</p>
-</li>
-<li>
-<p>System automatically purges data for tenants deleted longer than 30 days.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Tenant lifecycle is managed efficiently.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>Attempting to restore a tenant whose data has already been purged by the cleanup task.</li>
-</ul>
-<hr />
-<h2 id="use-case-7-security-permission-enforcement">Use Case 7: Security &amp; Permission Enforcement</h2>
-<p><strong>Description:</strong>  </p>
-<p>Ensures that all resources are accessed only by authenticated users with the correct role and correct tenant context.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>Middleware intercepts every request.</p>
-</li>
-<li>
-<p>System validates JWT and refreshes Tenant status from the database.</p>
-</li>
-<li>
-<p>System checks user roles (<code>USER</code>, <code>ADMIN</code>, <code>SUPER_ADMIN</code>) against endpoint permissions.</p>
-</li>
-<li>
-<p>System filters all database queries to ensure tenant isolation.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Data security and organization-level isolation are maintained.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Token missing, invalid, or expired.</p>
-</li>
-<li>
-<p>User role lacks sufficient permissions.</p>
-</li>
-<li>
-<p>Tenant is deleted or suspended (Immediate block).</p>
-</li>
-</ul>
+<h3 id="3-automatic-query-filtering">3. Automatic Query Filtering</h3>
+<p><strong>Custom Query Manager:</strong>
+- All tenant-scoped models use a custom database manager
+- Manager automatically injects tenant filter into ALL queries</p>
+<p><strong>How It Works:</strong>
+1. Middleware sets current tenant in thread-local storage
+2. Query manager retrieves current tenant context
+3. Automatically adds <code>tenant=current_tenant</code> filter to query
+4. Only data from user's tenant is returned</p>
+<h2 id="tenant-aware-caching">Tenant-Aware Caching</h2>
+<h3 id="cache-key-strategy">Cache Key Strategy</h3>
+<p><strong>Pattern:</strong> Always include tenant identifier in cache keys</p>
+<p><strong>Key Structure:</strong></p>
+<pre><code>&lt;resource_type&gt;:&lt;tenant_id&gt;:&lt;resource_id&gt;[:&lt;variant&gt;]
+</code></pre>
+<p><strong>Examples:</strong>
+- Book detail: <code>book:550e8400-...:abc123</code>
+- User library: <code>library:550e8400-...:user_abc</code>
+- Genre list: <code>genres:550e8400-...:list</code></p>
+<p><strong>Why This Matters:</strong>
+- Without tenant in key: Book from Tenant A could be cached and served to Tenant B
+- Redis doesn't know about tenants - we must namespace keys
+- Cache poisoning prevention.</p>
 
 
 

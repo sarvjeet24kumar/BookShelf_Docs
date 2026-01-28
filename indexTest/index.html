@@ -1,0 +1,1352 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="../auth/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Overview - BookShelf – Personalized Library Management System</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bookshelf-multi-tenant-library-management-platform" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BookShelf – Personalized Library Management System" class="md-header__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BookShelf – Personalized Library Management System
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BookShelf – Personalized Library Management System" class="md-nav__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BookShelf – Personalized Library Management System
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-tenant-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Tenant Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multi-Tenant Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isolation-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Isolation Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-based-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role-Based Access Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Role-Based Access Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#role-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication &amp; Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technology Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Workflows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book-management-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Book Management Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscription-payment-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subscription &amp; Payment Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stakeholders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stakeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#super-admins-platform-owners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Super Admins (Platform Owners)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-admins-organization-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Admins (Organization Managers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-library-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users (Library Members)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auth Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tenant_onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tenant Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional_usecases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functional Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional_modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permission Matrix.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_temp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Reference.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-tenant-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Tenant Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multi-Tenant Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isolation-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Isolation Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-based-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role-Based Access Control
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Role-Based Access Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#role-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Role Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication &amp; Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technology Stack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Workflows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book-management-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Book Management Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscription-payment-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subscription &amp; Payment Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stakeholders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stakeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#super-admins-platform-owners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Super Admins (Platform Owners)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-admins-organization-managers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Admins (Organization Managers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-library-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users (Library Members)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bookshelf-multi-tenant-library-management-platform">BookShelf – Multi-Tenant Library Management Platform</h1>
+<p>A secure, scalable  platform for managing digital libraries across multiple organizations with role-based access control and subscription management.</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p><strong>BookShelf</strong> is a multi-tenant REST API platform built with Django REST Framework that enables multiple organizations (libraries, schools, companies) to manage their book collections with complete data isolation.</p>
+<h3 id="key-goals">Key Goals</h3>
+<ul>
+<li><strong>Multi-tenant</strong> – Serve multiple organizations from one deployment</li>
+<li><strong>Complete data isolation</strong> – Tenant-level query filtering and middleware enforcement</li>
+<li><strong>3-tier role system</strong> – Super Admins, Tenant Admins, Regular Users</li>
+<li><strong>Subscription-based</strong> – Free and Premium</li>
+<li><strong>Security</strong> – JWT + OTP 2FA, token blacklisting, rate limiting</li>
+<li><strong>Personal libraries</strong> – Users track reading status (<code>TO_READ</code>, <code>READING</code>, <code>COMPLETED</code>)</li>
+</ul>
+<hr />
+<h2 id="multi-tenant-architecture">Multi-Tenant Architecture</h2>
+<h3 id="isolation-mechanism">Isolation Mechanism</h3>
+<ul>
+<li><strong>Database-level:</strong> All records tagged with <code>tenant_id</code></li>
+<li><strong>Middleware:</strong> <code>TenantMiddleware</code> enforces context on every authenticated request</li>
+<li><strong>Query filtering:</strong> Automatic tenant filtering via custom managers</li>
+<li><strong>Validation:</strong> Blocks access to suspended/deleted tenants</li>
+</ul>
+<hr />
+<h2 id="role-based-access-control">Role-Based Access Control</h2>
+<h3 id="role-hierarchy">Role Hierarchy</h3>
+<pre><code>SUPER_ADMIN - Manages tenants (no PII access)
+
+ADMIN - Full control within tenant
+
+USER - Own library only
+</code></pre>
+<p><strong>Full permissions:</strong> <a href="./API_DOCUMENTATION.md">API_DOCUMENTATION.md</a></p>
+<hr />
+<h2 id="key-features">Key Features</h2>
+<h3 id="platform-management">Platform Management</h3>
+<ul>
+<li>Multi-tenant infrastructure</li>
+<li>Platform-wide analytics (counts only)</li>
+<li>Subscription </li>
+</ul>
+<h3 id="authentication-security">Authentication &amp; Security</h3>
+<ul>
+<li>Email-based signup with OTP verification</li>
+<li>2FA login (password + OTP)</li>
+<li>JWT tokens with refresh + blacklisting</li>
+<li>Rate limiting</li>
+<li>Password reset via secure email tokens</li>
+</ul>
+<h3 id="user-management">User Management</h3>
+<ul>
+<li>Self-service registration</li>
+<li>3-tier role system (Super Admin, Admin, User)</li>
+<li>Profile management</li>
+</ul>
+<hr />
+<h2 id="technology-stack">Technology Stack</h2>
+<p><strong>Backend</strong></p>
+<ul>
+<li>
+<p>Django 6.0 + Django REST Framework</p>
+</li>
+<li>
+<p>PostgreSQL</p>
+</li>
+<li>
+<p>Redis (caching + Celery broker)</p>
+</li>
+<li>
+<p>Celery (async email tasks)</p>
+</li>
+</ul>
+<p><strong>Security</strong></p>
+<ul>
+<li>
+<p>Simple JWT (token management)</p>
+</li>
+<li>
+<p>OTP system (email-based 2FA)</p>
+</li>
+<li>
+<p>Token blacklist (logout)</p>
+</li>
+</ul>
+<p><strong>Payments</strong></p>
+<ul>
+<li>Razorpay (payment gateway)</li>
+<li>Webhook verification</li>
+</ul>
+<hr />
+<h2 id="system-workflows">System Workflows</h2>
+<h3 id="authentication-flow">Authentication Flow</h3>
+<p><strong>User Signup:</strong></p>
+<ul>
+<li>
+<p>User submits registration form with credentials</p>
+</li>
+<li>
+<p>System validates data and creates pending account</p>
+</li>
+<li>
+<p>OTP (6-digit code) sent to user's email</p>
+</li>
+<li>
+<p>User enters OTP to verify email ownership</p>
+</li>
+<li>
+<p>Account status changes to active</p>
+</li>
+<li>
+<p>User can now log in</p>
+</li>
+</ul>
+<p><strong>User Login:</strong></p>
+<ul>
+<li>
+<p>User provides email/username and password</p>
+</li>
+<li>
+<p>System validates credentials</p>
+</li>
+<li>
+<p>OTP sent to user's email (2FA)</p>
+</li>
+<li>
+<p>User enters OTP within validity period</p>
+</li>
+<li>
+<p>System issues JWT tokens (access + refresh)</p>
+</li>
+<li>
+<p>User authenticated for API access</p>
+</li>
+</ul>
+<p><strong>Password Reset:</strong></p>
+<ul>
+<li>
+<p>User requests password reset via email</p>
+</li>
+<li>
+<p>System sends secure reset link with token</p>
+</li>
+<li>
+<p>User clicks link and provides new password</p>
+</li>
+<li>
+<p>Password updated and user can log in</p>
+</li>
+</ul>
+<h3 id="book-management-flow">Book Management Flow</h3>
+<p><strong>User Book Request:</strong></p>
+<ul>
+<li>
+<p>User searches catalog for book</p>
+</li>
+<li>
+<p>If not found, user submits new book request</p>
+</li>
+<li>
+<p>Book created with status: <code>PENDING</code></p>
+</li>
+<li>
+<p>Admin receives notification</p>
+</li>
+<li>
+<p>User can view/edit their pending request</p>
+</li>
+</ul>
+<p><strong>Admin Book Approval:</strong></p>
+<ul>
+<li>
+<p>Admin reviews pending book requests</p>
+</li>
+<li>
+<p>Admin can approve - Status changes to <code>APPROVED</code></p>
+</li>
+<li>
+<p>Book becomes visible to all tenant users</p>
+</li>
+<li>
+<p>User receives approval notification email</p>
+</li>
+</ul>
+<p><strong>Admin Book Rejection:</strong></p>
+<ul>
+<li>
+<p>Admin can reject  Status changes to <code>REJECTED</code></p>
+</li>
+<li>
+<p>Book remains visible only to creator</p>
+</li>
+<li>
+<p>User receives rejection notification email</p>
+</li>
+<li>
+<p>User can edit and resubmit if needed</p>
+</li>
+</ul>
+<p><strong>Admin Direct Creation:</strong></p>
+<ul>
+<li>
+<p>Admin creates book directly</p>
+</li>
+<li>
+<p>Book auto-approved with status: <code>APPROVED</code></p>
+</li>
+<li>
+<p>Immediately visible to all users</p>
+</li>
+<li>
+<p>No approval workflow needed</p>
+</li>
+</ul>
+<h3 id="subscription-payment-flow">Subscription &amp; Payment Flow</h3>
+<p><strong>Payment Initiation:</strong></p>
+<ul>
+<li>
+<p>Tenant Admin accesses checkout page</p>
+</li>
+<li>
+<p>System checks if tenant already has active subscription</p>
+</li>
+<li>
+<p>If not active, Razorpay order created automatically</p>
+</li>
+<li>
+<p>Order details displayed on checkout page</p>
+</li>
+</ul>
+<p><strong>Payment Processing:</strong></p>
+<ul>
+<li>
+<p>User completes payment via Razorpay UI</p>
+</li>
+<li>
+<p>Razorpay processes transaction</p>
+</li>
+<li>
+<p>Payment status tracked in database</p>
+</li>
+</ul>
+<p><strong>Webhook Verification:</strong></p>
+<ul>
+<li>
+<p>Razorpay sends webhook to <code>/payments/webhook/razorpay/</code></p>
+</li>
+<li>
+<p>System verifies webhook signature (security check)</p>
+</li>
+<li>
+<p>If signature valid, payment marked as <code>SUCCESS</code></p>
+</li>
+<li>
+<p>Subscription status updated to <code>ACTIVE</code></p>
+</li>
+<li>
+<p>All tenant users gain Premium features</p>
+</li>
+</ul>
+<p><strong>Premium Activation:</strong></p>
+<ul>
+<li>
+<p>Subscription status: <code>CREATED</code> to <code>ACTIVE</code></p>
+</li>
+<li>
+<p>Library limit: 5 books to Unlimited</p>
+</li>
+<li>
+<p>Premium features unlocked for entire tenant</p>
+</li>
+</ul>
+<hr />
+<h2 id="stakeholders">Stakeholders</h2>
+<h3 id="super-admins-platform-owners">Super Admins (Platform Owners)</h3>
+<ul>
+<li>
+<p>Create and manage tenants</p>
+</li>
+<li>
+<p>Monitor platform metrics (no PII)</p>
+</li>
+<li>
+<p>View subscriptions and billing</p>
+</li>
+<li>
+<p>View payment/webhook history</p>
+</li>
+</ul>
+<h3 id="tenant-admins-organization-managers">Tenant Admins (Organization Managers)</h3>
+<ul>
+<li>
+<p>Manage users in their organization</p>
+</li>
+<li>
+<p>Build book catalog</p>
+</li>
+<li>
+<p>Approve/reject book requests</p>
+</li>
+<li>
+<p>Manage genres</p>
+</li>
+<li>
+<p>Initiate subscription payments</p>
+</li>
+</ul>
+<h3 id="users-library-members">Users (Library Members)</h3>
+<ul>
+<li>
+<p>Maintain personal bookshelf</p>
+</li>
+<li>
+<p>Track reading progress</p>
+</li>
+<li>
+<p>Request new books</p>
+</li>
+<li>
+<p>Search and filter approved books</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

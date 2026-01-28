@@ -1,0 +1,3092 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../permissions/">
+      
+      
+        <link rel="next" href="../api_docs/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Api Reference. - BookShelf – Personalized Library Management System</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-endpoints" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BookShelf – Personalized Library Management System" class="md-header__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BookShelf – Personalized Library Management System
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Api Reference.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BookShelf – Personalized Library Management System" class="md-nav__button md-logo" aria-label="BookShelf – Personalized Library Management System" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BookShelf – Personalized Library Management System
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexTest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auth Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tenant_onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tenant Onboarding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional_usecases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functional Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional_modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permission Matrix.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Reference.
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Reference.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Management Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book-management-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Book Management Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-library-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Library Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genre-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genre Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-management-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Management Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payments-subscriptions-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Payments &amp; Subscriptions Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Query Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Management Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book-management-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Book Management Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-library-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Library Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genre-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genre Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-management-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Management Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payments-subscriptions-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Payments &amp; Subscriptions Endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-query-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Query Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Api Reference.</h1>
+
+<h2 id="api-endpoints">API Endpoints</h2>
+<h3 id="authentication-endpoints">Authentication Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>POST</code></td>
+<td><code>/auth/signup/</code></td>
+<td>Public</td>
+<td>Register new user account</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>POST</code></td>
+<td><code>/auth/verify-email/</code></td>
+<td>Public</td>
+<td>Verify email with OTP</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>POST</code></td>
+<td><code>/auth/resend-otp/</code></td>
+<td>Public</td>
+<td>Resend verification OTP</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>POST</code></td>
+<td><code>/auth/login/</code></td>
+<td>Public</td>
+<td>Initiate login (send OTP)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>POST</code></td>
+<td><code>/auth/verify-login/</code></td>
+<td>Public</td>
+<td>Complete login with OTP</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>POST</code></td>
+<td><code>/auth/refresh/</code></td>
+<td>Refresh Token</td>
+<td>Get new access token</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>POST</code></td>
+<td><code>/auth/logout/</code></td>
+<td>Authenticated</td>
+<td>Logout and blacklist token</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>POST</code></td>
+<td><code>/auth/forgot-password/</code></td>
+<td>Public</td>
+<td>Request password reset</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>POST</code></td>
+<td><code>/auth/reset-password/</code></td>
+<td>Public</td>
+<td>Reset password with token</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>POST</code></td>
+<td><code>/auth/change-password/</code></td>
+<td>Authenticated</td>
+<td>Change password</td>
+</tr>
+</tbody>
+</table>
+<h3 id="user-management-endpoints">User Management Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td><code>GET</code></td>
+<td><code>/users/</code></td>
+<td>Admin, Super Admin</td>
+<td>List users</td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>POST</code></td>
+<td><code>/users/</code></td>
+<td>Admin, Super Admin</td>
+<td>Create new user</td>
+</tr>
+<tr>
+<td>13</td>
+<td><code>GET</code></td>
+<td><code>/users/&lt;id&gt;/</code></td>
+<td>User (own), Admin, Super Admin</td>
+<td>Get user details</td>
+</tr>
+<tr>
+<td>14</td>
+<td><code>PATCH</code></td>
+<td><code>/users/&lt;id&gt;/</code></td>
+<td>User (own), Admin, Super Admin</td>
+<td>Update user information</td>
+</tr>
+<tr>
+<td>15</td>
+<td><code>DELETE</code></td>
+<td><code>/users/&lt;id&gt;/</code></td>
+<td>User (own), Admin, Super Admin</td>
+<td>Delete user account</td>
+</tr>
+</tbody>
+</table>
+<p><strong>User Update Permissions:</strong></p>
+<ul>
+<li>
+<p><strong>User</strong>: Own account only</p>
+</li>
+<li>
+<p><strong>Admin</strong>: Own + users in tenant</p>
+</li>
+<li>
+<p><strong>Super Admin</strong>: Own + tenant admins only</p>
+</li>
+</ul>
+<p><strong>User Delete Permissions:</strong></p>
+<ul>
+<li>
+<p><strong>User</strong>: Own account only</p>
+</li>
+<li>
+<p><strong>Admin</strong>: Users in tenant (not self, not admins)</p>
+</li>
+<li>
+<p><strong>Super Admin</strong>: Tenant admins only (not users, not self)</p>
+</li>
+</ul>
+<h3 id="book-management-endpoints">Book Management Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td>
+<td><code>GET</code></td>
+<td><code>/books/</code></td>
+<td>User, Admin</td>
+<td>List books</td>
+</tr>
+<tr>
+<td>17</td>
+<td><code>POST</code></td>
+<td><code>/books/</code></td>
+<td>User, Admin</td>
+<td>Create book/request</td>
+</tr>
+<tr>
+<td>18</td>
+<td><code>GET</code></td>
+<td><code>/books/&lt;id&gt;/</code></td>
+<td>User, Admin</td>
+<td>Get book details</td>
+</tr>
+<tr>
+<td>19</td>
+<td><code>PATCH</code></td>
+<td><code>/books/&lt;id&gt;/</code></td>
+<td>User (pending), Admin</td>
+<td>Update book</td>
+</tr>
+<tr>
+<td>20</td>
+<td><code>DELETE</code></td>
+<td><code>/books/&lt;id&gt;/</code></td>
+<td>Admin</td>
+<td>Delete book</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Book View Permissions:</strong></p>
+<ul>
+<li>
+<p><strong>User</strong>: Approved books + own pending books</p>
+</li>
+<li>
+<p><strong>Admin</strong>: All books in tenant</p>
+</li>
+</ul>
+<p><strong>Book Approval:</strong></p>
+<ul>
+<li>
+<p><strong>User</strong>: Creates with <code>PENDING</code> status</p>
+</li>
+<li>
+<p><strong>Admin</strong>: Can create pre-approved books, approve/reject requests</p>
+</li>
+</ul>
+<h3 id="user-library-endpoints">User Library Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td><code>GET</code></td>
+<td><code>/users/&lt;user_id&gt;/books/</code></td>
+<td>User (own), Admin</td>
+<td>List user's library</td>
+</tr>
+<tr>
+<td>22</td>
+<td><code>POST</code></td>
+<td><code>/users/&lt;user_id&gt;/books/</code></td>
+<td>User (own), Admin</td>
+<td>Add book to library</td>
+</tr>
+<tr>
+<td>23</td>
+<td><code>GET</code></td>
+<td><code>/users/&lt;user_id&gt;/books/&lt;book_id&gt;/</code></td>
+<td>User (own), Admin</td>
+<td>Get library book details</td>
+</tr>
+<tr>
+<td>24</td>
+<td><code>PATCH</code></td>
+<td><code>/users/&lt;user_id&gt;/books/&lt;book_id&gt;/</code></td>
+<td>User (own), Admin</td>
+<td>Update reading status</td>
+</tr>
+<tr>
+<td>25</td>
+<td><code>DELETE</code></td>
+<td><code>/users/&lt;user_id&gt;/books/&lt;book_id&gt;/</code></td>
+<td>User (own), Admin</td>
+<td>Remove book from library</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Library Access:</strong></p>
+<ul>
+<li>
+<p><strong>User</strong>: Own library only</p>
+</li>
+<li>
+<p><strong>Admin</strong>: Any user library in their tenant</p>
+</li>
+<li>
+<p><strong>Super Admin</strong>: No access</p>
+</li>
+</ul>
+<p><strong>Subscription Limits:</strong></p>
+<ul>
+<li>
+<p><strong>Free Plan</strong>: Max 5 books</p>
+</li>
+<li>
+<p><strong>Premium Plan</strong>: Unlimited books</p>
+</li>
+</ul>
+<h3 id="genre-endpoints">Genre Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26</td>
+<td><code>GET</code></td>
+<td><code>/genres/</code></td>
+<td>User, Admin</td>
+<td>List all genres</td>
+</tr>
+<tr>
+<td>27</td>
+<td><code>POST</code></td>
+<td><code>/genres/</code></td>
+<td>Admin</td>
+<td>Create new genre</td>
+</tr>
+<tr>
+<td>28</td>
+<td><code>GET</code></td>
+<td><code>/genres/&lt;id&gt;/</code></td>
+<td>User, Admin</td>
+<td>Get genre details</td>
+</tr>
+<tr>
+<td>29</td>
+<td><code>PATCH</code></td>
+<td><code>/genres/&lt;id&gt;/</code></td>
+<td>Admin</td>
+<td>Update genre</td>
+</tr>
+<tr>
+<td>30</td>
+<td><code>DELETE</code></td>
+<td><code>/genres/&lt;id&gt;/</code></td>
+<td>Admin</td>
+<td>Delete genre</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tenant-management-endpoints">Tenant Management Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>31</td>
+<td><code>GET</code></td>
+<td><code>/tenants/</code></td>
+<td>Super Admin</td>
+<td>List all tenants</td>
+</tr>
+<tr>
+<td>32</td>
+<td><code>POST</code></td>
+<td><code>/tenants/</code></td>
+<td>Super Admin</td>
+<td>Create new tenant</td>
+</tr>
+<tr>
+<td>33</td>
+<td><code>GET</code></td>
+<td><code>/tenants/&lt;id&gt;/</code></td>
+<td>Super Admin</td>
+<td>Get tenant details</td>
+</tr>
+<tr>
+<td>34</td>
+<td><code>PATCH</code></td>
+<td><code>/tenants/&lt;id&gt;/</code></td>
+<td>Super Admin</td>
+<td>Update tenant</td>
+</tr>
+<tr>
+<td>35</td>
+<td><code>DELETE</code></td>
+<td><code>/tenants/&lt;id&gt;/</code></td>
+<td>Super Admin</td>
+<td>Delete tenant</td>
+</tr>
+<tr>
+<td>36</td>
+<td><code>POST</code></td>
+<td><code>/tenants/&lt;id&gt;/restore/</code></td>
+<td>Super Admin</td>
+<td>Restore deleted tenant</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payments-subscriptions-endpoints">Payments &amp; Subscriptions Endpoints</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>37</td>
+<td><code>POST</code></td>
+<td><code>/payments/create-order/</code></td>
+<td>Tenant Admin</td>
+<td>Create payment order</td>
+</tr>
+<tr>
+<td>38</td>
+<td><code>GET</code></td>
+<td><code>/payments/checkout/</code></td>
+<td>Tenant Admin</td>
+<td>Display checkout page</td>
+</tr>
+<tr>
+<td>39</td>
+<td><code>POST</code></td>
+<td><code>/payments/verify/</code></td>
+<td>Tenant Admin</td>
+<td>Verify payment</td>
+</tr>
+<tr>
+<td>40</td>
+<td><code>POST</code></td>
+<td><code>/payments/webhook/razorpay/</code></td>
+<td>Public (Signed)</td>
+<td>Razorpay webhook handler</td>
+</tr>
+<tr>
+<td>41</td>
+<td><code>GET</code></td>
+<td><code>/payments/subscriptions/</code></td>
+<td>Super Admin</td>
+<td>List all subscriptions</td>
+</tr>
+<tr>
+<td>42</td>
+<td><code>GET</code></td>
+<td><code>/payments/subscriptions/&lt;id&gt;/</code></td>
+<td>Super Admin</td>
+<td>Get subscription details</td>
+</tr>
+<tr>
+<td>43</td>
+<td><code>GET</code></td>
+<td><code>/payments/payment-history/</code></td>
+<td>Super Admin</td>
+<td>List all payment history</td>
+</tr>
+<tr>
+<td>44</td>
+<td><code>GET</code></td>
+<td><code>/payments/payment-history/&lt;id&gt;/</code></td>
+<td>Super Admin</td>
+<td>Get payment details</td>
+</tr>
+<tr>
+<td>45</td>
+<td><code>GET</code></td>
+<td><code>/payments/webhooks/</code></td>
+<td>Super Admin</td>
+<td>List webhook events</td>
+</tr>
+<tr>
+<td>46</td>
+<td><code>GET</code></td>
+<td><code>/payments/webhooks/&lt;id&gt;/</code></td>
+<td>Super Admin</td>
+<td>Get webhook details</td>
+</tr>
+</tbody>
+</table>
+<h3 id="access">Access</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Public</strong></td>
+<td>No authentication required</td>
+</tr>
+<tr>
+<td><strong>Authenticated</strong></td>
+<td>Any authenticated user</td>
+</tr>
+<tr>
+<td><strong>User</strong></td>
+<td>Regular tenant member</td>
+</tr>
+<tr>
+<td><strong>Admin</strong></td>
+<td>Tenant administrator</td>
+</tr>
+<tr>
+<td><strong>Super Admin</strong></td>
+<td>Platform administrator</td>
+</tr>
+<tr>
+<td><strong>Refresh Token</strong></td>
+<td>Valid refresh token required</td>
+</tr>
+<tr>
+<td><strong>Public (Signed)</strong></td>
+<td>No auth but requires valid signature</td>
+</tr>
+</tbody>
+</table>
+<h3 id="common-query-parameters">Common Query Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Endpoints</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>page</code></td>
+<td>All list endpoints</td>
+<td>Page number (default: 1)</td>
+</tr>
+<tr>
+<td><code>page_size</code></td>
+<td>All list endpoints</td>
+<td>Results per page (default: 10, max: 100)</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>User books</td>
+<td>Filter by reading status</td>
+</tr>
+<tr>
+<td><code>request_status</code></td>
+<td>Books (Admin)</td>
+<td>Filter by approval status</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<!-- ## Overview
+
+BookShelf is a multi-tenant library management system built with Django Rest Framework. The API follows RESTful principles and uses JWT for authentication.
+
+**Base URL:** `http://localhost:8000/api/v1/`
+
+**API Version:** v1
+
+---
+
+## Authentication
+
+BookShelf uses **JWT (JSON Web Token)** authentication with a two-factor authentication (2FA) flow using OTP (One-Time Password) sent via email.
+
+### Authentication Flow
+
+1. **Signup** → User registers with credentials
+2. **Email Verification** → User verifies email with OTP
+3. **Login** → User provides credentials (email/username + password)
+4. **Verify Login** → User verifies login with OTP sent to email
+5. **Access Token** → JWT access token is returned for authenticated requests
+
+### Request Headers
+
+
+<pre><code class="language-http">Authorization: Bearer &lt;access_token&gt;
+X-Tenant-ID: &lt;tenant_uuid&gt;  # Required for tenant-scoped requests
+</code></pre>
+
+
+### Token Refresh
+
+Access tokens expire after a configured duration. Use the refresh endpoint to obtain a new access token.
+
+---
+
+## Multi-Tenancy
+
+BookShelf supports multi-tenant architecture where each tenant represents an organization (e.g., a library, school, or company).
+
+### Tenant Header
+
+Most API requests require the `X-Tenant-ID` header:
+
+
+<pre><code class="language-http">X-Tenant-ID: 550e8400-e29b-41d4-a716-446655440000
+</code></pre>
+
+
+**Tenant Isolation:**
+- Regular users and tenant admins can only access data within their tenant
+- Super admins (platform admins) have cross-tenant access for management purposes
+
+---
+
+## User Roles & Permissions
+
+### Role Hierarchy
+
+
+<pre><code>SUPER_ADMIN (Platform Level - No Data Access)
+     │
+     ▼
+   ADMIN (Tenant Level - Full Control) ← Superset of User
+     │
+     ▼
+    USER (Own Data Only)
+</code></pre>
+
+
+| Role | Description | Access Level |
+|------|-------------|--------------|
+| **USER** | Regular library member | Own library and approved books |
+| **ADMIN** | Tenant administrator | All users and books within tenant |
+| **SUPER_ADMIN** | Platform administrator | Multi-tenant management (no PII access) |
+
+---
+
+
+
+## Common Response Format
+
+### Success Response
+
+
+<pre><code class="language-json">{
+  &quot;data&quot;: { ... },
+  &quot;detail&quot;: &quot;Success message&quot;
+}
+</code></pre>
+
+
+### Paginated Response
+
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 100,
+  &quot;next&quot;: &quot;http://api.example.com/endpoint/?page=2&quot;,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [...]
+}
+</code></pre>
+
+
+### Error Response
+
+
+<pre><code class="language-json">{
+  &quot;error&quot;: &quot;Error message&quot;,
+  &quot;detail&quot;: &quot;Detailed error description&quot;
+}
+</code></pre>
+
+
+### Field Validation Error
+
+
+<pre><code class="language-json">{
+  &quot;field_name&quot;: [&quot;Error message for this field&quot;],
+  &quot;another_field&quot;: [&quot;Another error message&quot;]
+}
+</code></pre>
+
+
+---
+
+## Rate Limiting
+
+Rate limiting is applied to prevent abuse:
+
+- **Authenticated Users:** 100 requests per minute
+- **Anonymous Users:** 20 requests per minute
+- **Auth Endpoints:** 10 requests per minute (signup, login, etc.)
+
+**Rate Limit Headers:**
+
+<pre><code class="language-http">X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 95
+X-RateLimit-Reset: 1640995200
+</code></pre>
+
+
+---
+
+## API Endpoints
+
+### Authentication Endpoints
+
+#### 1. Signup
+
+**Endpoint:** `POST /auth/signup/`
+
+**Description:** Register a new user account. Sends an OTP to the provided email for verification.
+
+**Authentication:** Not required
+
+**Headers:**
+
+<pre><code class="language-http">X-Tenant-ID: &lt;tenant_uuid&gt;
+Content-Type: application/json
+</code></pre>
+
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;johndoe&quot;,
+  &quot;email&quot;: &quot;john@example.com&quot;,
+  &quot;first_name&quot;: &quot;John&quot;,
+  &quot;last_name&quot;: &quot;Doe&quot;,
+  &quot;phone_no&quot;: &quot;+1234567890&quot;,
+  &quot;password&quot;: &quot;SecurePass123!&quot;,
+  &quot;confirm_password&quot;: &quot;SecurePass123!&quot;
+}
+</code></pre>
+
+
+**Validation Rules:**
+- `username`: 3-30 characters, alphanumeric + underscores only, unique
+- `email`: Valid email format, unique within tenant
+- `password`: Minimum 8 characters
+- `phone_no`: Valid phone number format
+- `first_name`, `last_name`: Letters only, 1-50 characters
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Verification code sent to your email.&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `400 Bad Request` - Validation errors
+- `409 Conflict` - Email or username already exists
+
+---
+
+#### 2. Verify Email
+
+**Endpoint:** `POST /auth/verify-email/`
+
+**Description:** Verify email address using the OTP sent during signup.
+
+**Authentication:** Not required
+
+**Headers:**
+
+<pre><code class="language-http">X-Tenant-ID: &lt;tenant_uuid&gt;
+Content-Type: application/json
+</code></pre>
+
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;john@example.com&quot;,  // OR &quot;username&quot;: &quot;johndoe&quot;
+  &quot;otp&quot;: &quot;123456&quot;
+}
+</code></pre>
+
+
+**Success Response:** `201 Created`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Email verified. Account activated successfully.&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `400 Bad Request` - Invalid or expired OTP
+- `404 Not Found` - No pending signup found
+
+---
+
+#### 3. Resend OTP
+
+**Endpoint:** `POST /auth/resend-otp/`
+
+**Description:** Resend verification OTP to user's email.
+
+**Authentication:** Not required
+
+**Headers:**
+
+<pre><code class="language-http">X-Tenant-ID: &lt;tenant_uuid&gt;
+</code></pre>
+
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;john@example.com&quot;  // OR &quot;username&quot;: &quot;johndoe&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;New verification code sent to your email.&quot;
+}
+</code></pre>
+
+
+---
+
+#### 4. Login
+
+**Endpoint:** `POST /auth/login/`
+
+**Description:** Initiate login with credentials. Sends OTP to user's email for 2FA.
+
+**Authentication:** Not required
+
+**Headers:**
+
+<pre><code class="language-http">X-Tenant-ID: &lt;tenant_uuid&gt;  # Optional for Super Admin
+</code></pre>
+
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;johndoe&quot;,  // Can use email or username
+  &quot;password&quot;: &quot;SecurePass123!&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;OTP sent to your email. Please verify to complete login.&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `401 Unauthorized` - Invalid credentials
+- `403 Forbidden` - Account suspended or email not verified
+
+---
+
+#### 5. Verify Login
+
+**Endpoint:** `POST /auth/verify-login/`
+
+**Description:** Complete login by verifying the OTP sent to email.
+
+**Authentication:** Not required
+
+**Headers:**
+
+<pre><code class="language-http">X-Tenant-ID: &lt;tenant_uuid&gt;  # Optional for Super Admin
+</code></pre>
+
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;johndoe&quot;,  // OR &quot;email&quot;: &quot;john@example.com&quot;
+  &quot;otp&quot;: &quot;123456&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;access&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGc...&quot;,
+  &quot;refresh&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGc...&quot;
+}
+</code></pre>
+
+
+**Token Usage:**
+
+<pre><code class="language-http">Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGc...
+</code></pre>
+
+
+---
+
+#### 6. Refresh Token
+
+**Endpoint:** `POST /auth/refresh/`
+
+**Description:** Obtain a new access token using refresh token.
+
+**Authentication:** Refresh token required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;refresh&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGc...&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;access&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGc...&quot;
+}
+</code></pre>
+
+
+---
+
+#### 7. Logout
+
+**Endpoint:** `POST /auth/logout/`
+
+**Description:** Logout user and blacklist refresh token.
+
+**Authentication:** Required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;refresh&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGc...&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Successfully logged out.&quot;
+}
+</code></pre>
+
+
+---
+
+#### 8. Forgot Password
+
+**Endpoint:** `POST /auth/forgot-password/`
+
+**Description:** Initiate password reset. Sends reset link to user's email.
+
+**Authentication:** Not required
+
+**Headers:**
+
+<pre><code class="language-http">X-Tenant-ID: &lt;tenant_uuid&gt;  # Optional for Super Admin
+</code></pre>
+
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;john@example.com&quot;  // OR &quot;username&quot;: &quot;johndoe&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;If an account exists, a reset link has been sent to the registered email.&quot;
+}
+</code></pre>
+
+
+---
+
+#### 9. Reset Password
+
+**Endpoint:** `POST /auth/reset-password/?token=<reset_token>`
+
+**Description:** Reset password using the token from email link.
+
+**Authentication:** Not required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;password&quot;: &quot;NewSecurePass123!&quot;,
+  &quot;confirm_password&quot;: &quot;NewSecurePass123!&quot;,
+  &quot;token&quot;: &quot;reset-token-from-email&quot;  // Optional if in query param
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Password successfully reset.&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `400 Bad Request` - Invalid or expired token, passwords don't match
+
+---
+
+#### 10. Change Password
+
+**Endpoint:** `POST /auth/change-password/`
+
+**Description:** Change password for authenticated user.
+
+**Authentication:** Required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;old_password&quot;: &quot;OldPassword123!&quot;,
+  &quot;new_password&quot;: &quot;NewPassword123!&quot;,
+  &quot;confirm_password&quot;: &quot;NewPassword123!&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Password changed successfully.&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `400 Bad Request` - Old password incorrect, passwords don't match
+
+---
+
+### User Management Endpoints
+
+#### 11. List Users
+
+**Endpoint:** `GET /users/`
+
+**Description:** List all users within the tenant (Admin/Super Admin only).
+
+**Authentication:** Required (Admin or Super Admin)
+
+**Permissions:**
+- **Admin**: List users in their tenant
+- **Super Admin**: List all tenant admins
+
+**Query Parameters:**
+- `page`: Page number (default: 1)
+- `page_size`: Results per page (default: 10, max: 100)
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 25,
+  &quot;next&quot;: &quot;http://api.example.com/users/?page=2&quot;,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
+      &quot;username&quot;: &quot;johndoe&quot;,
+      &quot;email&quot;: &quot;john@example.com&quot;,
+      &quot;first_name&quot;: &quot;John&quot;,
+      &quot;last_name&quot;: &quot;Doe&quot;,
+      &quot;phone_no&quot;: &quot;+1234567890&quot;,
+      &quot;role&quot;: &quot;USER&quot;,
+      &quot;is_email_verified&quot;: true,
+      &quot;is_active&quot;: true,
+      &quot;created_at&quot;: &quot;2024-01-15T10:30:00Z&quot;,
+      &quot;updated_at&quot;: &quot;2024-01-20T14:45:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+---
+
+#### 12. Create User
+
+**Endpoint:** `POST /users/`
+
+**Description:** Create a new user (Admin/Super Admin only). User receives email verification OTP.
+
+**Authentication:** Required (Admin or Super Admin)
+
+**Permissions:**
+- **Admin**: Create regular users in their tenant
+- **Super Admin**: Create tenant admins
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;janedoe&quot;,
+  &quot;email&quot;: &quot;jane@example.com&quot;,
+  &quot;first_name&quot;: &quot;Jane&quot;,
+  &quot;last_name&quot;: &quot;Doe&quot;,
+  &quot;phone_no&quot;: &quot;+1234567891&quot;,
+  &quot;password&quot;: &quot;SecurePass123!&quot;,
+  &quot;tenant&quot;: &quot;tenant-uuid-here&quot;  // Required for Super Admin only
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Verification code sent to your email.&quot;
+}
+</code></pre>
+
+
+---
+
+#### 13. Get User Details
+
+**Endpoint:** `GET /users/<user_id>/`
+
+**Description:** Retrieve details of a specific user.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Can view own profile only
+- **Admin**: Can view users in their tenant
+- **Super Admin**: Can view tenant admins
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
+  &quot;username&quot;: &quot;johndoe&quot;,
+  &quot;email&quot;: &quot;john@example.com&quot;,
+  &quot;first_name&quot;: &quot;John&quot;,
+  &quot;last_name&quot;: &quot;Doe&quot;,
+  &quot;phone_no&quot;: &quot;+1234567890&quot;,
+  &quot;role&quot;: &quot;USER&quot;,
+  &quot;is_email_verified&quot;: true,
+  &quot;is_active&quot;: true,
+  &quot;created_at&quot;: &quot;2024-01-15T10:30:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2024-01-20T14:45:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 14. Update User
+
+**Endpoint:** `PATCH /users/<user_id>/`
+
+**Description:** Update user information.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Can update own account only (excluding `is_active`, `deleted_at`)
+- **Admin**: Can update own account + regular users in tenant
+- **Super Admin**: Can update own account + tenant admins
+
+**Immutable Fields:** `email`, `role` cannot be changed
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;first_name&quot;: &quot;Jonathan&quot;,
+  &quot;last_name&quot;: &quot;Doe&quot;,
+  &quot;phone_no&quot;: &quot;+1234567899&quot;,
+  &quot;username&quot;: &quot;johndoe2&quot;,  // Optional, must be unique
+  &quot;is_active&quot;: false  // Admin/Super Admin only
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;550e8400-e29b-41d4-a716-446655440000&quot;,
+  &quot;username&quot;: &quot;johndoe2&quot;,
+  &quot;email&quot;: &quot;john@example.com&quot;,
+  &quot;first_name&quot;: &quot;Jonathan&quot;,
+  &quot;last_name&quot;: &quot;Doe&quot;,
+  &quot;phone_no&quot;: &quot;+1234567899&quot;,
+  &quot;role&quot;: &quot;USER&quot;,
+  &quot;is_email_verified&quot;: true,
+  &quot;is_active&quot;: false,
+  &quot;created_at&quot;: &quot;2024-01-15T10:30:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2024-01-21T09:15:00Z&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `403 Forbidden` - Insufficient permissions
+- `400 Bad Request` - Validation errors, username taken
+
+---
+
+#### 15. Delete User
+
+**Endpoint:** `DELETE /users/<user_id>/`
+
+**Description:** Soft delete a user account. User tokens are blacklisted.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Can delete own account only
+- **Admin**: Can delete regular users in tenant (not self, not other admins)
+- **Super Admin**: Can delete tenant admins only (not users, not self)
+
+**Success Response:** `204 No Content`
+
+**Error Responses:**
+- `403 Forbidden` - Insufficient permissions
+- `400 Bad Request` - Admins cannot delete themselves
+
+---
+
+### Book Management Endpoints
+
+#### 16. List Books
+
+**Endpoint:** `GET /books/`
+
+**Description:** List all books. Regular users see approved books only. Admins see all books in their tenant.
+
+**Authentication:** Required
+
+**Query Parameters:**
+- `page`: Page number
+- `page_size`: Results per page
+- `search`: Search in title, author, ISBN
+- `genre`: Filter by genre ID
+- `request_status`: Filter by status (`PENDING`, `APPROVED`, `REJECTED`) - Admin only
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 50,
+  &quot;next&quot;: &quot;http://api.example.com/books/?page=2&quot;,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;book-uuid&quot;,
+      &quot;title&quot;: &quot;The Great Gatsby&quot;,
+      &quot;author&quot;: &quot;F. Scott Fitzgerald&quot;,
+      &quot;isbn&quot;: &quot;9780743273565&quot;,
+      &quot;publisher&quot;: &quot;Scribner&quot;,
+      &quot;published_date&quot;: &quot;1925-04-10&quot;,
+      &quot;description&quot;: &quot;A classic American novel...&quot;,
+      &quot;cover_image&quot;: &quot;http://example.com/media/covers/gatsby.jpg&quot;,
+      &quot;request_status&quot;: &quot;APPROVED&quot;,
+      &quot;total_copies&quot;: 10,
+      &quot;available_copies&quot;: 7,
+      &quot;genres&quot;: [
+        {
+          &quot;id&quot;: &quot;genre-uuid&quot;,
+          &quot;name&quot;: &quot;Fiction&quot;
+        },
+        {
+          &quot;id&quot;: &quot;genre-uuid-2&quot;,
+          &quot;name&quot;: &quot;Classic&quot;
+        }
+      ],
+      &quot;created_by&quot;: {
+        &quot;id&quot;: &quot;user-uuid&quot;,
+        &quot;username&quot;: &quot;johndoe&quot;
+      },
+      &quot;created_at&quot;: &quot;2024-01-10T08:00:00Z&quot;,
+      &quot;updated_at&quot;: &quot;2024-01-15T10:30:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+**Caching:** Results are cached for users without query parameters for improved performance.
+
+---
+
+#### 17. Create Book
+
+**Endpoint:** `POST /books/`
+
+**Description:** Submit a new book for review. Regular users create requests with `PENDING` status. Admins can create pre-approved books.
+
+**Authentication:** Required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;To Kill a Mockingbird&quot;,
+  &quot;author&quot;: &quot;Harper Lee&quot;,
+  &quot;isbn&quot;: &quot;9780061120084&quot;,
+  &quot;publisher&quot;: &quot;J.B. Lippincott &amp; Co.&quot;,
+  &quot;published_date&quot;: &quot;1960-07-11&quot;,
+  &quot;description&quot;: &quot;A gripping tale of racial injustice...&quot;,
+  &quot;cover_image&quot;: &quot;http://example.com/image.jpg&quot;,  // Optional
+  &quot;total_copies&quot;: 5,  // Admin only, defaults to 1
+  &quot;available_copies&quot;: 5,  // Admin only, defaults to total_copies
+  &quot;request_status&quot;: &quot;APPROVED&quot;,  // Admin only
+  &quot;genres&quot;: [
+    &quot;genre-uuid-1&quot;,
+    &quot;genre-uuid-2&quot;
+  ]
+}
+</code></pre>
+
+
+**Success Response:** `201 Created`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;new-book-uuid&quot;,
+  &quot;title&quot;: &quot;To Kill a Mockingbird&quot;,
+  &quot;author&quot;: &quot;Harper Lee&quot;,
+  &quot;request_status&quot;: &quot;PENDING&quot;,  // or &quot;APPROVED&quot; if created by admin
+  ...
+}
+</code></pre>
+
+
+**Error Responses:**
+- `400 Bad Request` - Validation errors, duplicate ISBN
+
+---
+
+#### 18. Get Book Details
+
+**Endpoint:** `GET /books/<book_id>/`
+
+**Description:** Retrieve detailed information about a specific book.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Can view approved books or own pending books
+- **Admin**: Can view all books in tenant
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;book-uuid&quot;,
+  &quot;title&quot;: &quot;The Great Gatsby&quot;,
+  &quot;author&quot;: &quot;F. Scott Fitzgerald&quot;,
+  &quot;isbn&quot;: &quot;9780743273565&quot;,
+  &quot;publisher&quot;: &quot;Scribner&quot;,
+  &quot;published_date&quot;: &quot;1925-04-10&quot;,
+  &quot;description&quot;: &quot;A classic American novel...&quot;,
+  &quot;cover_image&quot;: &quot;http://example.com/media/covers/gatsby.jpg&quot;,
+  &quot;request_status&quot;: &quot;APPROVED&quot;,
+  &quot;total_copies&quot;: 10,
+  &quot;available_copies&quot;: 7,
+  &quot;genres&quot;: [
+    {
+      &quot;id&quot;: &quot;genre-uuid&quot;,
+      &quot;name&quot;: &quot;Fiction&quot;
+    }
+  ],
+  &quot;created_by&quot;: {
+    &quot;id&quot;: &quot;user-uuid&quot;,
+    &quot;username&quot;: &quot;johndoe&quot;
+  },
+  &quot;created_at&quot;: &quot;2024-01-10T08:00:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2024-01-15T10:30:00Z&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `404 Not Found` - Book not found or not accessible
+
+---
+
+#### 19. Update Book
+
+**Endpoint:** `PATCH /books/<book_id>/`
+
+**Description:** Update book information.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Can update own pending books only
+- **Admin**: Can update any book in tenant
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;The Great Gatsby (Updated Edition)&quot;,
+  &quot;description&quot;: &quot;Updated description...&quot;,
+  &quot;request_status&quot;: &quot;APPROVED&quot;,  // Admin only
+  &quot;total_copies&quot;: 15,  // Admin only
+  &quot;genres&quot;: [&quot;genre-uuid-1&quot;, &quot;genre-uuid-3&quot;]
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;book-uuid&quot;,
+  &quot;title&quot;: &quot;The Great Gatsby (Updated Edition)&quot;,
+  ...
+}
+</code></pre>
+
+
+**Error Responses:**
+- `403 Forbidden` - Cannot update approved/rejected books (users only)
+
+---
+
+#### 20. Delete Book
+
+**Endpoint:** `DELETE /books/<book_id>/`
+
+**Description:** Soft delete a book (Admin only). Cannot delete books that are in user libraries.
+
+**Authentication:** Required (Admin only)
+
+**Success Response:** `204 No Content`
+
+**Error Responses:**
+- `400 Bad Request` - Book exists in user libraries
+- `403 Forbidden` - Only admins can delete books
+
+---
+
+### User Library Endpoints
+
+#### 21. List User's Books
+
+**Endpoint:** `GET /users/<user_id>/books/`
+
+**Description:** List all books in a user's personal library.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Can access own library only
+- **Admin**: Can access libraries of users in their tenant
+- **Super Admin**: No access
+
+**Query Parameters:**
+- `page`: Page number
+- `page_size`: Results per page
+- `status`: Filter by reading status (`TO_READ`, `READING`, `COMPLETED`)
+- `search`: Search in title, author, ISBN
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 12,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;book-uuid&quot;,
+      &quot;title&quot;: &quot;1984&quot;,
+      &quot;author&quot;: &quot;George Orwell&quot;,
+      &quot;isbn&quot;: &quot;9780451524935&quot;,
+      &quot;cover_image&quot;: &quot;http://example.com/media/1984.jpg&quot;,
+      &quot;status&quot;: &quot;READING&quot;,  // User's reading status
+      &quot;genres&quot;: [
+        {
+          &quot;id&quot;: &quot;genre-uuid&quot;,
+          &quot;name&quot;: &quot;Dystopian&quot;
+        }
+      ],
+      &quot;added_at&quot;: &quot;2024-01-15T10:00:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+---
+
+#### 22. Add Book to Library
+
+**Endpoint:** `POST /users/<user_id>/books/`
+
+**Description:** Add an approved book to user's library.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Can add to own library only
+- **Admin**: Can add books to any user's library in tenant
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;book_id&quot;: &quot;book-uuid&quot;,
+  &quot;status&quot;: &quot;TO_READ&quot;  // Optional, defaults to &quot;TO_READ&quot;
+}
+</code></pre>
+
+
+**Success Response:** `201 Created`
+
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Book added to library.&quot;
+}
+</code></pre>
+
+
+**Subscription Limits:**
+- **Free Plan**: Maximum 3 books
+- **Premium Plan**: Unlimited books
+
+**Error Responses:**
+- `400 Bad Request` - Book already in library, subscription limit reached
+- `404 Not Found` - Book not found or not approved
+
+---
+
+#### 23. Get Library Book Details
+
+**Endpoint:** `GET /users/<user_id>/books/<book_id>/`
+
+**Description:** Get details of a specific book in user's library.
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Own library only
+- **Admin**: Users in their tenant
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;book-uuid&quot;,
+  &quot;title&quot;: &quot;1984&quot;,
+  &quot;author&quot;: &quot;George Orwell&quot;,
+  &quot;isbn&quot;: &quot;9780451524935&quot;,
+  &quot;description&quot;: &quot;A dystopian social science fiction novel...&quot;,
+  &quot;cover_image&quot;: &quot;http://example.com/media/1984.jpg&quot;,
+  &quot;status&quot;: &quot;READING&quot;,
+  &quot;genres&quot;: [
+    {
+      &quot;id&quot;: &quot;genre-uuid&quot;,
+      &quot;name&quot;: &quot;Dystopian&quot;
+    }
+  ],
+  &quot;added_at&quot;: &quot;2024-01-15T10:00:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 24. Update Library Book Status
+
+**Endpoint:** `PATCH /users/<user_id>/books/<book_id>/`
+
+**Description:** Update reading status of a book in library.
+
+**Authentication:** Required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;COMPLETED&quot;  // One of: TO_READ, READING, COMPLETED
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Book status updated successfully.&quot;
+}
+</code></pre>
+
+
+---
+
+#### 25. Remove Book from Library
+
+**Endpoint:** `DELETE /users/<user_id>/books/<book_id>/`
+
+**Description:** Remove a book from user's library (soft delete).
+
+**Authentication:** Required
+
+**Permissions:**
+- **User**: Own library only
+- **Admin**: Users in their tenant
+
+**Success Response:** `204 No Content`
+
+---
+
+### Genre Endpoints
+
+#### 26. List Genres
+
+**Endpoint:** `GET /genres/`
+
+**Description:** List all available genres.
+
+**Authentication:** Required
+
+**Query Parameters:**
+- `page`: Page number
+- `page_size`: Results per page
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 15,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;genre-uuid&quot;,
+      &quot;name&quot;: &quot;Fiction&quot;,
+      &quot;description&quot;: &quot;Fictional narrative works&quot;,
+      &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;
+    },
+    {
+      &quot;id&quot;: &quot;genre-uuid-2&quot;,
+      &quot;name&quot;: &quot;Science&quot;,
+      &quot;description&quot;: &quot;Scientific and educational books&quot;,
+      &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+---
+
+#### 27. Create Genre
+
+**Endpoint:** `POST /genres/`
+
+**Description:** Create a new genre (Admin only).
+
+**Authentication:** Required (Admin)
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;Mystery&quot;,
+  &quot;description&quot;: &quot;Mystery and detective fiction&quot;
+}
+</code></pre>
+
+
+**Success Response:** `201 Created`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;new-genre-uuid&quot;,
+  &quot;name&quot;: &quot;Mystery&quot;,
+  &quot;description&quot;: &quot;Mystery and detective fiction&quot;,
+  &quot;created_at&quot;: &quot;2024-01-21T14:30:00Z&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `400 Bad Request` - Validation errors, duplicate genre name
+- `403 Forbidden` - Only admins can create genres
+
+---
+
+#### 28. Get Genre Details
+
+**Endpoint:** `GET /genres/<genre_id>/`
+
+**Description:** Retrieve details of a specific genre.
+
+**Authentication:** Required
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;genre-uuid&quot;,
+  &quot;name&quot;: &quot;Fiction&quot;,
+  &quot;description&quot;: &quot;Fictional narrative works&quot;,
+  &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2024-01-15T10:00:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 29. Update Genre
+
+**Endpoint:** `PATCH /genres/<genre_id>/`
+
+**Description:** Update genre information (Admin only).
+
+**Authentication:** Required (Admin)
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;Science Fiction&quot;,
+  &quot;description&quot;: &quot;Updated description for sci-fi genre&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;genre-uuid&quot;,
+  &quot;name&quot;: &quot;Science Fiction&quot;,
+  &quot;description&quot;: &quot;Updated description for sci-fi genre&quot;,
+  &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2024-01-21T15:00:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 30. Delete Genre
+
+**Endpoint:** `DELETE /genres/<genre_id>/`
+
+**Description:** Soft delete a genre (Admin only).
+
+**Authentication:** Required (Admin)
+
+**Success Response:** `204 No Content`
+
+**Error Responses:**
+- `403 Forbidden` - Only admins can delete genres
+
+---
+
+### Tenant Management Endpoints
+
+#### 31. List Tenants
+
+**Endpoint:** `GET /tenants/`
+
+**Description:** List all tenants (Super Admin only).
+
+**Authentication:** Required (Super Admin)
+
+**Query Parameters:**
+- `page`: Page number
+- `page_size`: Results per page
+- `status`: Filter by status (`active`, `suspended`, `deleted`)
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 10,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;tenant-uuid&quot;,
+      &quot;name&quot;: &quot;City Public Library&quot;,
+      &quot;domain&quot;: &quot;citylibrary&quot;,
+      &quot;subscription_plan&quot;: &quot;PREMIUM&quot;,
+      &quot;is_active&quot;: true,
+      &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+      &quot;updated_at&quot;: &quot;2024-01-15T10:00:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+---
+
+#### 32. Create Tenant
+
+**Endpoint:** `POST /tenants/`
+
+**Description:** Create a new tenant (Super Admin only).
+
+**Authentication:** Required (Super Admin)
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;School Library&quot;,
+  &quot;domain&quot;: &quot;schoollib&quot;,
+  &quot;subscription_plan&quot;: &quot;FREE&quot;,
+  &quot;admin_email&quot;: &quot;admin@schoollib.com&quot;,
+  &quot;admin_username&quot;: &quot;schooladmin&quot;,
+  &quot;admin_password&quot;: &quot;SecurePass123!&quot;,
+  &quot;admin_first_name&quot;: &quot;Admin&quot;,
+  &quot;admin_last_name&quot;: &quot;User&quot;
+}
+</code></pre>
+
+
+**Success Response:** `201 Created`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;new-tenant-uuid&quot;,
+  &quot;name&quot;: &quot;School Library&quot;,
+  &quot;domain&quot;: &quot;schoollib&quot;,
+  &quot;subscription_plan&quot;: &quot;FREE&quot;,
+  &quot;is_active&quot;: true,
+  &quot;created_at&quot;: &quot;2024-01-21T16:00:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 33. Get Tenant Details
+
+**Endpoint:** `GET /tenants/<tenant_id>/`
+
+**Description:** Retrieve tenant details (Super Admin only).
+
+**Authentication:** Required (Super Admin)
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;tenant-uuid&quot;,
+  &quot;name&quot;: &quot;City Public Library&quot;,
+  &quot;domain&quot;: &quot;citylibrary&quot;,
+  &quot;subscription_plan&quot;: &quot;PREMIUM&quot;,
+  &quot;is_active&quot;: true,
+  &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2024-01-15T10:00:00Z&quot;,
+  &quot;total_users&quot;: 500,
+  &quot;total_books&quot;: 1200
+}
+</code></pre>
+
+
+---
+
+#### 34. Update Tenant
+
+**Endpoint:** `PATCH /tenants/<tenant_id>/`
+
+**Description:** Update tenant information (Super Admin only).
+
+**Authentication:** Required (Super Admin)
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;City Central Library&quot;,
+  &quot;subscription_plan&quot;: &quot;PREMIUM&quot;,
+  &quot;is_active&quot;: false
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;tenant-uuid&quot;,
+  &quot;name&quot;: &quot;City Central Library&quot;,
+  &quot;subscription_plan&quot;: &quot;PREMIUM&quot;,
+  &quot;is_active&quot;: false,
+  &quot;updated_at&quot;: &quot;2024-01-21T16:30:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 35. Delete Tenant
+
+**Endpoint:** `DELETE /tenants/<tenant_id>/`
+
+**Description:** Soft delete a tenant (Super Admin only).
+
+**Authentication:** Required (Super Admin)
+
+**Success Response:** `204 No Content`
+
+---
+
+#### 36. Restore Tenant
+
+**Endpoint:** `POST /tenants/<tenant_id>/restore/`
+
+**Description:** Restore a soft-deleted tenant (Super Admin only).
+
+**Authentication:** Required (Super Admin)
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Tenant restored successfully.&quot;
+}
+</code></pre>
+
+
+---
+
+### Payments & Subscriptions Endpoints
+
+#### 37. Create Order
+
+**Endpoint:** `POST /payments/create-order/`
+
+**Description:** Create a Razorpay order for subscription payment.
+
+**Authentication:** Required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;subscription_plan&quot;: &quot;PREMIUM&quot;  // One of: FREE, PREMIUM
+}
+</code></pre>
+
+
+**Success Response:** `201 Created`
+
+<pre><code class="language-json">{
+  &quot;order_id&quot;: &quot;order_NXExxxxxxxxx&quot;,
+  &quot;amount&quot;: 9900,  // Amount in paise (₹99.00)
+  &quot;currency&quot;: &quot;INR&quot;,
+  &quot;subscription_id&quot;: &quot;subscription-uuid&quot;
+}
+</code></pre>
+
+
+---
+
+#### 38. Checkout Page
+
+**Endpoint:** `GET /payments/checkout/`
+
+**Description:** Display Razorpay checkout page.
+
+**Authentication:** Required
+
+**Query Parameters:**
+- `order_id`: Razorpay order ID
+- `subscription_id`: Subscription UUID
+
+**Success Response:** `200 OK` (HTML page)
+
+---
+
+#### 39. Verify Payment
+
+**Endpoint:** `POST /payments/verify/`
+
+**Description:** Verify payment after successful Razorpay transaction.
+
+**Authentication:** Required
+
+**Request Body:**
+
+<pre><code class="language-json">{
+  &quot;razorpay_order_id&quot;: &quot;order_NXExxxxxxxxx&quot;,
+  &quot;razorpay_payment_id&quot;: &quot;pay_NXExxxxxxxxx&quot;,
+  &quot;razorpay_signature&quot;: &quot;signature_string&quot;,
+  &quot;subscription_id&quot;: &quot;subscription-uuid&quot;
+}
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Payment verified and subscription activated.&quot;,
+  &quot;subscription_id&quot;: &quot;subscription-uuid&quot;,
+  &quot;status&quot;: &quot;ACTIVE&quot;
+}
+</code></pre>
+
+
+**Error Responses:**
+- `400 Bad Request` - Invalid signature or payment verification failed
+
+---
+
+#### 40. Razorpay Webhook
+
+**Endpoint:** `POST /payments/webhook/razorpay/`
+
+**Description:** Handle Razorpay webhook events.
+
+**Authentication:** Not required (verified via signature)
+
+**Headers:**
+
+<pre><code class="language-http">X-Razorpay-Signature: &lt;webhook_signature&gt;
+</code></pre>
+
+
+**Success Response:** `200 OK`
+
+---
+
+#### 41. List Subscriptions
+
+**Endpoint:** `GET /payments/subscriptions/`
+
+**Description:** List user's subscriptions.
+
+**Authentication:** Required
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 3,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;subscription-uuid&quot;,
+      &quot;plan&quot;: &quot;PREMIUM&quot;,
+      &quot;status&quot;: &quot;ACTIVE&quot;,
+      &quot;amount&quot;: 9900,
+      &quot;start_date&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+      &quot;end_date&quot;: &quot;2024-02-01T00:00:00Z&quot;,
+      &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+---
+
+#### 42. Get Subscription Details
+
+**Endpoint:** `GET /payments/subscriptions/<subscription_id>/`
+
+**Description:** Retrieve details of a specific subscription.
+
+**Authentication:** Required
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;subscription-uuid&quot;,
+  &quot;user&quot;: {
+    &quot;id&quot;: &quot;user-uuid&quot;,
+    &quot;username&quot;: &quot;johndoe&quot;
+  },
+  &quot;plan&quot;: &quot;PREMIUM&quot;,
+  &quot;status&quot;: &quot;ACTIVE&quot;,
+  &quot;amount&quot;: 9900,
+  &quot;start_date&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+  &quot;end_date&quot;: &quot;2024-02-01T00:00:00Z&quot;,
+  &quot;payment&quot;: {
+    &quot;id&quot;: &quot;payment-uuid&quot;,
+    &quot;razorpay_payment_id&quot;: &quot;pay_NXExxxxxxxxx&quot;,
+    &quot;status&quot;: &quot;VERIFIED&quot;
+  },
+  &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 43. List Payment History
+
+**Endpoint:** `GET /payments/payment-history/`
+
+**Description:** List user's payment history.
+
+**Authentication:** Required
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 5,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;payment-uuid&quot;,
+      &quot;razorpay_order_id&quot;: &quot;order_NXExxxxxxxxx&quot;,
+      &quot;razorpay_payment_id&quot;: &quot;pay_NXExxxxxxxxx&quot;,
+      &quot;amount&quot;: 9900,
+      &quot;currency&quot;: &quot;INR&quot;,
+      &quot;status&quot;: &quot;VERIFIED&quot;,
+      &quot;subscription&quot;: {
+        &quot;id&quot;: &quot;subscription-uuid&quot;,
+        &quot;plan&quot;: &quot;PREMIUM&quot;
+      },
+      &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+---
+
+#### 44. Get Payment Details
+
+**Endpoint:** `GET /payments/payment-history/<payment_id>/`
+
+**Description:** Retrieve details of a specific payment.
+
+**Authentication:** Required
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;payment-uuid&quot;,
+  &quot;razorpay_order_id&quot;: &quot;order_NXExxxxxxxxx&quot;,
+  &quot;razorpay_payment_id&quot;: &quot;pay_NXExxxxxxxxx&quot;,
+  &quot;amount&quot;: 9900,
+  &quot;currency&quot;: &quot;INR&quot;,
+  &quot;status&quot;: &quot;VERIFIED&quot;,
+  &quot;subscription&quot;: {
+    &quot;id&quot;: &quot;subscription-uuid&quot;,
+    &quot;plan&quot;: &quot;PREMIUM&quot;,
+    &quot;status&quot;: &quot;ACTIVE&quot;
+  },
+  &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+  &quot;updated_at&quot;: &quot;2024-01-01T00:05:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+#### 45. List Webhook Events
+
+**Endpoint:** `GET /payments/webhooks/`
+
+**Description:** List webhook events (Admin/Super Admin only).
+
+**Authentication:** Required (Admin or Super Admin)
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;count&quot;: 20,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;webhook-uuid&quot;,
+      &quot;event_type&quot;: &quot;payment.captured&quot;,
+      &quot;razorpay_event_id&quot;: &quot;event_NXExxxxxxxxx&quot;,
+      &quot;status&quot;: &quot;processed&quot;,
+      &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;
+    }
+  ]
+}
+</code></pre>
+
+
+---
+
+#### 46. Get Webhook Event Details
+
+**Endpoint:** `GET /payments/webhooks/<webhook_id>/`
+
+**Description:** Retrieve details of a specific webhook event.
+
+**Authentication:** Required (Admin or Super Admin)
+
+**Success Response:** `200 OK`
+
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;webhook-uuid&quot;,
+  &quot;event_type&quot;: &quot;payment.captured&quot;,
+  &quot;razorpay_event_id&quot;: &quot;event_NXExxxxxxxxx&quot;,
+  &quot;payload&quot;: {
+    &quot;entity&quot;: &quot;event&quot;,
+    &quot;account_id&quot;: &quot;acc_xxxxx&quot;,
+    ...
+  },
+  &quot;status&quot;: &quot;processed&quot;,
+  &quot;error&quot;: null,
+  &quot;created_at&quot;: &quot;2024-01-01T00:00:00Z&quot;
+}
+</code></pre>
+
+
+---
+
+## HTTP Status Codes
+
+| Status Code | Description |
+|-------------|-------------|
+| `200 OK` | Request successful |
+| `201 Created` | Resource created successfully |
+| `204 No Content` | Request successful, no content to return |
+| `400 Bad Request` | Invalid request data or validation error |
+| `401 Unauthorized` | Authentication required or invalid token |
+| `403 Forbidden` | Insufficient permissions |
+| `404 Not Found` | Resource not found |
+| `409 Conflict` | Resource already exists |
+| `429 Too Many Requests` | Rate limit exceeded |
+| `500 Internal Server Error` | Server error |
+
+---
+
+## Common Enums
+
+### User Roles
+- `USER` - Regular library member
+- `ADMIN` - Tenant administrator
+- `SUPER_ADMIN` - Platform administrator
+
+### Book Reading Status
+- `TO_READ` - Book marked to read later
+- `READING` - Currently reading
+- `COMPLETED` - Finished reading
+
+### Book Request Status
+- `PENDING` - Awaiting admin approval
+- `APPROVED` - Approved and visible to all users
+- `REJECTED` - Rejected by admin
+
+### Subscription Plans
+- `FREE` - Free plan (max 3 books)
+- `PREMIUM` - Premium plan (unlimited books)
+
+### Subscription Status
+- `CREATED` - Subscription created, payment pending
+- `ACTIVE` - Active subscription
+- `CANCELLED` - Cancelled subscription
+
+### Payment Status
+- `CREATED` - Payment initiated
+- `PAID` - Payment successful
+- `VERIFIED` - Payment verified
+- `FAILED` - Payment failed
+- `ACTIVATED` - Subscription activated
+
+---
+
+## Error Handling
+
+### Error Response Format
+
+
+<pre><code class="language-json">{
+  &quot;error&quot;: &quot;Brief error message&quot;,
+  &quot;detail&quot;: &quot;Detailed error description&quot;
+}
+</code></pre>
+
+
+### Validation Error Format
+
+
+<pre><code class="language-json">{
+  &quot;username&quot;: [&quot;This field is required.&quot;],
+  &quot;email&quot;: [&quot;Enter a valid email address.&quot;],
+  &quot;password&quot;: [&quot;Password must be at least 8 characters.&quot;]
+}
+</code></pre>
+
+
+### Common Error Messages
+
+| Error | Cause | Solution |
+|-------|-------|----------|
+| `Invalid credentials` | Wrong username/password | Check credentials |
+| `Account suspended` | Account deactivated by admin | Contact support |
+| `Email not verified` | Email verification pending | Complete email verification |
+| `Permission denied` | Insufficient access rights | Check user role and permissions |
+| `Token expired` | JWT token expired | Refresh token or login again |
+| `Rate limit exceeded` | Too many requests | Wait before retrying |
+| `Book limit reached` | Free plan limit (3 books) | Upgrade to premium |
+
+---
+
+## Best Practices
+
+### 1. Authentication
+- Store JWT tokens securely (HttpOnly cookies or secure storage)
+- Refresh tokens before they expire
+- Logout users properly to blacklist tokens
+
+### 2. Multi-Tenancy
+- Always include `X-Tenant-ID` header for tenant-scoped requests
+- Validate tenant context before making requests
+
+### 3. Pagination
+- Use pagination for list endpoints to improve performance
+- Default page size is 10, maximum is 100
+
+### 4. Error Handling
+- Always check response status codes
+- Handle validation errors gracefully
+- Implement retry logic for transient errors
+
+### 5. Performance
+- Cache frequently accessed data when possible
+- Use query parameters to filter and reduce response size
+- Implement debouncing for search queries
+
+---
+
+## Support & Contact
+
+For API support, issues, or feature requests:
+- **Email:** support@bookshelf.com
+- **Documentation:** https://docs.bookshelf.com
+- **GitHub:** https://github.com/bookshelf/api
+
+---
+
+**Last Updated:** January 28, 2026  
+**API Version:** v1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

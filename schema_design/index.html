@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../functional_modules/" rel="prev"/>
-<link href="../api_docs/" rel="next"/>
+<link href="../permissions/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
 <title>Database Schema - BookShelf – Personalized Library Management System</title>
@@ -66,11 +66,35 @@
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="..">
+<a class="md-nav__link" href="../indexTest/">
 <span class="md-ellipsis">
     
   
     Overview
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../auth/">
+<span class="md-ellipsis">
+    
+  
+    Auth Flow
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tenant_onboarding/">
+<span class="md-ellipsis">
+    
+  
+    Tenant Onboarding
   
 
     
@@ -115,11 +139,35 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../permissions/">
+<span class="md-ellipsis">
+    
+  
+    Permission Matrix.
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api_temp/">
+<span class="md-ellipsis">
+    
+  
+    Api Reference.
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../api_docs/">
 <span class="md-ellipsis">
     
   
-    Api Docs.
+    Api Docs
   
 
     
@@ -142,69 +190,131 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1>Database Schema</h1>
-<div class="mermaid">erDiagram
-    users {
-        uuid id PK
-        string username
-        string email
-        string password
-        string first_name
-        string last_name
-        string phone_no
-        enum role
-        datetime created_at
-        datetime updated_at
-        datetime deleted_at
+<!-- ```mermaid
+---
+config:
+  layout: elk
+---
+erDiagram
+
+    tenants {
+        UUID id PK
+        VARCHAR name
+        VARCHAR slug UK
+        BOOLEAN is_active
+        VARCHAR subscription_plan "FREE|PREMIUM"
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+        TIMESTAMPTZ deleted_at
     }
 
-    genres {
-        uuid id PK
-        string name
-        datetime created_at
-        datetime updated_at
+    users {
+        UUID id PK
+        UUID tenant_id FK
+        VARCHAR username 
+        VARCHAR email UK
+        VARCHAR first_name 
+        VARCHAR last_name
+        BOOLEAN is_email_verified
+        VARCHAR role "USER|ADMIN|SUPER_ADMIN"
+        BOOLEAN is_active
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+        TIMESTAMPTZ deleted_at
     }
 
     books {
-        uuid id PK
-        string title
-        string author
-        small_int published_year
-        string isbn
-        boolean is_active
-        enum request_status
-        uuid created_by FK
-        datetime created_at
-        datetime updated_at
-        datetime deleted_at
+        UUID id PK
+        UUID tenant_id FK
+        UUID created_by FK
+        VARCHAR title
+        VARCHAR author
+        VARCHAR isbn
+        VARCHAR request_status "PENDING|APPROVED|REJECTED"
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+        TIMESTAMPTZ deleted_at
     }
 
-    user_books {
-        uuid id PK
-        uuid user_id FK
-        uuid book_id FK
-        enum status
-        datetime created_at
-        datetime updated_at
-        datetime deleted_at
+    genres {
+        UUID id PK
+        UUID tenant_id FK
+        VARCHAR name
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+        TIMESTAMPTZ deleted_at
     }
 
     book_genres {
-        uuid id PK
-        uuid book_id FK
-        uuid genre_id FK
-        datetime created_at
-        datetime updated_at
-        datetime deleted_at
+        UUID id PK
+        UUID book_id FK
+        UUID genre_id FK
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+        TIMESTAMPTZ deleted_at
     }
 
-    users ||--o{ user_books : has
-    books ||--o{ user_books : assigned_to
+    user_books {
+        UUID id PK
+        UUID user_id FK
+        UUID book_id FK
+        VARCHAR status "TO_READ|READING|COMPLETED"
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+        TIMESTAMPTZ deleted_at
+    }
 
-    books ||--o{ book_genres : categorized_as
-    genres ||--o{ book_genres : includes
+    subscriptions {
+        UUID id PK
+        UUID tenant_id FK
+        VARCHAR status "CREATED|ACTIVE|CANCELLED"
+        TIMESTAMPTZ activated_at
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+    }
 
+    payments {
+        UUID id PK
+        UUID tenant_id FK
+        UUID subscription_id FK
+        UUID initiated_by_user_id FK
+        VARCHAR razorpay_order_id UK
+        VARCHAR razorpay_payment_id
+        VARCHAR razorpay_signature
+        INTEGER amount_paise
+        VARCHAR currency "INR"
+        VARCHAR status "CREATED|PAID|FAILED|CAPTURED|VERIFIED"
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+        TIMESTAMPTZ verified_at
+    }
 
-</div>
+    webhook_events {
+        UUID id PK
+        VARCHAR provider "RAZORPAY"
+        VARCHAR event_id UK
+        VARCHAR event_type "payment.captured|payment.failed"
+        JSONB payload
+        BOOLEAN processed
+        TIMESTAMPTZ created_at
+        TIMESTAMPTZ updated_at
+    }
+
+    tenants ||--o{ users : "has"
+    users ||--o{ books : "creates"
+    tenants ||--o{ books : "owns"
+    tenants ||--o{ genres : "owns"
+    books ||--o{ book_genres : "categorized_by"
+    genres ||--o{ book_genres : "includes"
+    users ||--o{ user_books : "tracks"
+    books ||--o{ user_books : "tracked_in"
+
+    tenants ||--|| subscriptions : "owns"
+    subscriptions ||--o{ payments : "attempted_via"
+    tenants ||--o{ payments : "billed_for"
+    users ||--o{ payments : "initiated_by"
+``` -->
+<p><img alt="Architecture Diagram" src="../images/schema.png"/></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -231,6 +341,5 @@
 </div>
 <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
 <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
-<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
-mermaid.initialize({});</script></body>
+</body>
 </html>

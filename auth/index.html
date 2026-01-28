@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../tenant_onboarding/">
+        <link rel="prev" href="../indexTest/">
       
       
-        <link rel="next" href="../functional_modules/">
+        <link rel="next" href="../tenant_onboarding/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Functional Use Cases - BookShelf – Personalized Library Management System</title>
+        <title>Auth Flow - BookShelf – Personalized Library Management System</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#functional-use-case-documentation-bookshelf-system" class="md-skip">
+        <a href="#registration-email-verification" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Functional Use Cases
+              Auth Flow
             
           </span>
         </div>
@@ -180,10 +180,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../auth/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auth Flow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -199,6 +224,191 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registration-email-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registration &amp; Email Verification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Registration &amp; Email Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signup-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signup Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resend-verification-otp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resend Verification OTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login-flow-mfa-with-otp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Login Flow (MFA with OTP)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Login Flow (MFA with OTP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-credential-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Credential Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-otp-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: OTP Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Password Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Password Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forgot-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgot Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reset Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Middleware
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication Middleware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tenantjwtauthentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TenantJWTAuthentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -234,37 +444,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Functional Use Cases
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../functional_usecases/" class="md-nav__link">
         
   
   
@@ -280,103 +463,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-1-user-registration-login-tenant-context" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 1: User Registration &amp; Login (Tenant Context)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-2-personal-bookshelf-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 2: Personal Bookshelf Management
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-3-reading-status-tracking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 3: Reading Status Tracking
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-4-viewing-tenant-personal-books" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 4: Viewing Tenant &amp; Personal Books
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-5-tenant-administrative-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 5: Tenant Administrative Management
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-6-platform-level-supervision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 6: Platform-Level Supervision
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-7-security-permission-enforcement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 7: Security &amp; Permission Enforcement
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -533,8 +619,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -543,79 +627,169 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-case-1-user-registration-login-tenant-context" class="md-nav__link">
+  <a href="#registration-email-verification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 1: User Registration &amp; Login (Tenant Context)
+        Registration &amp; Email Verification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Registration &amp; Email Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signup-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signup Flow
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-2-personal-bookshelf-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#email-verification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 2: Personal Bookshelf Management
+        Email Verification
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-3-reading-status-tracking" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#resend-verification-otp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 3: Reading Status Tracking
+        Resend Verification OTP
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#use-case-4-viewing-tenant-personal-books" class="md-nav__link">
+  <a href="#login-flow-mfa-with-otp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 4: Viewing Tenant &amp; Personal Books
+        Login Flow (MFA with OTP)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Login Flow (MFA with OTP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-credential-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Credential Validation
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-5-tenant-administrative-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#step-2-otp-verification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 5: Tenant Administrative Management
+        Step 2: OTP Verification
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#use-case-6-platform-level-supervision" class="md-nav__link">
+  <a href="#password-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 6: Platform-Level Supervision
+        Password Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Password Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forgot-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgot Password
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-7-security-permission-enforcement" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#reset-password" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 7: Security &amp; Permission Enforcement
+        Reset Password
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Middleware
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication Middleware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tenantjwtauthentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TenantJWTAuthentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -636,216 +810,121 @@
 
 
 
-<h1 id="functional-use-case-documentation-bookshelf-system">Functional Use Case Documentation: BookShelf System</h1>
+  <h1>Auth Flow</h1>
+
+<p>BookShelf implements a multi-factor authentication system with OTP-based verification for both signup and login. All authentication flows are tenant-scoped using the <code>Tenant-ID</code> header.</p>
 <hr />
-<h2 id="use-case-1-user-registration-login-tenant-context">Use Case 1: User Registration &amp; Login (Tenant Context)</h2>
-<p><strong>Description:</strong><br />
-Allows a user to create an account within a specific Tenant and log in using JWT authentication.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User provides registration details (Username, Email, Password, Name, Phone).</p>
-</li>
-<li>
-<p>System validates data (email format, password strength, unique username/email within the tenant).</p>
-</li>
-<li>
-<p>System stores user profile linked to the relevant <code>Tenant</code>.</p>
-</li>
-<li>
-<p>System generates JWT tokens (Access &amp; Refresh).</p>
-</li>
-<li>
-<p><strong>Security Check:</strong> Middleware validates that the user's <code>Tenant</code> is active and not deleted/suspended.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>User is registered and authenticated. All subsequent requests carry the Tenant context.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Duplicate username/email for the same tenant.</p>
-</li>
-<li>
-<p>Invalid data formats.</p>
-</li>
-<li>
-<p>Attempting to access from a deleted or suspended tenant.</p>
-</li>
-</ul>
+<h2 id="registration-email-verification">Registration &amp; Email Verification</h2>
+<h3 id="signup-flow">Signup Flow</h3>
+<ol>
+<li>User sends credentials to <code>POST /api/v1/auth/signup/</code> with <code>Tenant-ID</code> header</li>
+<li>System validates:</li>
+<li>Tenant exists and is active</li>
+<li>Email unique within tenant</li>
+<li>Username globally unique</li>
+<li>Password meets strength requirements</li>
+<li>User created with <code>is_email_verified=False</code>, <code>is_active=False</code></li>
+<li>6-digit OTP generated, hashed, and cached in Redis </li>
+<li>Celery task dispatches verification email asynchronously</li>
+<li>Response: <code>"Verification code sent to your email."</code></li>
+</ol>
+<h3 id="email-verification">Email Verification</h3>
+<ol>
+<li>User submits OTP to <code>POST /api/v1/auth/verify-email/</code></li>
+<li>Can identify via email OR username</li>
+<li>Requires <code>Tenant-ID</code> header</li>
+<li>System validates OTP against cached hash</li>
+<li>On success:</li>
+<li>User marked <code>is_email_verified=True</code>, <code>is_active=True</code></li>
+<li>OTP cache cleared</li>
+<li>Account now ready for login</li>
+</ol>
+<h3 id="resend-verification-otp">Resend Verification OTP</h3>
+<ol>
+<li>User requests new code via <code>POST /api/v1/auth/resend-otp/</code></li>
+<li>Requires email OR username + <code>Tenant-ID</code></li>
+<li>Previous OTP invalidated, new one generated</li>
+<li>Fresh 10-minute window starts</li>
+</ol>
 <hr />
-<h2 id="use-case-2-personal-bookshelf-management">Use Case 2: Personal Bookshelf Management</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to maintain a personal collection of books from their tenant's approved catalog.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User browses the books approved for their organization.</p>
-</li>
-<li>
-<p>User adds a book to their personal bookshelf with an initial status (default: <code>TO_READ</code>).</p>
-</li>
-<li>
-<p>System verifies the book exists and belongs to the user's tenant.</p>
-</li>
-<li>
-<p>System creates a link between the User and the Book.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Book is added to the user's "My Books" list.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Book already exists in user's personal library.</p>
-</li>
-<li>
-<p>Book belongs to a different tenant.</p>
-</li>
-</ul>
+<h2 id="login-flow-mfa-with-otp">Login Flow (MFA with OTP)</h2>
+<h3 id="step-1-credential-validation">Step 1: Credential Validation</h3>
+<ol>
+<li>User sends credentials to <code>POST /api/v1/auth/login/</code></li>
+<li>Accepts email OR username + password</li>
+<li><code>Tenant-ID</code> optional (required for Admin/User, not for SuperAdmin)</li>
+<li>System validates:</li>
+<li>User exists in specified tenant</li>
+<li>Account not deleted (<code>deleted_at</code> is null)</li>
+<li>Email verified (<code>is_email_verified=True</code>)</li>
+<li>Account active (<code>is_active=True</code>)</li>
+<li>Password correct</li>
+<li>6-digit OTP generated, hashed, cached (10min TTL)</li>
+<li>Celery task sends OTP via email</li>
+<li>Response: <code>"OTP sent to your email. Please verify to complete login."</code></li>
+</ol>
+<h3 id="step-2-otp-verification">Step 2: OTP Verification</h3>
+<ol>
+<li>User submits OTP to <code>POST /api/v1/auth/verify-login/</code></li>
+<li>Requires email OR username + OTP</li>
+<li>System validates OTP (max 5 attempts per session)</li>
+<li>On success:</li>
+<li>OTP cache cleared</li>
+<li>JWT tokens issued</li>
+<li>Response contains both tokens for client storage</li>
+</ol>
 <hr />
-<h2 id="use-case-3-reading-status-tracking">Use Case 3: Reading Status Tracking</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to track progress on books in their personal collection.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User selects a book from their personal library.</p>
-</li>
-<li>
-<p>User updates the status to <code>TO_READ</code>, <code>READING</code>, or <code>COMPLETED</code>.</p>
-</li>
-<li>
-<p>System validates the status choice.</p>
-</li>
-<li>
-<p>System updates the <code>updated_at</code> timestamp for accuracy.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>The reading progress is updated and reflected in the user's dashboard.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Invalid status value provided.</p>
-</li>
-<li>
-<p>User attempts to update a book they haven't added to their library.</p>
-</li>
-</ul>
+<h2 id="password-management">Password Management</h2>
+<h3 id="forgot-password">Forgot Password</h3>
+<ol>
+<li>User submits request to <code>POST /api/v1/auth/forgot-password/</code></li>
+<li>Requires email OR username</li>
+<li><code>Tenant-ID</code> optional</li>
+<li>System generates secure reset token</li>
+<li>Token cached in Redis, linked to user ID</li>
+<li>Celery task sends email with reset link</li>
+<li>Response always: <code>"If an account exists, a reset link has been sent."</code></li>
+<li>Prevents email enumeration</li>
+</ol>
+<h3 id="reset-password">Reset Password</h3>
+<p><strong>GET Request</strong> (Load Form):
+1. User clicks link to <code>GET /api/v1/auth/reset-password/?token=&lt;token&gt;</code>
+2. System validates token exists and not expired
+3. Renders HTML form for password entry</p>
+<p><strong>POST Request</strong> (Submit New Password):
+1. User submits via form or API:
+   - <code>token</code>, <code>password</code>, <code>confirm_password</code>
+2. System validates:
+   - Token valid and not expired
+   - Passwords match
+   - Password meets strength requirements
+3. Updates user password (hashed)
+4. Reset token cleared from cache
+5. User can now login with new credentials</p>
+<h3 id="change-password">Change Password</h3>
+<ol>
+<li>Authenticated user calls <code>POST /api/v1/auth/change-password/</code></li>
+<li>Required fields:</li>
+<li><code>current_password</code>: Must match existing</li>
+<li><code>new_password</code>: Must meet requirements</li>
+<li><code>confirm_password</code>: Must match new</li>
+<li>System verifies current password</li>
+<li>Updates to new password</li>
+<li>User must re-login on other devices</li>
+</ol>
 <hr />
-<h2 id="use-case-4-viewing-tenant-personal-books">Use Case 4: Viewing Tenant &amp; Personal Books</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to view the available catalog and their personal reading list .</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User requests the book list (public tenant catalog or personal).</p>
-</li>
-<li>
-<p>System applies tenant-level filtering (User only sees their organization's data).</p>
-</li>
-<li>
-<p>System applies pagination and optional filters (Genre, Title, Author).</p>
-</li>
-<li>
-<p>Paginated results are returned.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>User sees a filtered, structured list of books.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Unauthorized access (missing/invalid token).</p>
-</li>
-<li>
-<p>Attempting to access data from another tenant.</p>
-</li>
-</ul>
-<hr />
-<h2 id="use-case-5-tenant-administrative-management">Use Case 5: Tenant Administrative Management</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows tenant administrators to manage their organization's users and book catalog.</p>
-<p><strong>Steps:</strong>
-- Admin adds new books to the tenant's catalog.</p>
-<ul>
-<li>
-<p>Admin manages user accounts (viewing active users, suspending accounts).</p>
-</li>
-<li>
-<p>Admin approves book requests if applicable.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Tenant-specific data is updated for all users within that organization.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Admin attempts to update/delete users from other tenants (Blocked by Tenant Isolation).</p>
-</li>
-<li>
-<p>Admin attempts to delete their own account.</p>
-</li>
-</ul>
-<hr />
-<h2 id="use-case-6-platform-level-supervision">Use Case 6: Platform-Level Supervision</h2>
-<p><strong>Description:</strong>  </p>
-<p>Platform-wide control over tenants, global settings, and system-level auditing.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>Super Admin creates or updates Tenants.</p>
-</li>
-<li>
-<p>Super Admin performs "Soft Delete" on inactive tenants.</p>
-</li>
-<li>
-<p>Super Admin restores recently deleted tenants via <code>PATCH</code>.</p>
-</li>
-<li>
-<p>System automatically purges data for tenants deleted longer than 30 days.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Tenant lifecycle is managed efficiently.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>Attempting to restore a tenant whose data has already been purged by the cleanup task.</li>
-</ul>
-<hr />
-<h2 id="use-case-7-security-permission-enforcement">Use Case 7: Security &amp; Permission Enforcement</h2>
-<p><strong>Description:</strong>  </p>
-<p>Ensures that all resources are accessed only by authenticated users with the correct role and correct tenant context.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>Middleware intercepts every request.</p>
-</li>
-<li>
-<p>System validates JWT and refreshes Tenant status from the database.</p>
-</li>
-<li>
-<p>System checks user roles (<code>USER</code>, <code>ADMIN</code>, <code>SUPER_ADMIN</code>) against endpoint permissions.</p>
-</li>
-<li>
-<p>System filters all database queries to ensure tenant isolation.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Data security and organization-level isolation are maintained.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Token missing, invalid, or expired.</p>
-</li>
-<li>
-<p>User role lacks sufficient permissions.</p>
-</li>
-<li>
-<p>Tenant is deleted or suspended (Immediate block).</p>
-</li>
-</ul>
+<h2 id="authentication-middleware">Authentication Middleware</h2>
+<h3 id="tenantjwtauthentication">TenantJWTAuthentication</h3>
+<p>Every protected request passes through:</p>
+<ol>
+<li>Extract JWT from <code>Authorization: Bearer &lt;token&gt;</code></li>
+<li>Validate token signature and expiry</li>
+<li>Check access token JTI not in Redis blacklist</li>
+<li>Load user from token payload</li>
+<li>Verify user is active and not deleted</li>
+<li>Verify tenant is active (if applicable)</li>
+<li>Set <code>request.user</code> and tenant context</li>
+</ol>
 
 
 

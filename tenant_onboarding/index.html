@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../tenant_onboarding/">
+        <link rel="prev" href="../auth/">
       
       
-        <link rel="next" href="../functional_modules/">
+        <link rel="next" href="../functional_usecases/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Functional Use Cases - BookShelf – Personalized Library Management System</title>
+        <title>Tenant Onboarding - BookShelf – Personalized Library Management System</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#functional-use-case-documentation-bookshelf-system" class="md-skip">
+        <a href="#tenant-onboarding-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Functional Use Cases
+              Tenant Onboarding
             
           </span>
         </div>
@@ -207,33 +207,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../tenant_onboarding/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Tenant Onboarding
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -253,7 +226,7 @@
   <span class="md-ellipsis">
     
   
-    Functional Use Cases
+    Tenant Onboarding
   
 
     
@@ -271,7 +244,7 @@
   <span class="md-ellipsis">
     
   
-    Functional Use Cases
+    Tenant Onboarding
   
 
     
@@ -297,10 +270,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-case-1-user-registration-login-tenant-context" class="md-nav__link">
+  <a href="#what-is-a-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 1: User Registration &amp; Login (Tenant Context)
+        What is a Tenant?
       
     </span>
   </a>
@@ -308,10 +281,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-2-personal-bookshelf-management" class="md-nav__link">
+  <a href="#onboarding-process" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 2: Personal Bookshelf Management
+        Onboarding Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Onboarding Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-tenant-creation-by-super-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Tenant Creation (By Super Admin)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-admin-account-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Admin Account Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-initial-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Initial Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-user-signup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: User Signup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tenant-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tenant Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#free-tier-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Free Tier Limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#premium-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Premium Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Isolation
       
     </span>
   </a>
@@ -319,54 +403,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-3-reading-status-tracking" class="md-nav__link">
+  <a href="#quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 3: Reading Status Tracking
+        Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-super-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Super Admin
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-4-viewing-tenant-personal-books" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#for-tenant-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 4: Viewing Tenant &amp; Personal Books
+        For Tenant Admin
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-5-tenant-administrative-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#for-users" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 5: Tenant Administrative Management
+        For Users
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-6-platform-level-supervision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 6: Platform-Level Supervision
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-7-security-permission-enforcement" class="md-nav__link">
+  <a href="#support" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 7: Security &amp; Permission Enforcement
+        Support
       
     </span>
   </a>
@@ -377,6 +467,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional_usecases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functional Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -543,10 +660,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#use-case-1-user-registration-login-tenant-context" class="md-nav__link">
+  <a href="#what-is-a-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 1: User Registration &amp; Login (Tenant Context)
+        What is a Tenant?
       
     </span>
   </a>
@@ -554,10 +671,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-2-personal-bookshelf-management" class="md-nav__link">
+  <a href="#onboarding-process" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 2: Personal Bookshelf Management
+        Onboarding Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Onboarding Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-tenant-creation-by-super-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Tenant Creation (By Super Admin)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-admin-account-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Admin Account Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-initial-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Initial Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-user-signup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: User Signup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tenant-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tenant Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#free-tier-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Free Tier Limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#premium-upgrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Premium Upgrade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Isolation
       
     </span>
   </a>
@@ -565,54 +793,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-3-reading-status-tracking" class="md-nav__link">
+  <a href="#quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 3: Reading Status Tracking
+        Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-super-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Super Admin
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-4-viewing-tenant-personal-books" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#for-tenant-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 4: Viewing Tenant &amp; Personal Books
+        For Tenant Admin
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-5-tenant-administrative-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#for-users" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 5: Tenant Administrative Management
+        For Users
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#use-case-6-platform-level-supervision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Use Case 6: Platform-Level Supervision
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case-7-security-permission-enforcement" class="md-nav__link">
+  <a href="#support" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case 7: Security &amp; Permission Enforcement
+        Support
       
     </span>
   </a>
@@ -636,215 +870,162 @@
 
 
 
-<h1 id="functional-use-case-documentation-bookshelf-system">Functional Use Case Documentation: BookShelf System</h1>
+<h1 id="tenant-onboarding-guide">Tenant Onboarding Guide</h1>
+<h2 id="what-is-a-tenant">What is a Tenant?</h2>
+<p>A tenant represents an organization or company using the BookShelf platform. Each tenant has its own isolated space with separate users, books, and data.</p>
 <hr />
-<h2 id="use-case-1-user-registration-login-tenant-context">Use Case 1: User Registration &amp; Login (Tenant Context)</h2>
-<p><strong>Description:</strong><br />
-Allows a user to create an account within a specific Tenant and log in using JWT authentication.</p>
-<p><strong>Steps:</strong></p>
+<h2 id="onboarding-process">Onboarding Process</h2>
+<h3 id="step-1-tenant-creation-by-super-admin">Step 1: Tenant Creation (By Super Admin)</h3>
+<p>The platform Super Admin creates the tenant with:</p>
 <ul>
 <li>
-<p>User provides registration details (Username, Email, Password, Name, Phone).</p>
+<p><strong>Name</strong>: Organization's display name</p>
 </li>
 <li>
-<p>System validates data (email format, password strength, unique username/email within the tenant).</p>
+<p><strong>Slug</strong>: Unique URL identifier (auto-generated or custom)</p>
 </li>
 <li>
-<p>System stores user profile linked to the relevant <code>Tenant</code>.</p>
-</li>
-<li>
-<p>System generates JWT tokens (Access &amp; Refresh).</p>
-</li>
-<li>
-<p><strong>Security Check:</strong> Middleware validates that the user's <code>Tenant</code> is active and not deleted/suspended.</p>
+<p><strong>Subscription Plan</strong>: Defaults to Free tier</p>
 </li>
 </ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>User is registered and authenticated. All subsequent requests carry the Tenant context.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Duplicate username/email for the same tenant.</p>
-</li>
-<li>
-<p>Invalid data formats.</p>
-</li>
-<li>
-<p>Attempting to access from a deleted or suspended tenant.</p>
-</li>
-</ul>
+<p>After creation, the tenant receives a unique ID used for all API requests.</p>
 <hr />
-<h2 id="use-case-2-personal-bookshelf-management">Use Case 2: Personal Bookshelf Management</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to maintain a personal collection of books from their tenant's approved catalog.</p>
-<p><strong>Steps:</strong></p>
-<ul>
+<h3 id="step-2-admin-account-setup">Step 2: Admin Account Setup</h3>
+<p>The Super Admin creates the first admin user for the new tenant:</p>
+<ol>
+<li>Super Admin provides:</li>
+<li>Admin's email address</li>
+<li>Username</li>
+<li>Temporary password</li>
 <li>
-<p>User browses the books approved for their organization.</p>
+<p>Role set as ADMIN</p>
 </li>
 <li>
-<p>User adds a book to their personal bookshelf with an initial status (default: <code>TO_READ</code>).</p>
+<p>System actions:</p>
+</li>
+<li>Creates admin user linked to the tenant</li>
+<li>Sends email verification OTP</li>
+<li>
+<p>Admin verifies email and activates account</p>
 </li>
 <li>
-<p>System verifies the book exists and belongs to the user's tenant.</p>
+<p>Admin can now login using the Tenant-ID header</p>
 </li>
-<li>
-<p>System creates a link between the User and the Book.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Book is added to the user's "My Books" list.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Book already exists in user's personal library.</p>
-</li>
-<li>
-<p>Book belongs to a different tenant.</p>
-</li>
-</ul>
+</ol>
 <hr />
-<h2 id="use-case-3-reading-status-tracking">Use Case 3: Reading Status Tracking</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to track progress on books in their personal collection.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User selects a book from their personal library.</p>
-</li>
-<li>
-<p>User updates the status to <code>TO_READ</code>, <code>READING</code>, or <code>COMPLETED</code>.</p>
-</li>
-<li>
-<p>System validates the status choice.</p>
-</li>
-<li>
-<p>System updates the <code>updated_at</code> timestamp for accuracy.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>The reading progress is updated and reflected in the user's dashboard.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Invalid status value provided.</p>
-</li>
-<li>
-<p>User attempts to update a book they haven't added to their library.</p>
-</li>
-</ul>
+<h3 id="step-3-initial-configuration">Step 3: Initial Configuration</h3>
+<p>The tenant admin sets up the organization:</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add Genres</td>
+<td>Create book categories relevant to the organization</td>
+</tr>
+<tr>
+<td>Invite Users</td>
+<td>Create user accounts or share signup instructions</td>
+</tr>
+<tr>
+<td>Add Books</td>
+<td>Build the initial book catalog</td>
+</tr>
+<tr>
+<td>Review Settings</td>
+<td>Configure any tenant-specific preferences</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="use-case-4-viewing-tenant-personal-books">Use Case 4: Viewing Tenant &amp; Personal Books</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows users to view the available catalog and their personal reading list .</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>User requests the book list (public tenant catalog or personal).</p>
-</li>
-<li>
-<p>System applies tenant-level filtering (User only sees their organization's data).</p>
-</li>
-<li>
-<p>System applies pagination and optional filters (Genre, Title, Author).</p>
-</li>
-<li>
-<p>Paginated results are returned.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>User sees a filtered, structured list of books.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Unauthorized access (missing/invalid token).</p>
-</li>
-<li>
-<p>Attempting to access data from another tenant.</p>
-</li>
-</ul>
+<h3 id="step-4-user-signup">Step 4: User Signup</h3>
+<p>Regular users join the tenant:</p>
+<ol>
+<li>User visits signup page with Tenant-ID</li>
+<li>Submits email, username, and password</li>
+<li>Receives email verification OTP</li>
+<li>Verifies email to activate account</li>
+<li>Can now login and access tenant resources</li>
+</ol>
 <hr />
-<h2 id="use-case-5-tenant-administrative-management">Use Case 5: Tenant Administrative Management</h2>
-<p><strong>Description:</strong>  </p>
-<p>Allows tenant administrators to manage their organization's users and book catalog.</p>
-<p><strong>Steps:</strong>
-- Admin adds new books to the tenant's catalog.</p>
+<h2 id="tenant-lifecycle">Tenant Lifecycle</h2>
+<h3 id="free-tier-limits">Free Tier Limits</h3>
 <ul>
-<li>
-<p>Admin manages user accounts (viewing active users, suspending accounts).</p>
-</li>
-<li>
-<p>Admin approves book requests if applicable.</p>
-</li>
+<li>Maximum 5 books per user in personal library</li>
+<li>All core features available</li>
 </ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Tenant-specific data is updated for all users within that organization.</p>
-<p><strong>Exceptions:</strong></p>
+<h3 id="premium-upgrade">Premium Upgrade</h3>
+<ol>
+<li>Tenant admin initiates payment through checkout</li>
+<li>Razorpay processes the payment</li>
+<li>On success, tenant upgraded to Premium</li>
+<li>Users get unlimited library capacity</li>
+</ol>
+<h3 id="tenant-status">Tenant Status</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td>Fully operational, users can access</td>
+</tr>
+<tr>
+<td>Inactive</td>
+<td>Suspended, users cannot login</td>
+</tr>
+<tr>
+<td>Deleted</td>
+<td>Soft-deleted, pending permanent removal</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="data-isolation">Data Isolation</h2>
+<p>Each tenant's data is completely isolated:</p>
 <ul>
-<li>
-<p>Admin attempts to update/delete users from other tenants (Blocked by Tenant Isolation).</p>
-</li>
-<li>
-<p>Admin attempts to delete their own account.</p>
-</li>
+<li>Users can only see books within their tenant</li>
+<li>Genres are tenant-specific</li>
+<li>Personal libraries are scoped to tenant</li>
+<li>No cross-tenant data access possible</li>
 </ul>
 <hr />
-<h2 id="use-case-6-platform-level-supervision">Use Case 6: Platform-Level Supervision</h2>
-<p><strong>Description:</strong>  </p>
-<p>Platform-wide control over tenants, global settings, and system-level auditing.</p>
-<p><strong>Steps:</strong></p>
-<ul>
-<li>
-<p>Super Admin creates or updates Tenants.</p>
-</li>
-<li>
-<p>Super Admin performs "Soft Delete" on inactive tenants.</p>
-</li>
-<li>
-<p>Super Admin restores recently deleted tenants via <code>PATCH</code>.</p>
-</li>
-<li>
-<p>System automatically purges data for tenants deleted longer than 30 days.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Tenant lifecycle is managed efficiently.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>Attempting to restore a tenant whose data has already been purged by the cleanup task.</li>
-</ul>
+<h2 id="quick-reference">Quick Reference</h2>
+<h3 id="for-super-admin">For Super Admin</h3>
+<ol>
+<li>Create tenant via API or admin panel</li>
+<li>Create admin user for the tenant</li>
+<li>Share tenant credentials with organization</li>
+</ol>
+<h3 id="for-tenant-admin">For Tenant Admin</h3>
+<ol>
+<li>Verify email and login</li>
+<li>Set up genres and initial books</li>
+<li>Invite team members</li>
+<li>Manage user accounts and content</li>
+</ol>
+<h3 id="for-users">For Users</h3>
+<ol>
+<li>Receive invite or signup URL with Tenant-ID</li>
+<li>Complete registration and email verification</li>
+<li>Login and start using the platform</li>
+<li>Browse books and build personal library</li>
+</ol>
 <hr />
-<h2 id="use-case-7-security-permission-enforcement">Use Case 7: Security &amp; Permission Enforcement</h2>
-<p><strong>Description:</strong>  </p>
-<p>Ensures that all resources are accessed only by authenticated users with the correct role and correct tenant context.</p>
-<p><strong>Steps:</strong></p>
+<h2 id="support">Support</h2>
+<p>If issues occur during onboarding:</p>
 <ul>
-<li>
-<p>Middleware intercepts every request.</p>
-</li>
-<li>
-<p>System validates JWT and refreshes Tenant status from the database.</p>
-</li>
-<li>
-<p>System checks user roles (<code>USER</code>, <code>ADMIN</code>, <code>SUPER_ADMIN</code>) against endpoint permissions.</p>
-</li>
-<li>
-<p>System filters all database queries to ensure tenant isolation.</p>
-</li>
-</ul>
-<p><strong>Post-condition:</strong>  </p>
-<p>Data security and organization-level isolation are maintained.</p>
-<p><strong>Exceptions:</strong></p>
-<ul>
-<li>
-<p>Token missing, invalid, or expired.</p>
-</li>
-<li>
-<p>User role lacks sufficient permissions.</p>
-</li>
-<li>
-<p>Tenant is deleted or suspended (Immediate block).</p>
-</li>
+<li>Super Admin handles tenant-level issues</li>
+<li>Tenant Admin handles user-level issues</li>
+<li>Users contact their Tenant Admin </li>
 </ul>
 
 

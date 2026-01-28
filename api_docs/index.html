@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../schema_design/">
+        <link rel="prev" href="../api_temp/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Api Docs. - BookShelf – Personalized Library Management System</title>
+        <title>Api Docs - BookShelf – Personalized Library Management System</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bookshelf-rest-api-documentation" class="md-skip">
+        <a href="#bookshelf-api-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Api Docs.
+              Api Docs
             
           </span>
         </div>
@@ -154,7 +154,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../indexTest/" class="md-nav__link">
         
   
   
@@ -162,6 +162,60 @@
     
   
     Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auth Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tenant_onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tenant Onboarding
   
 
     
@@ -259,6 +313,60 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permission Matrix.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_temp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Api Reference.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -278,7 +386,7 @@
   <span class="md-ellipsis">
     
   
-    Api Docs.
+    Api Docs
   
 
     
@@ -296,7 +404,7 @@
   <span class="md-ellipsis">
     
   
-    Api Docs.
+    Api Docs
   
 
     
@@ -322,63 +430,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#base-configuration" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Base Configuration
+        Overview
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pagination" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pagination
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response-formats" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response Formats
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Response Formats">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#success-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Success Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -395,32 +453,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#signup-request" class="md-nav__link">
+  <a href="#user-roles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Signup Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#login-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#login-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login Response
+        User Roles
       
     </span>
   </a>
@@ -433,33 +469,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#user-management-admin-only" class="md-nav__link">
+  <a href="#1-authentication-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Management (Admin Only)
+        1. Authentication Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Authentication Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-signup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Signup
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#me" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-verify-email" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Me
+        1.2 Verify Email
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Me">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#user-response" class="md-nav__link">
+  <a href="#13-resend-otp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Response
+        1.3 Resend OTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-verify-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Verify Login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-refresh-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 Refresh Token
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 Logout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-forgot-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8 Forgot Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-reset-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9 Reset Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-change-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10 Change Password
       
     </span>
   </a>
@@ -472,22 +596,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#books" class="md-nav__link">
+  <a href="#2-user-management-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Books
+        2. User Management (Admin)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Books">
+    <nav class="md-nav" aria-label="2. User Management (Admin)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#query-parameters-get-books" class="md-nav__link">
+  <a href="#21-list-users" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Query Parameters (GET /books/)
+        2.1 List Users
       
     </span>
   </a>
@@ -495,10 +619,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#visibility-rules" class="md-nav__link">
+  <a href="#22-create-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Visibility Rules
+        2.2 Create User
       
     </span>
   </a>
@@ -506,10 +630,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-book-request" class="md-nav__link">
+  <a href="#23-get-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create Book Request
+        2.3 Get User
       
     </span>
   </a>
@@ -517,10 +641,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#book-response" class="md-nav__link">
+  <a href="#24-update-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Book Response
+        2.4 Update User
       
     </span>
   </a>
@@ -528,10 +652,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-book-request-admin-only" class="md-nav__link">
+  <a href="#25-delete-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Update Book Request (Admin Only)
+        2.5 Delete User
       
     </span>
   </a>
@@ -544,22 +668,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-books-user-library" class="md-nav__link">
+  <a href="#3-tenant-management-superadmin-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Books (User Library)
+        3. Tenant Management (SuperAdmin Only)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="My Books (User Library)">
+    <nav class="md-nav" aria-label="3. Tenant Management (SuperAdmin Only)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#query-parameters-get-my-books" class="md-nav__link">
+  <a href="#31-list-tenants" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Query Parameters (GET /my-books/)
+        3.1 List Tenants
       
     </span>
   </a>
@@ -567,10 +691,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-book-to-library-request" class="md-nav__link">
+  <a href="#32-create-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Book to Library Request
+        3.2 Create Tenant
       
     </span>
   </a>
@@ -578,10 +702,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#reading-status-values" class="md-nav__link">
+  <a href="#33-get-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reading Status Values
+        3.3 Get Tenant
       
     </span>
   </a>
@@ -589,10 +713,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#my-book-response" class="md-nav__link">
+  <a href="#34-update-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Book Response
+        3.4 Update Tenant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-delete-tenant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Delete Tenant
       
     </span>
   </a>
@@ -605,22 +740,66 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#genres" class="md-nav__link">
+  <a href="#4-book-catalog" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Genres
+        4. Book Catalog
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Genres">
+    <nav class="md-nav" aria-label="4. Book Catalog">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#genre-response" class="md-nav__link">
+  <a href="#41-list-books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Genre Response
+        4.1 List Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-create-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Create Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-get-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Get Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-update-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Update Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-delete-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Delete Book
       
     </span>
   </a>
@@ -633,44 +812,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#request-status-values" class="md-nav__link">
+  <a href="#5-genre-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Request Status Values
+        5. Genre Management
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error Codes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validation-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation Rules
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Validation Rules">
+    <nav class="md-nav" aria-label="5. Genre Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#title-author" class="md-nav__link">
+  <a href="#51-list-genres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Title &amp; Author
+        5.1 List Genres
       
     </span>
   </a>
@@ -678,10 +835,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#isbn" class="md-nav__link">
+  <a href="#52-create-genre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ISBN
+        5.2 Create Genre
       
     </span>
   </a>
@@ -689,10 +846,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#published-year" class="md-nav__link">
+  <a href="#53-get-genre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Published Year
+        5.3 Get Genre
       
     </span>
   </a>
@@ -700,10 +857,342 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#genres_1" class="md-nav__link">
+  <a href="#54-update-genre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Genres
+        5.4 Update Genre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-delete-genre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Delete Genre
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-personal-library-user-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Personal Library (User Books)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Personal Library (User Books)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-list-users-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 List User's Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-add-book-to-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Add Book to Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-get-library-book-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Get Library Book Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-update-reading-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Update Reading Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-remove-from-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 Remove from Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-payments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Payments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Payments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-create-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Create Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-checkout-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Checkout Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-verify-payment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Verify Payment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-razorpay-webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Razorpay Webhook
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-list-subscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 List Subscriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-list-payment-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 List Payment History
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-list-webhook-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7 List Webhook Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-error-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Error Responses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Error Responses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#400-bad-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        400 Bad Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#401-unauthorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        401 Unauthorized
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#403-forbidden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        403 Forbidden
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#404-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        404 Not Found
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#429-rate-limited" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        429 Rate Limited
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Book Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genre-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genre Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-book-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Book Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagination-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagination Response
       
     </span>
   </a>
@@ -750,63 +1239,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#base-configuration" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Base Configuration
+        Overview
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pagination" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pagination
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response-formats" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response Formats
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Response Formats">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#success-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Success Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error Response
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -823,32 +1262,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#signup-request" class="md-nav__link">
+  <a href="#user-roles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Signup Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#login-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#login-response" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login Response
+        User Roles
       
     </span>
   </a>
@@ -861,33 +1278,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#user-management-admin-only" class="md-nav__link">
+  <a href="#1-authentication-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Management (Admin Only)
+        1. Authentication Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Authentication Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-signup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Signup
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#me" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-verify-email" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Me
+        1.2 Verify Email
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Me">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#user-response" class="md-nav__link">
+  <a href="#13-resend-otp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Response
+        1.3 Resend OTP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-verify-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Verify Login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-refresh-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 Refresh Token
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 Logout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-forgot-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8 Forgot Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-reset-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9 Reset Password
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-change-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10 Change Password
       
     </span>
   </a>
@@ -900,22 +1405,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#books" class="md-nav__link">
+  <a href="#2-user-management-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Books
+        2. User Management (Admin)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Books">
+    <nav class="md-nav" aria-label="2. User Management (Admin)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#query-parameters-get-books" class="md-nav__link">
+  <a href="#21-list-users" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Query Parameters (GET /books/)
+        2.1 List Users
       
     </span>
   </a>
@@ -923,10 +1428,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#visibility-rules" class="md-nav__link">
+  <a href="#22-create-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Visibility Rules
+        2.2 Create User
       
     </span>
   </a>
@@ -934,10 +1439,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-book-request" class="md-nav__link">
+  <a href="#23-get-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Create Book Request
+        2.3 Get User
       
     </span>
   </a>
@@ -945,10 +1450,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#book-response" class="md-nav__link">
+  <a href="#24-update-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Book Response
+        2.4 Update User
       
     </span>
   </a>
@@ -956,10 +1461,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-book-request-admin-only" class="md-nav__link">
+  <a href="#25-delete-user" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Update Book Request (Admin Only)
+        2.5 Delete User
       
     </span>
   </a>
@@ -972,22 +1477,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-books-user-library" class="md-nav__link">
+  <a href="#3-tenant-management-superadmin-only" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Books (User Library)
+        3. Tenant Management (SuperAdmin Only)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="My Books (User Library)">
+    <nav class="md-nav" aria-label="3. Tenant Management (SuperAdmin Only)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#query-parameters-get-my-books" class="md-nav__link">
+  <a href="#31-list-tenants" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Query Parameters (GET /my-books/)
+        3.1 List Tenants
       
     </span>
   </a>
@@ -995,10 +1500,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-book-to-library-request" class="md-nav__link">
+  <a href="#32-create-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Add Book to Library Request
+        3.2 Create Tenant
       
     </span>
   </a>
@@ -1006,10 +1511,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#reading-status-values" class="md-nav__link">
+  <a href="#33-get-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reading Status Values
+        3.3 Get Tenant
       
     </span>
   </a>
@@ -1017,10 +1522,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#my-book-response" class="md-nav__link">
+  <a href="#34-update-tenant" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Book Response
+        3.4 Update Tenant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-delete-tenant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Delete Tenant
       
     </span>
   </a>
@@ -1033,22 +1549,66 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#genres" class="md-nav__link">
+  <a href="#4-book-catalog" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Genres
+        4. Book Catalog
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Genres">
+    <nav class="md-nav" aria-label="4. Book Catalog">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#genre-response" class="md-nav__link">
+  <a href="#41-list-books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Genre Response
+        4.1 List Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-create-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Create Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-get-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Get Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-update-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Update Book
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-delete-book" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Delete Book
       
     </span>
   </a>
@@ -1061,44 +1621,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#request-status-values" class="md-nav__link">
+  <a href="#5-genre-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Request Status Values
+        5. Genre Management
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error Codes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validation-rules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation Rules
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Validation Rules">
+    <nav class="md-nav" aria-label="5. Genre Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#title-author" class="md-nav__link">
+  <a href="#51-list-genres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Title &amp; Author
+        5.1 List Genres
       
     </span>
   </a>
@@ -1106,10 +1644,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#isbn" class="md-nav__link">
+  <a href="#52-create-genre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ISBN
+        5.2 Create Genre
       
     </span>
   </a>
@@ -1117,10 +1655,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#published-year" class="md-nav__link">
+  <a href="#53-get-genre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Published Year
+        5.3 Get Genre
       
     </span>
   </a>
@@ -1128,10 +1666,342 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#genres_1" class="md-nav__link">
+  <a href="#54-update-genre" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Genres
+        5.4 Update Genre
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-delete-genre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Delete Genre
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-personal-library-user-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Personal Library (User Books)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Personal Library (User Books)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-list-users-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 List User's Books
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-add-book-to-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Add Book to Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-get-library-book-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Get Library Book Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-update-reading-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Update Reading Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-remove-from-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 Remove from Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-payments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Payments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Payments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-create-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Create Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-checkout-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Checkout Page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-verify-payment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Verify Payment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-razorpay-webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Razorpay Webhook
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-list-subscriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 List Subscriptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-list-payment-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 List Payment History
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-list-webhook-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7 List Webhook Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-error-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Error Responses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Error Responses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#400-bad-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        400 Bad Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#401-unauthorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        401 Unauthorized
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#403-forbidden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        403 Forbidden
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#404-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        404 Not Found
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#429-rate-limited" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        429 Rate Limited
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tenant-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Book Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genre-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Genre Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-book-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Book Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagination-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagination Response
       
     </span>
   </a>
@@ -1160,532 +2030,1020 @@
 
 
 
-<h1 id="bookshelf-rest-api-documentation">BookShelf REST API Documentation</h1>
-<h2 id="base-configuration">Base Configuration</h2>
-<table>
-<thead>
-<tr>
-<th>Setting</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Base URL</td>
-<td><code>/api/v1/</code></td>
-</tr>
-<tr>
-<td>Versioning</td>
-<td>URI-based</td>
-</tr>
-<tr>
-<td>Authentication</td>
-<td>JWT (Bearer Token)</td>
-</tr>
-<tr>
-<td>Pagination</td>
-<td>Enabled for list endpoints</td>
-</tr>
-<tr>
-<td>Update Strategy</td>
-<td>PATCH only</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="pagination">Pagination</h2>
-<p>Pagination is applied to all list endpoints.</p>
-<p><strong>Response Structure:</strong></p>
-<pre><code class="language-json">{
-    &quot;count&quot;: 50,
-    &quot;page&quot;: 1,
-    &quot;page_size&quot;: 10,
-    &quot;next&quot;: &quot;http://localhost:8000/api/v1/books/?page=2&quot;,
-    &quot;previous&quot;: null,
-    &quot;data&quot;: [...]
-}
-</code></pre>
-<hr />
-<h2 id="response-formats">Response Formats</h2>
-<h3 id="success-response">Success Response</h3>
-<pre><code class="language-json">{
-    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
-    &quot;title&quot;: &quot;Deep Learning&quot;,
-    &quot;author&quot;: &quot;Ian Goodfellow&quot;,
-    &quot;isbn&quot;: &quot;9780262035613&quot;,
-    &quot;published_year&quot;: 2016,
-    &quot;request_status&quot;: &quot;APPROVED&quot;,
-    &quot;created_by_email&quot;: &quot;admin@gmail.com&quot;,
-    &quot;genres&quot;: [&quot;Technology&quot;, &quot;Machine Learning&quot;],
-    &quot;created_at&quot;: &quot;2026-01-08T06:50:36.959536+05:30&quot;
-}
-</code></pre>
-<h3 id="error-response">Error Response</h3>
-<pre><code class="language-json">{
-    &quot;errors&quot;: {
-        &quot;isbn&quot;: [&quot;ISBN already exists.&quot;],
-        &quot;title&quot;: [&quot;Title must contain at least one letter.&quot;]
-    }
-}
-</code></pre>
-<p><strong>or</strong></p>
-<pre><code class="language-json">{
-    &quot;error&quot;: &quot;Book not found.&quot;
-}
-</code></pre>
+<h1 id="bookshelf-api-documentation">BookShelf API Documentation</h1>
+<h2 id="overview">Overview</h2>
+<p>Base URL: <code>/api/v1/</code></p>
+<p>All requests require <code>Tenant-ID</code> header (except SuperAdmin and public endpoints).</p>
 <hr />
 <h2 id="authentication">Authentication</h2>
+<p>Include access token in Authorization header:</p>
+<pre><code>Authorization: Bearer &lt;access_token&gt;
+</code></pre>
+<h3 id="user-roles">User Roles</h3>
 <table>
 <thead>
 <tr>
-<th>Method</th>
-<th>Endpoint</th>
+<th>Role</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>POST</td>
-<td><code>/auth/signup/</code></td>
-<td>Register new user</td>
+<td>SUPER_ADMIN</td>
+<td>Platform-level access, manages tenants and admins</td>
 </tr>
 <tr>
-<td>POST</td>
-<td><code>/auth/login/</code></td>
-<td>Login and get JWT tokens</td>
+<td>ADMIN</td>
+<td>Tenant administrator, manages users and books</td>
 </tr>
 <tr>
-<td>POST</td>
-<td><code>/auth/refresh/</code></td>
-<td>Refresh access token</td>
-</tr>
-<tr>
-<td>POST</td>
-<td><code>/auth/logout/</code></td>
-<td>Logout (blacklist token)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="signup-request">Signup Request</h3>
-<pre><code class="language-json">{
-    &quot;username&quot;: &quot;testuser&quot;,
-    &quot;email&quot;: &quot;test@example.com&quot;,
-    &quot;password&quot;: &quot;securepassword123&quot;,
-    &quot;first_name&quot;: &quot;Test&quot;,
-    &quot;last_name&quot;: &quot;User&quot;
-}
-</code></pre>
-<h3 id="login-request">Login Request</h3>
-<pre><code class="language-json">{
-    &quot;email&quot;: &quot;test@example.com&quot;,
-    &quot;password&quot;: &quot;securepassword123&quot;
-}
-</code></pre>
-<h3 id="login-response">Login Response</h3>
-<pre><code class="language-json">{
-    &quot;access&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...&quot;,
-    &quot;refresh&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...&quot;
-}
-</code></pre>
-<hr />
-<h2 id="user-management-admin-only">User Management (Admin Only)</h2>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Endpoint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GET</td>
-<td><code>/users/</code></td>
-<td>List all users</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/users/{id}/</code></td>
-<td>Get user details</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/users/{id}/</code></td>
-<td>Soft delete user</td>
-</tr>
-</tbody>
-</table>
-<h2 id="me">Me</h2>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Endpoint</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GET</td>
-<td><code>/users/me/</code></td>
-<td>Get self details</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/users/me/</code></td>
-<td>Soft delete user (User only)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="user-response">User Response</h3>
-<pre><code class="language-json">{
-    &quot;id&quot;: &quot;019b99e5-09aa-7bd5-9a3c-71efd21c56ee&quot;,
-    &quot;username&quot;: &quot;testuser1&quot;,
-    &quot;email&quot;: &quot;testuser1@example.com&quot;,
-    &quot;first_name&quot;: &quot;Test&quot;,
-    &quot;last_name&quot;: &quot;User&quot;,
-    &quot;role&quot;: &quot;USER&quot;,
-    &quot;date_joined&quot;: &quot;2026-01-08T00:48:02.922906+05:30&quot;
-}
-</code></pre>
-<hr />
-<h2 id="books">Books</h2>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Endpoint</th>
-<th>Description</th>
-<th>Access</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GET</td>
-<td><code>/books/</code></td>
-<td>List books</td>
-<td>All authenticated</td>
-</tr>
-<tr>
-<td>POST</td>
-<td><code>/books/</code></td>
-<td>Create book</td>
-<td>All authenticated</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/books/{id}/</code></td>
-<td>Get book details</td>
-<td>All authenticated</td>
-</tr>
-<tr>
-<td>PATCH</td>
-<td><code>/books/{id}/</code></td>
-<td>Update book</td>
-<td>Admin only</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/books/{id}/</code></td>
-<td>Soft delete book</td>
-<td>Admin only</td>
-</tr>
-</tbody>
-</table>
-<h3 id="query-parameters-get-books">Query Parameters (GET <code>/books/</code>)</h3>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>request_status</code></td>
-<td>Filter by status (PENDING, APPROVED, REJECTED)</td>
-<td><code>?request_status=APPROVED</code></td>
-</tr>
-<tr>
-<td><code>genre</code></td>
-<td>Filter by genre name</td>
-<td><code>?genre=Fiction</code></td>
-</tr>
-<tr>
-<td><code>title</code></td>
-<td>Search by title (case-insensitive)</td>
-<td><code>?title=harry</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="visibility-rules">Visibility Rules</h3>
-<table>
-<thead>
-<tr>
-<th>User Type</th>
-<th>Default View</th>
-<th>With <code>request_status</code> Filter</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Admin</td>
-<td>All books</td>
-<td>Filter by specified status</td>
-</tr>
-<tr>
-<td>User</td>
-<td>APPROVED + own books</td>
-<td>APPROVED: all, PENDING/REJECTED: own only</td>
-</tr>
-</tbody>
-</table>
-<h3 id="create-book-request">Create Book Request</h3>
-<pre><code class="language-json">{
-    &quot;title&quot;: &quot;My Book Title&quot;,
-    &quot;author&quot;: &quot;Author Name&quot;,
-    &quot;isbn&quot;: &quot;9780262035613&quot;,
-    &quot;published_year&quot;: 2020,
-    &quot;genres&quot;: [&quot;019b9297-6647-72dd-902b-d0fe1e8e2b48&quot;]
-}
-</code></pre>
-<h3 id="book-response">Book Response</h3>
-<pre><code class="language-json">{
-    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
-    &quot;title&quot;: &quot;My Book Title&quot;,
-    &quot;author&quot;: &quot;Author Name&quot;,
-    &quot;isbn&quot;: &quot;9780262035613&quot;,
-    &quot;published_year&quot;: 2020,
-    &quot;request_status&quot;: &quot;APPROVED&quot;,
-    &quot;created_by_email&quot;: &quot;admin@gmail.com&quot;,
-    &quot;genres&quot;: [&quot;Fiction&quot;, &quot;Technology&quot;],
-    &quot;created_at&quot;: &quot;2026-01-08T06:50:36.959536+05:30&quot;
-}
-</code></pre>
-<h3 id="update-book-request-admin-only">Update Book Request (Admin Only)</h3>
-<pre><code class="language-json">{
-    &quot;title&quot;: &quot;Updated Title&quot;,
-    &quot;author&quot;: &quot;Updated Author&quot;,
-    &quot;published_year&quot;: 2021,
-    &quot;request_status&quot;: &quot;APPROVED&quot;
-}
-</code></pre>
-<blockquote>
-<p><strong>Note:</strong> ISBN and genres are NOT updateable after creation.</p>
-</blockquote>
-<hr />
-<h2 id="my-books-user-library">My Books (User Library)</h2>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Endpoint</th>
-<th>Description</th>
-<th>Access</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GET</td>
-<td><code>/my-books/</code></td>
-<td>List user's reading list</td>
-<td>User only</td>
-</tr>
-<tr>
-<td>POST</td>
-<td><code>/my-books/</code></td>
-<td>Add book to reading list</td>
-<td>User only</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/my-books/{id}/</code></td>
-<td>Get book from reading list</td>
-<td>User only</td>
-</tr>
-<tr>
-<td>PATCH</td>
-<td><code>/my-books/{id}/</code></td>
-<td>Update reading status</td>
-<td>User only</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/my-books/{id}/</code></td>
-<td>Remove from reading list</td>
-<td>User only</td>
-</tr>
-</tbody>
-</table>
-<h3 id="query-parameters-get-my-books">Query Parameters (GET <code>/my-books/</code>)</h3>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>status</code></td>
-<td>Filter by reading status</td>
-<td><code>?status=READING</code></td>
-</tr>
-<tr>
-<td><code>title</code></td>
-<td>Search by title</td>
-<td><code>?title=harry</code></td>
-</tr>
-<tr>
-<td><code>author</code></td>
-<td>Search by author</td>
-<td><code>?author=rowling</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="add-book-to-library-request">Add Book to Library Request</h3>
-<pre><code class="language-json">{
-    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
-    &quot;status&quot;: &quot;TO_READ&quot;
-}
-</code></pre>
-<h3 id="reading-status-values">Reading Status Values</h3>
-<ul>
-<li><code>TO_READ</code></li>
-<li><code>READING</code></li>
-<li><code>COMPLETED</code></li>
-</ul>
-<h3 id="my-book-response">My Book Response</h3>
-<pre><code class="language-json">{
-    &quot;id&quot;: &quot;019b9b30-fa5f-71ff-8a30-3ec1cf2109dd&quot;,
-    &quot;title&quot;: &quot;Deep Learning&quot;,
-    &quot;author&quot;: &quot;Ian Goodfellow&quot;,
-    &quot;isbn&quot;: &quot;9780262035613&quot;,
-    &quot;published_year&quot;: 2016,
-    &quot;status&quot;: &quot;READING&quot;,
-    &quot;created_by_email&quot;: &quot;admin@gmail.com&quot;,
-    &quot;genres&quot;: [&quot;Technology&quot;, &quot;Machine Learning&quot;],
-    &quot;created_at&quot;: &quot;2026-01-08T06:50:36.959536+05:30&quot;
-}
-</code></pre>
-<hr />
-<h2 id="genres">Genres</h2>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Endpoint</th>
-<th>Description</th>
-<th>Access</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GET</td>
-<td><code>/genres/</code></td>
-<td>List all genres</td>
-<td>All authenticated</td>
-</tr>
-</tbody>
-</table>
-<h3 id="genre-response">Genre Response</h3>
-<pre><code class="language-json">{
-    &quot;id&quot;: &quot;019b9297-6647-72dd-902b-d0fe1e8e2b48&quot;,
-    &quot;name&quot;: &quot;Fiction&quot;,
-    &quot;created_at&quot;: &quot;2026-01-07T14:30:00.000000+05:30&quot;
-}
-</code></pre>
-<hr />
-<h2 id="request-status-values">Request Status Values</h2>
-<table>
-<thead>
-<tr>
-<th>Status</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>PENDING</code></td>
-<td>Book awaiting admin approval (default for users)</td>
-</tr>
-<tr>
-<td><code>APPROVED</code></td>
-<td>Book approved and visible to all (default for admins)</td>
-</tr>
-<tr>
-<td><code>REJECTED</code></td>
-<td>Book rejected by admin</td>
+<td>USER</td>
+<td>Regular user, manages own library</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="error-codes">Error Codes</h2>
-<table>
-<thead>
-<tr>
-<th>Status Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>Success</td>
-</tr>
-<tr>
-<td>201</td>
-<td>Created</td>
-</tr>
-<tr>
-<td>204</td>
-<td>No Content (successful delete)</td>
-</tr>
-<tr>
-<td>400</td>
-<td>Bad Request (validation error)</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized (invalid/missing token)</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden (insufficient permissions)</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error</td>
-</tr>
-</tbody>
-</table>
+<h2 id="1-authentication-endpoints">1. Authentication Endpoints</h2>
+<h3 id="11-signup">1.1 Signup</h3>
+<p><strong>Purpose:</strong> Register a new user for a tenant</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/signup/</code></p>
+<p><strong>Header:</strong> <code>Tenant-ID: &lt;tenant_uuid&gt;</code></p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;string&quot;,
+  &quot;email&quot;: &quot;string&quot;,
+  &quot;password&quot;: &quot;string&quot;,
+  &quot;password_confirm&quot;: &quot;string&quot;,
+  &quot;first_name&quot;: &quot;string (optional)&quot;,
+  &quot;last_name&quot;: &quot;string (optional)&quot;,
+  &quot;phone_no&quot;: &quot;string (optional)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Verification code sent to your email.&quot;
+}
+</code></pre>
 <hr />
-<h2 id="validation-rules">Validation Rules</h2>
-<h3 id="title-author">Title &amp; Author</h3>
-<ul>
-<li>Must contain at least one letter</li>
-<li>Allowed: letters, numbers, spaces, underscores, apostrophes, periods, commas</li>
-</ul>
-<h3 id="isbn">ISBN</h3>
-<ul>
-<li>Maximum 13 characters</li>
-<li>Must be unique across all books</li>
-</ul>
-<h3 id="published-year">Published Year</h3>
-<ul>
-<li>Range: 1000 - 2026</li>
-</ul>
-<h3 id="genres_1">Genres</h3>
-<ul>
-<li>Must provide at least one valid genre UUID</li>
-<li>Genre must exist in database</li>
-</ul>
+<h3 id="12-verify-email">1.2 Verify Email</h3>
+<p><strong>Purpose:</strong> Verify email with OTP after signup</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/verify-email/</code></p>
+<p><strong>Header:</strong> <code>Tenant-ID: &lt;tenant_uuid&gt;</code></p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;string (or username)&quot;,
+  &quot;username&quot;: &quot;string (or email)&quot;,
+  &quot;otp&quot;: &quot;string (6 digits)&quot;
+}
+</code></pre>
+<p><strong>Success Response (201 Created):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Email verified. Account activated successfully.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="13-resend-otp">1.3 Resend OTP</h3>
+<p><strong>Purpose:</strong> Resend verification OTP</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/resend-otp/</code></p>
+<p><strong>Header:</strong> <code>Tenant-ID: &lt;tenant_uuid&gt;</code></p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;string (or username)&quot;,
+  &quot;username&quot;: &quot;string (or email)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;New verification code sent to your email.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="14-login">1.4 Login</h3>
+<p><strong>Purpose:</strong> Authenticate and receive login OTP</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/login/</code></p>
+<p><strong>Header:</strong> <code>Tenant-ID: &lt;tenant_uuid&gt;</code> (optional for SuperAdmin)</p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;string (or username)&quot;,
+  &quot;username&quot;: &quot;string (or email)&quot;,
+  &quot;password&quot;: &quot;string&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;OTP sent to your email. Please verify to complete login.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="15-verify-login">1.5 Verify Login</h3>
+<p><strong>Purpose:</strong> Complete login with OTP, receive JWT tokens</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/verify-login/</code></p>
+<p><strong>Header:</strong> <code>Tenant-ID: &lt;tenant_uuid&gt;</code> (optional for SuperAdmin)</p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;string (or username)&quot;,
+  &quot;username&quot;: &quot;string (or email)&quot;,
+  &quot;otp&quot;: &quot;string (6 digits)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;access&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...&quot;,
+  &quot;refresh&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...&quot;
+}
+</code></pre>
+<hr />
+<h3 id="16-refresh-token">1.6 Refresh Token</h3>
+<p><strong>Purpose:</strong> Get new access token using refresh token</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/refresh/</code></p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;refresh&quot;: &quot;string (JWT refresh token)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;access&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...&quot;,
+  &quot;refresh&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...&quot;
+}
+</code></pre>
+<hr />
+<h3 id="17-logout">1.7 Logout</h3>
+<p><strong>Purpose:</strong> Blacklist tokens and logout</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/logout/</code></p>
+<p><strong>Auth Required:</strong> Yes</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;refresh&quot;: &quot;string (JWT refresh token)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Logged out successfully&quot;
+}
+</code></pre>
+<hr />
+<h3 id="18-forgot-password">1.8 Forgot Password</h3>
+<p><strong>Purpose:</strong> Request password reset link</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/forgot-password/</code></p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;email&quot;: &quot;string (or username)&quot;,
+  &quot;username&quot;: &quot;string (or email)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;If an account exists, a reset link has been sent to the registered email.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="19-reset-password">1.9 Reset Password</h3>
+<p><strong>Purpose:</strong> Reset password using token</p>
+<p><strong>Endpoint:</strong> <code>GET/POST /api/v1/auth/reset-password/</code></p>
+<p><strong>Auth Required:</strong> No</p>
+<p><strong>Query Parameter:</strong> <code>token=&lt;reset_token&gt;</code></p>
+<p><strong>Request Body (POST):</strong></p>
+<pre><code class="language-json">{
+  &quot;token&quot;: &quot;string&quot;,
+  &quot;password&quot;: &quot;string&quot;,
+  &quot;confirm_password&quot;: &quot;string&quot;
+}
+</code></pre>
+<p><strong>Success:</strong> Renders HTML success page</p>
+<hr />
+<h3 id="110-change-password">1.10 Change Password</h3>
+<p><strong>Purpose:</strong> Change password for authenticated user</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/auth/change-password/</code></p>
+<p><strong>Auth Required:</strong> Yes</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;current_password&quot;: &quot;string&quot;,
+  &quot;new_password&quot;: &quot;string&quot;,
+  &quot;confirm_password&quot;: &quot;string&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Password changed successfully. Please login with your new password.&quot;
+}
+</code></pre>
+<hr />
+<h2 id="2-user-management-admin">2. User Management (Admin)</h2>
+<h3 id="21-list-users">2.1 List Users</h3>
+<p><strong>Purpose:</strong> Get paginated list of users</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/users/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN, ADMIN)</p>
+<p><strong>Query Parameters:</strong>
+- <code>page</code> (optional): Page number
+- <code>page_size</code> (optional): Items per page</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 10,
+  &quot;next&quot;: &quot;http://example.com/api/v1/users/?page=2&quot;,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;username&quot;: &quot;string&quot;,
+      &quot;email&quot;: &quot;string&quot;,
+      &quot;phone_no&quot;: &quot;string&quot;,
+      &quot;role&quot;: &quot;USER&quot;,
+      &quot;tenant&quot;: &quot;uuid&quot;,
+      &quot;first_name&quot;: &quot;string&quot;,
+      &quot;last_name&quot;: &quot;string&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+    }
+  ]
+}
+</code></pre>
+<p><strong>Notes:</strong>
+- SUPER_ADMIN sees all ADMIN users across tenants
+- ADMIN sees all USER role users in their tenant</p>
+<hr />
+<h3 id="22-create-user">2.2 Create User</h3>
+<p><strong>Purpose:</strong> Create a new user (Admin creates users, SuperAdmin creates admins)</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/users/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN, ADMIN)</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;string&quot;,
+  &quot;email&quot;: &quot;string&quot;,
+  &quot;password&quot;: &quot;string&quot;,
+  &quot;phone_no&quot;: &quot;string (optional)&quot;,
+  &quot;first_name&quot;: &quot;string (optional)&quot;,
+  &quot;last_name&quot;: &quot;string (optional)&quot;,
+  &quot;tenant&quot;: &quot;uuid (required for SuperAdmin creating admin)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Verification code sent to your email.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="23-get-user">2.3 Get User</h3>
+<p><strong>Purpose:</strong> Get details of a specific user</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/users/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): User UUID</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;username&quot;: &quot;string&quot;,
+  &quot;email&quot;: &quot;string&quot;,
+  &quot;phone_no&quot;: &quot;string&quot;,
+  &quot;role&quot;: &quot;USER&quot;,
+  &quot;first_name&quot;: &quot;string&quot;,
+  &quot;last_name&quot;: &quot;string&quot;,
+  &quot;is_active&quot;: true,
+  &quot;deleted_at&quot;: null,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+}
+</code></pre>
+<hr />
+<h3 id="24-update-user">2.4 Update User</h3>
+<p><strong>Purpose:</strong> Update user details</p>
+<p><strong>Endpoint:</strong> <code>PATCH /api/v1/users/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): User UUID</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;username&quot;: &quot;string (optional)&quot;,
+  &quot;first_name&quot;: &quot;string (optional)&quot;,
+  &quot;last_name&quot;: &quot;string (optional)&quot;,
+  &quot;phone_no&quot;: &quot;string (optional)&quot;,
+  &quot;is_active&quot;: &quot;boolean (admin only)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;username&quot;: &quot;string&quot;,
+  &quot;email&quot;: &quot;string&quot;,
+  &quot;phone_no&quot;: &quot;string&quot;,
+  &quot;role&quot;: &quot;USER&quot;,
+  &quot;first_name&quot;: &quot;Updated Name&quot;,
+  &quot;last_name&quot;: &quot;string&quot;,
+  &quot;is_active&quot;: true,
+  &quot;deleted_at&quot;: null,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+}
+</code></pre>
+<p><strong>Restrictions:</strong>
+- <code>email</code> and <code>role</code> are immutable
+- Regular users cannot update <code>is_active</code> or <code>deleted_at</code>
+- Admin cannot update other admins or themselves</p>
+<hr />
+<h3 id="25-delete-user">2.5 Delete User</h3>
+<p><strong>Purpose:</strong> Soft delete a user</p>
+<p><strong>Endpoint:</strong> <code>DELETE /api/v1/users/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): User UUID</p>
+<p><strong>Success Response (204 No Content):</strong></p>
+<pre><code>(Empty response body)
+</code></pre>
+<hr />
+<h2 id="3-tenant-management-superadmin-only">3. Tenant Management (SuperAdmin Only)</h2>
+<h3 id="31-list-tenants">3.1 List Tenants</h3>
+<p><strong>Purpose:</strong> Get paginated list of all tenants</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/tenants/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN)</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 5,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;name&quot;: &quot;BookShelf Corp&quot;,
+      &quot;slug&quot;: &quot;bookshelf-corp&quot;,
+      &quot;is_active&quot;: true,
+      &quot;subscription_plan&quot;: &quot;FREE&quot;,
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;deleted_at&quot;: null
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="32-create-tenant">3.2 Create Tenant</h3>
+<p><strong>Purpose:</strong> Create a new tenant</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/tenants/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN)</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;string&quot;,
+  &quot;slug&quot;: &quot;string&quot;,
+  &quot;is_active&quot;: true,
+  &quot;subscription_plan&quot;: &quot;FREE&quot;
+}
+</code></pre>
+<p><strong>Success Response (201 Created):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;New Tenant&quot;,
+  &quot;slug&quot;: &quot;new-tenant&quot;,
+  &quot;is_active&quot;: true,
+  &quot;subscription_plan&quot;: &quot;FREE&quot;,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;deleted_at&quot;: null
+}
+</code></pre>
+<hr />
+<h3 id="33-get-tenant">3.3 Get Tenant</h3>
+<p><strong>Purpose:</strong> Get tenant details with metrics</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/tenants/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Tenant UUID</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;BookShelf Corp&quot;,
+  &quot;slug&quot;: &quot;bookshelf-corp&quot;,
+  &quot;is_active&quot;: true,
+  &quot;subscription_plan&quot;: &quot;PREMIUM&quot;,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;updated_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;deleted_at&quot;: null,
+  &quot;user_count&quot;: 25,
+  &quot;book_count&quot;: 150
+}
+</code></pre>
+<hr />
+<h3 id="34-update-tenant">3.4 Update Tenant</h3>
+<p><strong>Purpose:</strong> Update tenant details</p>
+<p><strong>Endpoint:</strong> <code>PATCH /api/v1/tenants/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Tenant UUID</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;string (optional)&quot;,
+  &quot;slug&quot;: &quot;string (optional)&quot;,
+  &quot;is_active&quot;: &quot;boolean (optional)&quot;,
+  &quot;subscription_plan&quot;: &quot;FREE|PREMIUM (optional)&quot;,
+  &quot;deleted_at&quot;: &quot;null (to restore)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;Updated Name&quot;,
+  &quot;slug&quot;: &quot;updated-slug&quot;,
+  &quot;is_active&quot;: true,
+  &quot;subscription_plan&quot;: &quot;PREMIUM&quot;,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;updated_at&quot;: &quot;2026-01-29T13:00:00.000000Z&quot;,
+  &quot;deleted_at&quot;: null,
+  &quot;user_count&quot;: 25,
+  &quot;book_count&quot;: 150
+}
+</code></pre>
+<hr />
+<h3 id="35-delete-tenant">3.5 Delete Tenant</h3>
+<p><strong>Purpose:</strong> Soft delete a tenant</p>
+<p><strong>Endpoint:</strong> <code>DELETE /api/v1/tenants/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Tenant UUID</p>
+<p><strong>Success Response (204 No Content):</strong></p>
+<pre><code>(Empty response body)
+</code></pre>
+<hr />
+<h2 id="4-book-catalog">4. Book Catalog</h2>
+<h3 id="41-list-books">4.1 List Books</h3>
+<p><strong>Purpose:</strong> Get paginated list of books</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/books/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER)</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 50,
+  &quot;next&quot;: &quot;http://example.com/api/v1/books/?page=2&quot;,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;title&quot;: &quot;The Great Gatsby&quot;,
+      &quot;author&quot;: &quot;F. Scott Fitzgerald&quot;,
+      &quot;isbn&quot;: &quot;978-0743273565&quot;,
+      &quot;published_year&quot;: 1925,
+      &quot;request_status&quot;: &quot;APPROVED&quot;,
+      &quot;created_by&quot;: {
+        &quot;id&quot;: &quot;uuid&quot;
+      },
+      &quot;genres&quot;: [&quot;Fiction&quot;, &quot;Classic&quot;],
+      &quot;deleted_at&quot;: null,
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+    }
+  ]
+}
+</code></pre>
+<p><strong>Visibility:</strong>
+- ADMIN: Sees all books (PENDING, APPROVED, REJECTED)
+- USER: Sees APPROVED books + own PENDING/REJECTED books</p>
+<hr />
+<h3 id="42-create-book">4.2 Create Book</h3>
+<p><strong>Purpose:</strong> Add a new book to catalog</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/books/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER)</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;string&quot;,
+  &quot;author&quot;: &quot;string&quot;,
+  &quot;isbn&quot;: &quot;string&quot;,
+  &quot;published_year&quot;: 2024,
+  &quot;genres&quot;: [&quot;uuid1&quot;, &quot;uuid2&quot;],
+  &quot;request_status&quot;: &quot;APPROVED (admin only)&quot;
+}
+</code></pre>
+<p><strong>Success Response (201 Created):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;title&quot;: &quot;New Book&quot;,
+  &quot;author&quot;: &quot;Author Name&quot;,
+  &quot;isbn&quot;: &quot;978-1234567890&quot;,
+  &quot;published_year&quot;: 2024,
+  &quot;request_status&quot;: &quot;APPROVED&quot;,
+  &quot;created_by&quot;: {
+    &quot;id&quot;: &quot;uuid&quot;
+  },
+  &quot;genres&quot;: [&quot;Fiction&quot;],
+  &quot;deleted_at&quot;: null,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+}
+</code></pre>
+<p><strong>Notes:</strong>
+- ADMIN: Books created with <code>APPROVED</code> status
+- USER: Books created with <code>PENDING</code> status</p>
+<hr />
+<h3 id="43-get-book">4.3 Get Book</h3>
+<p><strong>Purpose:</strong> Get book details</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/books/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Book UUID</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;title&quot;: &quot;The Great Gatsby&quot;,
+  &quot;author&quot;: &quot;F. Scott Fitzgerald&quot;,
+  &quot;isbn&quot;: &quot;978-0743273565&quot;,
+  &quot;published_year&quot;: 1925,
+  &quot;request_status&quot;: &quot;APPROVED&quot;,
+  &quot;created_by&quot;: {
+    &quot;id&quot;: &quot;uuid&quot;
+  },
+  &quot;genres&quot;: [&quot;Fiction&quot;, &quot;Classic&quot;],
+  &quot;deleted_at&quot;: null,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+}
+</code></pre>
+<hr />
+<h3 id="44-update-book">4.4 Update Book</h3>
+<p><strong>Purpose:</strong> Update book details</p>
+<p><strong>Endpoint:</strong> <code>PATCH /api/v1/books/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER - own pending only)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Book UUID</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;string (optional)&quot;,
+  &quot;author&quot;: &quot;string (optional)&quot;,
+  &quot;published_year&quot;: &quot;integer (optional)&quot;,
+  &quot;genres&quot;: [&quot;uuid1&quot;, &quot;uuid2&quot;] (optional),
+  &quot;request_status&quot;: &quot;APPROVED|REJECTED (admin only)&quot;,
+  &quot;deleted_at&quot;: &quot;null to restore (admin only)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;title&quot;: &quot;Updated Title&quot;,
+  &quot;author&quot;: &quot;Updated Author&quot;,
+  &quot;isbn&quot;: &quot;978-0743273565&quot;,
+  &quot;published_year&quot;: 1925,
+  &quot;request_status&quot;: &quot;APPROVED&quot;,
+  &quot;created_by&quot;: {
+    &quot;id&quot;: &quot;uuid&quot;
+  },
+  &quot;genres&quot;: [&quot;Fiction&quot;, &quot;Romance&quot;],
+  &quot;deleted_at&quot;: null,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+}
+</code></pre>
+<hr />
+<h3 id="45-delete-book">4.5 Delete Book</h3>
+<p><strong>Purpose:</strong> Soft delete a book</p>
+<p><strong>Endpoint:</strong> <code>DELETE /api/v1/books/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN only)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Book UUID</p>
+<p><strong>Success Response (204 No Content):</strong></p>
+<pre><code>(Empty response body)
+</code></pre>
+<hr />
+<h2 id="5-genre-management">5. Genre Management</h2>
+<h3 id="51-list-genres">5.1 List Genres</h3>
+<p><strong>Purpose:</strong> Get list of genres</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/genres/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER)</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 10,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;name&quot;: &quot;fiction&quot;,
+      &quot;description&quot;: &quot;Fictional literature&quot;,
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;deleted_at&quot;: null
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="52-create-genre">5.2 Create Genre</h3>
+<p><strong>Purpose:</strong> Create a new genre</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/genres/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN only)</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;string&quot;,
+  &quot;description&quot;: &quot;string (optional)&quot;
+}
+</code></pre>
+<p><strong>Success Response (201 Created):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;mystery&quot;,
+  &quot;description&quot;: &quot;Mystery and thriller books&quot;,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;deleted_at&quot;: null
+}
+</code></pre>
+<hr />
+<h3 id="53-get-genre">5.3 Get Genre</h3>
+<p><strong>Purpose:</strong> Get genre details</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/genres/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Genre UUID</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;fiction&quot;,
+  &quot;description&quot;: &quot;Fictional literature&quot;,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;deleted_at&quot;: null
+}
+</code></pre>
+<hr />
+<h3 id="54-update-genre">5.4 Update Genre</h3>
+<p><strong>Purpose:</strong> Update genre details</p>
+<p><strong>Endpoint:</strong> <code>PATCH /api/v1/genres/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN only)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Genre UUID</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;string (optional)&quot;,
+  &quot;description&quot;: &quot;string (optional)&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;updated-name&quot;,
+  &quot;description&quot;: &quot;Updated description&quot;,
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;deleted_at&quot;: null
+}
+</code></pre>
+<hr />
+<h3 id="55-delete-genre">5.5 Delete Genre</h3>
+<p><strong>Purpose:</strong> Soft delete a genre</p>
+<p><strong>Endpoint:</strong> <code>DELETE /api/v1/genres/{id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN only)</p>
+<p><strong>Path Parameters:</strong>
+- <code>id</code> (required): Genre UUID</p>
+<p><strong>Success Response (204 No Content):</strong></p>
+<pre><code>(Empty response body)
+</code></pre>
+<hr />
+<h2 id="6-personal-library-user-books">6. Personal Library (User Books)</h2>
+<h3 id="61-list-users-books">6.1 List User's Books</h3>
+<p><strong>Purpose:</strong> Get books in a user's personal library</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/users/{user_id}/books/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER - own library)</p>
+<p><strong>Path Parameters:</strong>
+- <code>user_id</code> (required): User UUID</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 5,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;title&quot;: &quot;The Great Gatsby&quot;,
+      &quot;author&quot;: &quot;F. Scott Fitzgerald&quot;,
+      &quot;isbn&quot;: &quot;978-0743273565&quot;,
+      &quot;published_year&quot;: 1925,
+      &quot;status&quot;: &quot;READING&quot;,
+      &quot;added_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;created_by&quot;: {
+        &quot;id&quot;: &quot;uuid&quot;
+      },
+      &quot;genres&quot;: [&quot;Fiction&quot;, &quot;Classic&quot;],
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+    }
+  ]
+}
+</code></pre>
+<p><strong>Access Rules:</strong>
+- ADMIN: Can view any user's library in tenant
+- USER: Can only view own library</p>
+<hr />
+<h3 id="62-add-book-to-library">6.2 Add Book to Library</h3>
+<p><strong>Purpose:</strong> Add a book to user's personal library</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/users/{user_id}/books/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER - own library)</p>
+<p><strong>Path Parameters:</strong>
+- <code>user_id</code> (required): User UUID</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;book_id&quot;: &quot;uuid&quot;,
+  &quot;status&quot;: &quot;TO_READ|READING|COMPLETED (default: TO_READ)&quot;
+}
+</code></pre>
+<p><strong>Success Response (201 Created):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Book added successfully.&quot;
+}
+</code></pre>
+<p><strong>Subscription Limits:</strong>
+- FREE: Maximum 5 books
+- PREMIUM: Unlimited</p>
+<hr />
+<h3 id="63-get-library-book-details">6.3 Get Library Book Details</h3>
+<p><strong>Purpose:</strong> Get details of a book in user's library</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/users/{user_id}/books/{book_id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER - own library)</p>
+<p><strong>Path Parameters:</strong>
+- <code>user_id</code> (required): User UUID
+- <code>book_id</code> (required): Book UUID</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;title&quot;: &quot;The Great Gatsby&quot;,
+  &quot;author&quot;: &quot;F. Scott Fitzgerald&quot;,
+  &quot;isbn&quot;: &quot;978-0743273565&quot;,
+  &quot;published_year&quot;: 1925,
+  &quot;status&quot;: &quot;READING&quot;,
+  &quot;added_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+  &quot;created_by&quot;: {
+    &quot;id&quot;: &quot;uuid&quot;
+  },
+  &quot;genres&quot;: [&quot;Fiction&quot;, &quot;Classic&quot;],
+  &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+}
+</code></pre>
+<hr />
+<h3 id="64-update-reading-status">6.4 Update Reading Status</h3>
+<p><strong>Purpose:</strong> Update reading status for a book</p>
+<p><strong>Endpoint:</strong> <code>PATCH /api/v1/users/{user_id}/books/{book_id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER - own library)</p>
+<p><strong>Path Parameters:</strong>
+- <code>user_id</code> (required): User UUID
+- <code>book_id</code> (required): Book UUID</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;TO_READ|READING|COMPLETED&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Reading status updated.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="65-remove-from-library">6.5 Remove from Library</h3>
+<p><strong>Purpose:</strong> Remove a book from user's library</p>
+<p><strong>Endpoint:</strong> <code>DELETE /api/v1/users/{user_id}/books/{book_id}/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN, USER - own library)</p>
+<p><strong>Path Parameters:</strong>
+- <code>user_id</code> (required): User UUID
+- <code>book_id</code> (required): Book UUID</p>
+<p><strong>Success Response (204 No Content):</strong></p>
+<pre><code>(Empty response body)
+</code></pre>
+<hr />
+<h2 id="7-payments">7. Payments</h2>
+<h3 id="71-create-order">7.1 Create Order</h3>
+<p><strong>Purpose:</strong> Create Razorpay order for subscription</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/payments/create-order/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN only)</p>
+<p><strong>Success Response (201 Created):</strong></p>
+<pre><code class="language-json">{
+  &quot;razorpay_order_id&quot;: &quot;order_xxxxxxxxxxxxx&quot;,
+  &quot;amount&quot;: 100,
+  &quot;currency&quot;: &quot;INR&quot;,
+  &quot;status&quot;: &quot;created&quot;
+}
+</code></pre>
+<hr />
+<h3 id="72-checkout-page">7.2 Checkout Page</h3>
+<p><strong>Purpose:</strong> Render checkout page with Razorpay widget</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/payments/checkout/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN only)</p>
+<p><strong>Response:</strong> HTML page with payment form</p>
+<hr />
+<h3 id="73-verify-payment">7.3 Verify Payment</h3>
+<p><strong>Purpose:</strong> Verify Razorpay payment signature</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/payments/verify/</code></p>
+<p><strong>Auth Required:</strong> Yes (ADMIN only)</p>
+<p><strong>Request Body:</strong></p>
+<pre><code class="language-json">{
+  &quot;razorpay_payment_id&quot;: &quot;pay_xxxxxxxxxxxxx&quot;,
+  &quot;razorpay_order_id&quot;: &quot;order_xxxxxxxxxxxxx&quot;,
+  &quot;razorpay_signature&quot;: &quot;signature_hash&quot;
+}
+</code></pre>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;detail&quot;: &quot;Payment verified successfully.&quot;
+}
+</code></pre>
+<hr />
+<h3 id="74-razorpay-webhook">7.4 Razorpay Webhook</h3>
+<p><strong>Purpose:</strong> Receive webhook events from Razorpay</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/payments/webhook/razorpay/</code></p>
+<p><strong>Auth Required:</strong> No (Signature verified)</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;ok&quot;
+}
+</code></pre>
+<hr />
+<h3 id="75-list-subscriptions">7.5 List Subscriptions</h3>
+<p><strong>Purpose:</strong> Get list of subscriptions</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/payments/subscriptions/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN, ADMIN - own tenant)</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 5,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;tenant&quot;: &quot;uuid&quot;,
+      &quot;tenant_name&quot;: &quot;BookShelf Corp&quot;,
+      &quot;tenant_slug&quot;: &quot;bookshelf-corp&quot;,
+      &quot;status&quot;: &quot;ACTIVE&quot;,
+      &quot;activated_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="76-list-payment-history">7.6 List Payment History</h3>
+<p><strong>Purpose:</strong> Get payment transaction history</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/payments/payment-history/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN, ADMIN - own tenant)</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 10,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;tenant&quot;: &quot;uuid&quot;,
+      &quot;tenant_name&quot;: &quot;BookShelf Corp&quot;,
+      &quot;subscription&quot;: &quot;uuid&quot;,
+      &quot;initiated_by&quot;: &quot;uuid&quot;,
+      &quot;initiated_by_username&quot;: &quot;admin&quot;,
+      &quot;razorpay_order_id&quot;: &quot;order_xxxxxxxxxxxxx&quot;,
+      &quot;razorpay_payment_id&quot;: &quot;pay_xxxxxxxxxxxxx&quot;,
+      &quot;amount&quot;: 100,
+      &quot;currency&quot;: &quot;INR&quot;,
+      &quot;status&quot;: &quot;CAPTURED&quot;,
+      &quot;verified_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h3 id="77-list-webhook-events">7.7 List Webhook Events</h3>
+<p><strong>Purpose:</strong> Get webhook events for debugging</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/payments/webhooks/</code></p>
+<p><strong>Auth Required:</strong> Yes (SUPER_ADMIN only)</p>
+<p><strong>Success Response (200 OK):</strong></p>
+<pre><code class="language-json">{
+  &quot;count&quot;: 20,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;uuid&quot;,
+      &quot;event_id&quot;: &quot;evt_xxxxxxxxxxxxx&quot;,
+      &quot;event_type&quot;: &quot;payment.captured&quot;,
+      &quot;payload&quot;: {},
+      &quot;processed&quot;: true,
+      &quot;error_message&quot;: null,
+      &quot;created_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;,
+      &quot;updated_at&quot;: &quot;2026-01-29T12:00:00.000000Z&quot;
+    }
+  ]
+}
+</code></pre>
+<hr />
+<h2 id="common-error-responses">Common Error Responses</h2>
+<h3 id="400-bad-request">400 Bad Request</h3>
+<p>Validation errors:</p>
+<pre><code class="language-json">{
+  &quot;success&quot;: false,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;VALIDATION_ERROR&quot;,
+    &quot;message&quot;: &quot;Validation failed&quot;,
+    &quot;details&quot;: {
+      &quot;email&quot;: [&quot;This field is required.&quot;]
+    }
+  }
+}
+</code></pre>
+<h3 id="401-unauthorized">401 Unauthorized</h3>
+<pre><code class="language-json">{
+  &quot;success&quot;: false,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;AUTHENTICATION_FAILED&quot;,
+    &quot;message&quot;: &quot;Invalid credentials.&quot;
+  }
+}
+</code></pre>
+<h3 id="403-forbidden">403 Forbidden</h3>
+<pre><code class="language-json">{
+  &quot;success&quot;: false,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;PERMISSION_DENIED&quot;,
+    &quot;message&quot;: &quot;You do not have permission to perform this action.&quot;
+  }
+}
+</code></pre>
+<h3 id="404-not-found">404 Not Found</h3>
+<pre><code class="language-json">{
+  &quot;success&quot;: false,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;NOT_FOUND&quot;,
+    &quot;message&quot;: &quot;Resource not found.&quot;
+  }
+}
+</code></pre>
+<h3 id="429-rate-limited">429 Rate Limited</h3>
+<pre><code class="language-json">{
+  &quot;success&quot;: false,
+  &quot;error&quot;: {
+    &quot;code&quot;: &quot;RATE_LIMITED&quot;,
+    &quot;message&quot;: &quot;Request was throttled. Try again later.&quot;
+  }
+}
+</code></pre>
+<hr />
+<h2 id="schema-definitions">Schema Definitions</h2>
+<h3 id="user-object">User Object</h3>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;username&quot;: &quot;string&quot;,
+  &quot;email&quot;: &quot;string&quot;,
+  &quot;phone_no&quot;: &quot;string | null&quot;,
+  &quot;role&quot;: &quot;SUPER_ADMIN | ADMIN | USER&quot;,
+  &quot;first_name&quot;: &quot;string&quot;,
+  &quot;last_name&quot;: &quot;string&quot;,
+  &quot;is_active&quot;: &quot;boolean&quot;,
+  &quot;deleted_at&quot;: &quot;datetime | null&quot;,
+  &quot;created_at&quot;: &quot;datetime&quot;
+}
+</code></pre>
+<h3 id="tenant-object">Tenant Object</h3>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;string&quot;,
+  &quot;slug&quot;: &quot;string&quot;,
+  &quot;is_active&quot;: &quot;boolean&quot;,
+  &quot;subscription_plan&quot;: &quot;FREE | PREMIUM&quot;,
+  &quot;user_count&quot;: &quot;integer&quot;,
+  &quot;book_count&quot;: &quot;integer&quot;,
+  &quot;created_at&quot;: &quot;datetime&quot;,
+  &quot;updated_at&quot;: &quot;datetime&quot;,
+  &quot;deleted_at&quot;: &quot;datetime | null&quot;
+}
+</code></pre>
+<h3 id="book-object">Book Object</h3>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;title&quot;: &quot;string&quot;,
+  &quot;author&quot;: &quot;string&quot;,
+  &quot;isbn&quot;: &quot;string&quot;,
+  &quot;published_year&quot;: &quot;integer&quot;,
+  &quot;request_status&quot;: &quot;PENDING | APPROVED | REJECTED&quot;,
+  &quot;created_by&quot;: {&quot;id&quot;: &quot;uuid&quot;},
+  &quot;genres&quot;: [&quot;string&quot;],
+  &quot;deleted_at&quot;: &quot;datetime | null&quot;,
+  &quot;created_at&quot;: &quot;datetime&quot;
+}
+</code></pre>
+<h3 id="genre-object">Genre Object</h3>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;name&quot;: &quot;string&quot;,
+  &quot;description&quot;: &quot;string | null&quot;,
+  &quot;created_at&quot;: &quot;datetime&quot;,
+  &quot;deleted_at&quot;: &quot;datetime | null&quot;
+}
+</code></pre>
+<h3 id="user-book-object">User Book Object</h3>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;uuid&quot;,
+  &quot;title&quot;: &quot;string&quot;,
+  &quot;author&quot;: &quot;string&quot;,
+  &quot;isbn&quot;: &quot;string&quot;,
+  &quot;published_year&quot;: &quot;integer&quot;,
+  &quot;status&quot;: &quot;TO_READ | READING | COMPLETED&quot;,
+  &quot;added_at&quot;: &quot;datetime&quot;,
+  &quot;created_by&quot;: {&quot;id&quot;: &quot;uuid&quot;},
+  &quot;genres&quot;: [&quot;string&quot;],
+  &quot;created_at&quot;: &quot;datetime&quot;
+}
+</code></pre>
+<h3 id="pagination-response">Pagination Response</h3>
+<pre><code class="language-json">{
+  &quot;count&quot;: &quot;integer (total items)&quot;,
+  &quot;next&quot;: &quot;string (URL) | null&quot;,
+  &quot;previous&quot;: &quot;string (URL) | null&quot;,
+  &quot;results&quot;: []
+}
+</code></pre>
 
 
 
