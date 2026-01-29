@@ -887,20 +887,24 @@
 <li>Prevents email enumeration</li>
 </ol>
 <h3 id="reset-password">Reset Password</h3>
-<p><strong>GET Request</strong> (Load Form):
-1. User clicks link to <code>GET /api/v1/auth/reset-password/?token=&lt;token&gt;</code>
-2. System validates token exists and not expired
-3. Renders HTML form for password entry</p>
-<p><strong>POST Request</strong> (Submit New Password):
-1. User submits via form or API:
-   - <code>token</code>, <code>password</code>, <code>confirm_password</code>
-2. System validates:
-   - Token valid and not expired
-   - Passwords match
-   - Password meets strength requirements
-3. Updates user password (hashed)
-4. Reset token cleared from cache
-5. User can now login with new credentials</p>
+<p><strong>GET Request</strong> (Load Form):</p>
+<ol>
+<li>User clicks link to <code>GET /api/v1/auth/reset-password/?token=&lt;token&gt;</code></li>
+<li>System validates token exists and not expired</li>
+<li>Renders HTML form for password entry</li>
+</ol>
+<p><strong>POST Request</strong> (Submit New Password):</p>
+<ol>
+<li>User submits via form or API:</li>
+<li><code>token</code>, <code>password</code>, <code>confirm_password</code></li>
+<li>System validates:</li>
+<li>Token valid and not expired</li>
+<li>Passwords match</li>
+<li>Password meets strength requirements</li>
+<li>Updates user password (hashed)</li>
+<li>Reset token cleared from cache</li>
+<li>User can now login with new credentials</li>
+</ol>
 <h3 id="change-password">Change Password</h3>
 <ol>
 <li>Authenticated user calls <code>POST /api/v1/auth/change-password/</code></li>

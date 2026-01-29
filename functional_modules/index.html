@@ -627,7 +627,6 @@
 <h2 id="2-tenant-management-module-platform-level">2. Tenant Management Module (Platform Level)</h2>
 <ul>
 <li><strong>Lifecycle Management</strong>: Super Admins can create, update, and manage multiple tenants.</li>
-<li><strong>Soft Deletion Protocol</strong>: Tenants can be marked as deleted, which immediately blocks access for all associated users.</li>
 <li><strong>Delayed Data Purge</strong>: A background cron job automatically purges all related data (Users, Books, Genres, etc.) after retention period, keeping the platform clean while allowing for recovery.</li>
 <li><strong>Restore Capability</strong>: Super Admins can restore deleted tenants (and their data) any time before the final purge.</li>
 </ul>
